@@ -289,117 +289,7 @@
 }
 
 
-@media (max-width: 1024px) {
-    .services__form._fixed .services__form-text {
-        font-size: 16px;
-        margin-bottom: 13px;
-    }
 
-    .services__form._fixed .full-menu__form-inputs {
-        margin-bottom: 20px;
-    }
-
-    .services__form._fixed input {
-        width: 100%;
-        height: 20px;
-        font-size: 12px;
-        padding: 5px;
-    }
-
-    .services__form._fixed input::placeholder {
-        font-size: 12px !important;
-    }
-
-    .services {
-        padding: 20px !important;
-        position: relative;
-        z-index: 50;
-        min-height: 450px;
-    }
-
-    .services__heading {
-        font-size: 25px;
-    }
-
-    .services__text {
-        font-size: 12px;
-        width: 100%;
-        margin-top: 20px;
-        line-height: 16px;
-    }
-
-    .services__link {
-        display: none;
-    }
-
-    .services__wrap {
-        flex-direction: column;
-        margin-top: unset;
-    }
-
-    .services__inner {
-        padding-top: 100px;
-        width: 100%;
-    }
-
-    .services__text._half {
-        min-width: 100%;
-        max-width: 100%;
-    }
-
-    .services__form._fixed {
-        min-width: 300px;
-        max-width: 300px;
-        margin: 0 auto;
-        padding: 10px;
-    }
-
-    .services__form._fixed .full-menu__form-inputs {
-        flex-direction: column;
-    }
-
-    .services__form._fixed input {
-        margin-bottom: 10px;
-        width: 100%;
-        border-radius: none;
-    }
-
-    .composition__items .services__form {
-        display: none;
-    }
-
-    .services__breadcrumbs {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 16px;
-        color: #005090;
-    }
-
-    .services__breadcrumbs_visible {
-        display: block;
-    }
-
-    .services__inner_special {
-        padding-top: 0;
-    }
-
-    .services__big-text {
-        transform: unset;
-        margin: 0;
-        padding: 0;
-        font-size: 60px;
-    }
-
-    .services__form._fixed .full-menu__form-submit {
-        width: 120px;
-        height: 15px;
-        border-radius: 4px;
-        font-size: 10px;
-        margin-bottom: 14px;
-        margin-right: 20px;
-    }
-}
 
 @media (min-width: 1600px) {
     .services {
@@ -614,6 +504,135 @@
             padding-top: pxToVw3(4);
             padding-bottom: pxToVw3(4);
             margin-top: -5px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .services__form._fixed .services__form-text {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+
+    .services__form._fixed .full-menu__form-inputs {
+        margin-bottom: 20px;
+    }
+
+    .services__form._fixed input {
+        width: 100%;
+        height: 20px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .services__form._fixed input::placeholder {
+        font-size: 12px !important;
+    }
+
+    .services {
+        padding: 20px !important;
+        position: relative;
+        z-index: 50;
+        min-height: 450px;
+    }
+
+    .services__heading {
+        font-size: 25px;
+    }
+
+    .services__text {
+        font-size: 12px;
+        width: 100%;
+        margin-top: 20px;
+        line-height: 16px;
+    }
+
+    .services__link {
+        display: none;
+    }
+
+    .services__wrap {
+        flex-direction: column;
+        margin-top: unset;
+    }
+
+    .services__inner {
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    .services__text._half {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .services__form._fixed {
+        min-width: 300px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .services__form._fixed .full-menu__form-inputs {
+        flex-direction: column;
+    }
+
+    .services__form._fixed input {
+        margin-bottom: 10px;
+        width: 100%;
+        border-radius: none;
+    }
+
+    .composition__items .services__form {
+        display: none;
+    }
+
+    .services__breadcrumbs {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 16px;
+        color: #005090;
+    }
+
+    .services__breadcrumbs_visible {
+        display: block;
+    }
+
+    .services__inner_special {
+        padding-top: 0;
+    }
+
+    .services__big-text {
+        transform: unset;
+        margin: 0;
+        padding: 0;
+        font-size: 60px;
+    }
+
+    .services__form._fixed .full-menu__form-submit {
+        width: 120px;
+        height: 15px;
+        border-radius: 4px;
+        font-size: 10px;
+        margin-bottom: 14px;
+        margin-right: 20px;
+    }
+
+    .services {
+        &__form {
+            &.company-4 {
+                margin-top: 20px;    
+            }
+
+            &.franchise {
+                max-width: 300px;
+                .full-menu__form-inputs {
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

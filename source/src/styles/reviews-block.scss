@@ -77,3 +77,55 @@
         margin-bottom: pxToVw3(20);
     }
 }
+
+@media (max-width: 1024px) {
+    .reviews-block {
+        margin-bottom: 50px;
+
+        &__item-wrapper {
+            min-width: 50%;
+            padding-right: 20px;
+        }
+
+        &__item {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            p {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        &__item-name {
+            font-size: 16px;
+        }
+
+        &__more {
+            font-size: 16px;
+            margin-top: 20px;
+
+            &::after {
+                margin-left: 15px;
+                width: 50px;
+                height: 7px;
+            }
+        }
+
+        &__switch {
+            bottom: -30px;
+        }
+    }
+}
+
+
+@media (max-width: 400px) {
+    .reviews-block {
+        &__item-wrapper {
+            min-width: 100%;
+            padding-right: 5px;
+        }
+    }
+}

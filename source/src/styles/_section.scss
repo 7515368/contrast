@@ -844,6 +844,14 @@
             }
         }
     }
+
+    &__company-5 {
+        color: #005090;
+    }
+    
+    &__company-6 {
+        color: #005090;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -971,6 +979,8 @@
         position: static;
         background: #e8f1f6;
     }
+    
+    
 
     .section_c {
         background: none;
@@ -991,6 +1001,10 @@
         position: relative;
         left: 0;
         top: 0;
+
+        &.light {
+            font-size: 16px;
+        }
     }
 
     .section__name2:after,
@@ -1209,11 +1223,21 @@
         &__company-3 {
             padding: 20px;
             height: auto;
-            .section {
-                &__name2 {
-                    font-size: 16px;
-                }
-            }
+        }
+        
+        &__company-5 {
+            padding: 20px;
+            height: auto;
+        }
+        
+        &__company-6 {
+            padding: 20px;
+
+            padding-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+
+            overflow: visible;
         }
 
         &__company-mob {
@@ -1283,6 +1307,167 @@
                     align-items: flex-start;
                 }
                 .number {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        &__license-block {
+            flex-direction: column;
+
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .section {
+                &__title2 {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+
+        &__license-block-row {
+            flex-wrap: wrap;
+        }
+
+        &__license-block-item {
+            width: 50%;
+
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+
+            &:after {
+                width: 1px;
+                height: 90px;
+                top: 50%;
+
+                transform: translateY(-50%);
+            }
+            &:nth-child(2n + 2) {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        &__company-4 {
+            background-color: #005092;
+            height: auto;
+        }
+
+        &__box-text {
+            margin-top: 30px;
+
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            font-size: 12px;
+        }
+
+        &__section-4-overlay {
+            right: 0;
+            top: 0;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            position: static;
+
+            .section {
+                &__basic-text {
+                    margin-bottom: 15px;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        &__company-6-wrapper {
+            position: relative;
+            top: 0;
+            left: 0;
+            max-width: none;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__company-contacts {
+            width: 100%;
+
+            margin-bottom: 30px;
+        }
+
+        &__company-contacts-list {
+            ul {
+                li {
+                    max-width: 300px;
+
+                    span {
+                        font-size: 14px;
+                    }
+
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        &__company-numbers-franchise {
+            .section {
+                &__company-numbers-item {
+                    max-width: none;
+
+                    &:nth-child(5) {
+                        padding-left: 0;
+                    }
+                }
+                
+                &__company-numbers-item--internet {
+                    padding-left: 0;
+                }
+                
+                &__company-numbers-internet{
+                    font-size: 16px;
+                    line-height: 18px;
+                    max-width: 150px;
+                }
+            }
+        }
+
+        &__numbered-list {
+            ul {
+                li {
+                    .circle {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        &__franchise-3 {
+            padding-bottom: 60px;
+        }
+
+        &__small-text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+
+        &__charity-overlay {
+            .section {
+                &__name {
                     margin-bottom: 15px;
                 }
             }
@@ -1396,5 +1581,11 @@
             padding-right: pxToVw3(160);
             padding-top: pxToVw3(200);
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .section {
+        
     }
 }
