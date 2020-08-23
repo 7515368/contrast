@@ -1,0 +1,6 @@
+**/public
+card.iml
+target
+.idea
+node_modules
+catalina.base_IS_UNDEFINED

@@ -1,0 +1,51 @@
+.map-marker {
+}
+.map-marker__img {
+    width: 20px;
+    height: 20px;
+}
+.map-marker__number {
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.map-marker__special1,
+.map-marker__special2 {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #4c84b2;
+    border-radius: 0;
+    color: #f18d1e;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.map-marker__special2 {
+    color: white;
+}
+
+.map-marker__color-cirlce {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+
+.map-marker__color-cirlce_yellow {
+    background: #ffff00;
+}
+
+.map-marker__color-cirlce_blue {
+    background: #00ffff;
+}
+
+.map-marker__color-cirlce_pink {
+    background: #e24f8d;
+}
+
+.map-marker__color-cirlce_green {
+    background: #86c03f;
+}

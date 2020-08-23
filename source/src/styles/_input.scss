@@ -1,0 +1,57 @@
+.input {
+    font-size: pxToVw(11);
+    border: none;
+    color: #005090;
+    height: pxToVw(28);
+    padding-bottom: pxToVw(4.7);
+    border-bottom: 1px solid #65a2c2;
+    outline: none;
+}
+
+.input_mode1 {
+    width: pxToVw(187);
+}
+
+.input_mode2 {
+    width: 100%;
+    margin-bottom: pxToVw(6.4);
+    font-weight: 300;
+}
+
+input::placeholder {
+    font-size: pxToVw(12);
+    color: #005090;
+    font-weight: 300;
+}
+
+.input_textarea {
+    width: 100%;
+    height: pxToVw(64);
+    border: 1px solid #65a2c2;
+    margin-top: pxToVw(25.6);
+}
+
+@media (min-width: 1600px) {
+    .input {
+        font-size: pxToVw2(11);
+        height: pxToVw2(28);
+        padding-bottom: pxToVw2(4.7);
+    }
+
+    .input_mode1 {
+        width: pxToVw2(187);
+    }
+
+    .input_mode2 {
+        margin-bottom: pxToVw2(6.4);
+    }
+
+    input::placeholder {
+        font-size: pxToVw2(12);
+    }
+
+    .input_textarea {
+        height: pxToVw2(64);
+        margin-top: pxToVw2(25.6);
+    }
+}

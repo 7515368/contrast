@@ -1,0 +1,79 @@
+.reviews-block {
+    margin-bottom: pxToVw3(160);
+    position: relative;
+    &__wrapper {
+        overflow: hidden;
+        position: relative;
+    }
+    &__more {
+        display: flex;
+        margin-top: pxToVw(25);
+        font-size: pxToVw(14);
+        font-weight: bold;
+        cursor: pointer;
+        align-items: center;
+        font-family: "Museo Sans", sans-serif;
+        &:after {
+            content: "";
+            display: inline-block;
+            width: pxToVw(70);
+            height: pxToVw(10);
+            background: url(../img/arrow-right_dark-blue.svg) no-repeat center / contain;
+            margin-left: pxToVw(30);
+        }
+    }
+
+    &__item {
+        padding-left: pxToVw3(25);
+        padding-top: pxToVw3(25);
+        padding-bottom: pxToVw3(25);
+        padding-right: pxToVw3(30);
+
+        background-color: #fff;
+
+        p {
+            font-size: pxToVw3(16);
+            font-weight: 300;
+            line-height: pxToVw3(20);
+        }
+    }
+
+    &__item-wrapper {
+        min-width: 33.4%;
+        padding-right: 40px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        transition: transform 1s ease-in-out;
+    }
+
+    &__switch {
+        position: absolute;
+        bottom: pxToVw(-60);
+        font-size: pxToVw(12);
+        display: flex;
+        color: #67a1c4;
+        left: pxToVw(0);
+        user-select: none;
+        transition: opacity 1s ease;
+    }
+
+    &__item-name {
+        font-size: pxToVw3(16);
+        font-weight: 700;
+
+        margin-bottom: pxToVw3(15);
+    }
+
+    &__blue-text {
+        font-size: pxToVw3(17);
+        line-height: pxToVw3(32);
+        font-weight: 300;
+
+        color: #65A2C2;
+
+        margin-bottom: pxToVw3(20);
+    }
+}
