@@ -35,6 +35,9 @@ const popupOpen = () => {
     setTimeout(() => {
         document.addEventListener("click", onDocumentClick);
     }, 100);
+
+    // $.fn.fullpage.setMouseWheelScrolling(false);
+    // $.fn.fullpage.setAllowScrolling(false);
 };
 
 const onDocumentClick = (e) => {
@@ -48,6 +51,7 @@ const popupCloseHandle = () => {
     setTimeout(() => {
         popup.style.display = "none";
     }, 500);
+
 };
 const renderDataToPopup = (target) => {
     const block = target.closest("[data-info-block]");

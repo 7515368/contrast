@@ -144,7 +144,23 @@
 .info-block__popup-left {
     width: 40%;
     padding-right: pxToVw(60);
+
+    height: 100%;
+    display: grid;
+    grid-template-rows: max-content max-content 1fr;
+    overflow: auto;
+    padding-right: 1vw;
 }
+.info-block__popup-left::-webkit-scrollbar {
+    width: 4px;
+    background: #e8f1f6;
+}
+.info-block__popup-left::-webkit-scrollbar-thumb {
+    width: 4px;
+    background: #005090;
+}
+
+
 .info-block__popup-left .info-block__date {
     position: absolute;
     top: pxToVw(70);
