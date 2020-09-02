@@ -63,6 +63,7 @@ module.exports = env => {
                 { from: "src/company-page.html", to: "company-page.html" },
                 { from: "src/franchise.html", to: "franchise.html" },
                 { from: "src/charity.html", to: "charity.html" },
+                { from: "src/services-white.html", to: "services-white.html" },
                 { from: "src/img", to: "img" },
                 { from: "src/styles/fonts", to: "css/fonts" }
             ]),

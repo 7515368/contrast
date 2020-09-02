@@ -7,102 +7,348 @@
         <title>Contrast</title>
         <link href="css/fonts/fonts.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
-        <script
-            src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6df80c10-caa1-4e7b-b17b-682ac757966b"
-            type="text/javascript"
-        ></script>
     </head>
     <body>
-        <div class="content" id="content">
-            <main class="main" id="main">
-                <section class="section section_map" data-height-adjust="true">
-                    <div class="map">
-                        <div class="map__item">
-                            <div class="map__big">
-                                <div class="map__scheme-object selected" data-adresses-map-object>
-                                    <div class="map__scheme-object-left">
-                                        <div class="map__scheme-object-heading">
-                                            Азбука вкуса
-                                        </div>
-                                        <div class="map__scheme-object-time">
-                                            с 10.00 до 22.00
-                                        </div>
-                                        <div class="map__scheme-object-services">
-                                            <div class="map__scheme-object-services-heading">
-                                                Услуги
-                                            </div>
-                                            <div class="map__scheme-services">
-                                                <div class="map__scheme-services-left">
-                                                    <div class="map__scheme-services-row">
-                                                        Химчистка
-                                                    </div>
-                                                    <div class="map__scheme-services-row">
-                                                        Прачечная
-                                                    </div>
-                                                    <div class="map__scheme-services-row">
-                                                        Ремонт одежды
-                                                    </div>
-                                                </div>
-                                                <div class="map__scheme-services-right">
-                                                    <div class="map__scheme-services-row">
-                                                        Чистка ковров
-                                                    </div>
-                                                    <div class="map__scheme-services-row">
-                                                        Ремонт и чистка обуви
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="map__scheme-object-right">
-                                        <div class="map__scheme-desc height">
-                                            <div class="map__scheme-desc-row">
-                                                <span>Адрес</span> Ленинский проспект д. 91, Москва,
-                                                Московская область, Россия
-                                            </div>
-                                            <div class="map__scheme-desc-row">
-                                                <span>Метро</span> Ленинский проспект
-                                            </div>
-                                        </div>
-                                        <div class="map__scheme-imgs">
-                                            <img src="img/scheme-img.png" data-popup-show-more=""/>
-                                            <img src="img/scheme-img.png" data-popup-show-more=""/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="map__scheme active" id="map" data-adresses-map></div>
+        <div class="content" id="content" data-height-adjust="true">
+            <section class="section section_a-mob">
+                <div class="section__breadcrumbs-mob">
+                    <strong>Услуги</strong>
+                    <div>Шелковые<br />платья</div>
+                </div> 
+                <div
+                    class="section__slide"
+                    data-section-slide-mob="1"
+                    style="background-image: url(img/services.jpg); background-position: center;"
+                ></div>
+                <div class="section__text-mob">
+                    <h2 class="section__h2-mob">Бережно и эффективно</h2>
+                    <p class="section__text-mob-desc">
+                        Если на Ваше шелковое платье попали морские брызги, капли шампанского, сок
+                        клубники, не волнуйтесь, и, главное, не замывайте пятна, не протирайте их
+                        влажными салфетками. Просто промокните любое пятно чистой сухой тканью и ни
+                        в коем случае не трите. Оставьте все, как есть, и не расстраивайтесь. Мы
+                        легко решим Вашу проблему.
+                    </p>
+                </div>
+            </section>
+            <main class="main" id="main" data-fullpage="true">
+                <section class="section section_services section_services_white"
+                    data-phone-color="#005090"
+                    data-menu-color="#005090"
+                    data-logo-color="blue"
+                    data-burger-color="blue"
+                    data-breadcrumbs-color="#005090"
+                    data-pagination-color="#005090">
+                    <div class="services">
+                        <div class="services__inner">
+                            <h2 class="services__heading">
+                                Бережно<br />
+                                и эффективно
+                            </h2>
+                            <div class="services__text">
+                                Если на Ваше шелковое платье попали морские брызги, капли
+                                шампанского, сок клубники, не волнуйтесь, и, главное, не замывайте
+                                пятна, не протирайте их влажными салфетками. Просто промокните любое
+                                пятно чистой сухой тканью и ни в коем случае не трите. Оставьте все,
+                                как есть, и не расстраивайтесь. Мы легко решим Вашу проблему.
                             </div>
-                            <div class="map__small">
-                                <div class="map__scheme-desc">
-                                    <div class="map__scheme-desc-heading">
-                                        Как проехать на общественном транспорте
+                            <div class="services__links">
+                                <a class="services__link" data-fullpage-scroll-to="2"
+                                    >Состав услуги
+                                    <img src="img/sliderArrowLeftBlue.svg" alt="" />
+                                </a>
+                                <a class="services__link" data-fullpage-scroll-to="3"
+                                    >Портфолио
+                                    <img src="img/sliderArrowLeftBlue.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="section section_d"
+                    data-phone-color="#005090"
+                    data-menu-color="#65A2C2"
+                    data-logo-color="blue"
+                    data-burger-color="blue"
+                    data-breadcrumbs-color="#005090"
+                    data-pagination-color="#005090"
+                >
+                    <div class="composition composition_special">
+                        <div class="composition__container">
+                            <div class="composition__left composition__left_width1">
+                                <div class="composition__header">Состав услуги</div>
+                                <div class="composition__items">
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        оценка изделия технологом
                                     </div>
-                                    <div class="map__scheme-desc-text">
-                                        «От ст.“Проспект Вернадского” на автобусе 224 проехать 5
-                                        остановок, остановка “Ленинский проспект”, перейти на
-                                        противоположную сторону Ленинского проспекта, приемный пункт
-                                        расположен в м-не “Азбука вкуса”
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        удаление пятен
+                                    </div>
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        ручная обработка выведение пятен
+                                    </div>
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        чистка
+                                    </div>
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        отпаривание
+                                    </div>
+
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        ремонт истончившейся мездры
+                                    </div>
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        жилирование мездры
+                                    </div>
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        расчесывание и полировка меха
+                                    </div>
+                                    <div class="composition__item">
+                                        <div class="composition__item-quotes">»</div>
+                                        упаковка в воздухопроницаемый чехол (нетканый «дышащий»
+                                        материал)
                                     </div>
                                 </div>
-                                <div class="map__scheme-desc">
-                                    <div class="map__scheme-desc-heading">
-                                        Как проехать на автомобиле
+                            </div>
+                            <div class="composition__right">
+                                <div class="composition__double-block">
+                                    <div class="composition__order">
+                                        <div class="composition__header">
+                                            Дополнительно можно заказать
+                                        </div>
+                                        <div class="composition__items2">
+                                            <div class="composition__item">
+                                                <div class="composition__item-quotes">»</div>
+                                                Замена подкладки — прайс
+                                            </div>
+                                            <div class="composition__item">
+                                                <div class="composition__item-quotes">»</div>
+                                                Озонирование — прайс
+                                            </div>
+                                            <div class="composition__item">
+                                                <div class="composition__item-quotes">»</div>
+                                                Замена пуговиц, клипсы и крючков — прайс
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="map__scheme-desc-text">
-                                        От МКАД по Ленинскому проспекту 5,3 км в сторону центра, на
-                                        пересечении с Ленинского проспекта с ул.Академика Пилюгина
-                                        съехать на дублер Ленинского проспекта, через 500 м справа
-                                        м-н «Азбука Вкуса»
+                                    <div class="composition__cycle">
+                                        <div class="composition__header">Время цикла</div>
+                                        <div class="composition__cycle-img">
+                                            <img src="img/cycle.svg" />
+                                            <div class="composition__cycle-text">
+                                                <div class="composition__cycle-num">5</div>
+                                                <div class="composition__cycle-days">суток</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="map__back-button">
-                            Вернуться к поиску <img src="img/leftArrow.svg" alt="" />
-                        </a>
+                        <div class="composition__prices">
+                            <div class="composition__header">Цены на услуги по чистке меха</div>
+                            <div class="composition__prices-inner triple">
+                                <div class="composition__prices-row">
+                                    <div class="composition__prices-text">
+                                        Замена молнии юбка, брюки простые (молния заказчика)
+                                    </div>
+                                    <div class="composition__prices-price">
+                                        550 ₽ <span>/ 1 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="composition__prices-row">
+                                    <div class="composition__prices-text">
+                                        Укоротить и подшить низ изделия брюки простые, джинсы
+                                    </div>
+                                    <div class="composition__prices-price">
+                                        550 ₽ <span>/ 1 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="composition__prices-row">
+                                    <div class="composition__prices-text">
+                                        Укоротить рукава (два рукава одного изделия) пиджак, пальто
+                                        демисезонное, плащ
+                                    </div>
+                                    <div class="composition__prices-price">
+                                        550 ₽ <span>/ 1 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="composition__prices-row">
+                                    <div class="composition__prices-text">
+                                        Замена подкладки (материал заказчика) пиджак
+                                    </div>
+                                    <div class="composition__prices-price">
+                                        550 ₽ <span>/ 1 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="composition__prices-row">
+                                    <div class="composition__prices-text">
+                                        Подогнать по фигуре юбка
+                                    </div>
+                                    <div class="composition__prices-price">
+                                        550 ₽ <span>/ 1 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="composition__prices-row">
+                                    <div class="composition__prices-text">
+                                        Штопка
+                                    </div>
+                                    <div class="composition__prices-price">
+                                        От 550 ₽
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="section section_d"
+                    data-phone-color="#65A2C2"
+                    data-menu-color="#65A2C2"
+                    data-logo-color="blue"
+                    data-burger-color="blue"
+                    data-breadcrumbs-color="#005090"
+                    data-pagination-color="#005090"
+                >
+                    <div class="portfolio">
+                        <div class="portfolio__heading">
+                            Портфолио
+                        </div>
+                        <div class="portfolio__items" data-carousel-track-container>
+                            <div class="portfolio__items-inner" data-carousel-track data-in-view="3">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">01.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">02.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">03.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">04.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">05.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">06.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">07.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">07.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-heading">
+                                        <span class="portfolio__item-num">07.</span
+                                        ><span class="portfolio__item-brand">Название бренда</span>
+                                    </div>
+                                    <div class="portfolio__item-image">
+                                        <img src="img/item.svg" />
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__switch">
+                            <div
+                                class="footer__portfolio-back"
+                                style="opacity: 0.5;"
+                                data-carousel-back
+                            >
+                                <img src="img/sliderArrowRightBlue.svg" />
+                            </div>
+                            <div class="footer__portfolio-page" data-carousel-current></div>
+                            <div class="footer__portfolio-page footer__portfolio-page_nomargin">
+                                /
+                            </div>
+                            <div class="footer__portfolio-page" data-carousel-total></div>
+                            <div class="footer__portfolio-forward" data-carousel-forward>
+                                <img src="img/sliderArrowLeftBlue.svg" />
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
+            <div class="pagination" data-pagination>
+                <div class="pagination__up" data-pagination-up>
+                    <img class="pagination__up-img" src="img/up.svg" />
+                    <img class="pagination__up-img_blue" src="img/up-blue.svg" />
+                </div>
+                <div class="pagination__down" data-pagination-down>
+                    <img class="pagination__down-img" src="img/down.svg" />
+                    <img class="pagination__down-img_blue" src="img/down-blue.svg" />
+                </div>
+                <div class="pagination__inner" data-pagination-inner></div>
+            </div>
             <nav class="full-menu" data-full-menu data-fullpage="true">
                 <div class="full-menu__top">
                     <a href="/" class="full-menu__logo">
@@ -1064,7 +1310,7 @@
                 </div>
             </nav>
             <header class="header">
-                <a href="/">
+                <a class="mobile-hidden" href="/">
                     <img class="header__logo" src="img/logo.svg" data-logo-white />
                     <img
                         class="header__logo header__logo_blue"
@@ -1073,8 +1319,11 @@
                         style="opacity: 0;"
                     />
                 </a>
+                <a href="#" class="header__phoneIcon">
+                    <img src="img/phoneIcon.svg" alt="" />
+                </a>
                 <div class="header__breadcrumbs" data-breadcrumbs>
-                    <strong>Главная</strong> / Адреса
+                    <strong>Услуги</strong> / <span>Шелковые платья</span>
                 </div>
                 <img class="header__menu" src="img/menu.svg" data-menu-white data-menu-open />
                 <img
@@ -1104,60 +1353,14 @@
                 <a href="tel:+74997033070" class="footer__phone" data-footer-phone>
                     7-499-703-30-70
                 </a>
+
                 <div class="footer__chat">
                     <img class="footer__chat-img" src="img/chat.svg" />
                     <div class="footer__chat-num">3</div>
                 </div>
             </footer>
-            <div class="info-block__popup info-block__popup--img" data-popup-container>
-                <div class="info-block__popup-close" data-popup-close>
-                    <img src="img/full-menu-close.svg" />
-                </div>
-                <div class="info-block__popup-arrow" data-popup-arrow>
-                    <img src="img/arrow-down.svg" />
-                </div>
-                <div class="info-block__popup-full">
-                    <div class="info-block__popup-full-img-inner">
-                        <img src="img/scheme-img.png" alt="">
-                    </div>
-                </div>
-                <div class="info-block__popup-overlay" data-request-overlay></div>
-            </div>
         </div>
         <div class="form" id="form"></div>
         <script type="text/javascript" src="js/bundle.js"></script>
-        <script type="text/javascript">
-            ymaps.ready(init);
-            function init() {
-                var mapObj = new ymaps.Map("map", {
-                    center: [55.75, 37.62],
-                    zoom: 12,
-                    controls: [],
-                });
-
-                mapObj.geoObjects.add(
-                    new ymaps.Placemark(
-                        [55.75, 37.62],
-                        {},
-                        {
-                            iconLayout: "default#image",
-                            iconImageHref: "img/marker1.svg",
-                            iconImageSize: [20, 20],
-                        }
-                    )
-                );
-                mapObj.geoObjects.add(
-                    new ymaps.Placemark(
-                        [55.73, 37.61],
-                        {},
-                        {
-                            iconLayout: "default#image",
-                            iconImageHref: "img/marker2.svg",
-                            iconImageSize: [20, 20],
-                        }
-                    )
-                );
-            }
-        </script>
     </body>
 </html>
