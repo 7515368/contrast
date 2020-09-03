@@ -49,6 +49,7 @@ module.exports = env => {
             CSSExtract,
             new CopyWebpackPlugin([
                 { from: "src/index.html", to: "index.html" },
+                { from: "src/start-page.html", to: "start-page.html" },
                 { from: "src/services.html", to: "services.html" },
                 { from: "src/tailor.html", to: "tailor.html" },
                 { from: "src/shoes.html", to: "shoes.html" },
