@@ -66,7 +66,8 @@ module.exports = env => {
                 { from: "src/charity.html", to: "charity.html" },
                 { from: "src/services-white.html", to: "services-white.html" },
                 { from: "src/img", to: "img" },
-                { from: "src/styles/fonts", to: "css/fonts" }
+                { from: "src/styles/fonts", to: "css/fonts" },
+                { from: "src/js/jquery-3-4-1.js", to: "js/" }
             ]),
             new HtmlWebpackPlugin({
                 template: "src/index.html",

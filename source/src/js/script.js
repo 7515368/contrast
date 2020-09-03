@@ -15,6 +15,8 @@ import "./slider3.js";
 import "./sliderPopup.js";
 import "./sliderPopup2.js";
 import "./request.js";
+import "./jquery-3-4-1.js"; 
+import "./main.js";
 
 const state = { placeholders: document.querySelectorAll("input") };
 

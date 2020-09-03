@@ -404,9 +404,9 @@
 
                                         <a href="#">Посмотреть адрес</a>
                                     </p>
-                                    <div class="info-block__more" data-popup-show-more>
+                                    <a class="info-block__more" data-toggle="modal" data-target="#news-popup">
                                         Подробнее
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="info-block" data-info-block>
                                     <img
@@ -1805,31 +1805,36 @@
                     <div class="footer__chat-num">3</div>
                 </div>
             </footer>
-            <div class="info-block__popup" data-popup-container data-carousel2-container>
-                <div class="info-block__popup-close" data-popup-close>
-                    <img src="img/full-menu-close.svg" />
-                </div>
-                <div class="info-block__popup-left">
-                    <div class="info-block__date" data-popup-date></div>
-                    <h3 class="info-block__header" data-popup-header></h3>
-                    <p class="info-block__text" data-popup-text></p>
-                </div>
-                <div class="info-block__popup-right">
-                    <img class="info-block__popup-img" src="" data-popup-img />
-                </div>
-                <div class="info-block__switch" data-popup-switch>
-                    <div class="footer__portfolio-back" style="opacity: 0.5;" data-carousel2-back>
-                        <img src="img/sliderArrowRightBlue.svg" />
+            <div class="popup-block" id="news-popup">
+                <div class="popup-block__overlay">
+                    <div class="popup-block__popup">
+                        <div class="inner-content">
+                            <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close"><img src="img/full-menu-close.svg" /></a>
+                        </div>
+                        <div class="info-block__popup-left">
+                            <div class="info-block__date" >gtgt</div>
+                            <h3 class="info-block__header" >gtgtg</h3>
+                            <p class="info-block__text" >gtgt</p>
+                        </div>
+                        <div class="info-block__popup-right">
+                            <img class="info-block__popup-img" src="img/img1.jpg" />
+                        </div>
+                        <div class="info-block__switch" >
+                            <div class="footer__portfolio-back" style="opacity: 0.5;" >
+                                <img src="img/sliderArrowRightBlue.svg" />
+                            </div>
+                            <div class="footer__portfolio-page" ></div>
+                            <div class="footer__portfolio-page footer__portfolio-page_nomargin">
+                                /
+                            </div>
+                            <div class="footer__portfolio-page" ></div>
+                            <div class="footer__portfolio-forward">
+                                <img src="img/sliderArrowLeftBlue.svg" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer__portfolio-page" data-carousel2-current></div>
-                    <div class="footer__portfolio-page footer__portfolio-page_nomargin">
-                        /
-                    </div>
-                    <div class="footer__portfolio-page" data-carousel2-total></div>
-                    <div class="footer__portfolio-forward" data-carousel2-forward>
-                        <img src="img/sliderArrowLeftBlue.svg" />
-                    </div>
                 </div>
+               
             </div>
             <div class="info-block__popup info-block__popup2" data-popup-container2>
                 <div class="info-block__popup-close" data-popup-close2>
@@ -1843,6 +1848,6 @@
             </div>
         </div>
         <div class="form" id="form"></div>
-    </body>
+    </body> 
     <script type="text/javascript" src="js/bundle.js"></script>
 </html> 
