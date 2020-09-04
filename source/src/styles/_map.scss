@@ -265,7 +265,7 @@ input:checked + .map__option-checkbox-img {
     z-index: 1;
     transition: opacity 1s ease;
     position: static;
-    height: pxToVw(217.6);
+    height: pxToVw(240.6);
     margin-bottom: pxToVw(25.6);
 }
 
@@ -381,11 +381,11 @@ input:checked + .map__option-checkbox-img {
 .map__scheme-imgs {
     display: flex;
     justify-content: space-between;
-    height: 160px;
+    height: pxToVw3(190);
 }
 
 .map__scheme-imgs img {
-    width: pxToVw(160);
+    width: pxToVw(150);
     height: 100%;
     object-fit: cover;
 }
@@ -813,7 +813,7 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__scheme-imgs img {
-        width: pxToVw2(160);
+        width: pxToVw3(200);
         height: 100%;
     }
     .map__scheme-object-right {
