@@ -265,7 +265,7 @@ input:checked + .map__option-checkbox-img {
     z-index: 1;
     transition: opacity 1s ease;
     position: static;
-    height: pxToVw(240.6);
+    height: pxToVw(210.6);
     margin-bottom: pxToVw(25.6);
 }
 
@@ -380,14 +380,17 @@ input:checked + .map__option-checkbox-img {
 
 .map__scheme-imgs {
     display: flex;
-    justify-content: space-between;
-    height: pxToVw3(190);
+    height: pxToVw3(160);
 }
 
 .map__scheme-imgs img {
-    width: pxToVw(150);
+    width: pxToVw(128);
     height: 100%;
     object-fit: cover;
+
+    &:first-child {
+        margin-right: pxToVw3(25);
+    }
 }
 .map__scheme-object-right {
     min-width: 50%;
@@ -813,7 +816,7 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__scheme-imgs img {
-        width: pxToVw3(200);
+        width: pxToVw3(170);
         height: 100%;
     }
     .map__scheme-object-right {
