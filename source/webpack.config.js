@@ -1,9 +1,10 @@
 const path = require("path");
+const webpack = require("webpack");
 const ExtractTextPlagin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = env => {
+module.exports = (env) => {
     const isProduction = env === "production";
     const CSSExtract = new ExtractTextPlagin("css/styles.css");
 
@@ -11,14 +12,14 @@ module.exports = env => {
         entry: ["babel-polyfill", "./src/js/script.js"],
         output: {
             path: path.join(__dirname, "public"),
-            filename: "js/" + "bundle.js"
+            filename: "js/" + "bundle.js",
         },
         module: {
             rules: [
                 {
                     loader: "babel-loader",
                     test: /\.js$/,
-                    exclude: /node_modules/
+                    exclude: /node_modules/,
                 },
                 {
                     test: /\.s?css$/,
@@ -27,29 +28,28 @@ module.exports = env => {
                             {
                                 loader: "css-loader",
                                 options: {
-                                    sourceMap: true
-                                }
+                                    sourceMap: true,
+                                },
                             },
                             {
                                 loader: "sass-loader",
                                 options: {
-                                    sourceMap: true
-                                }
-                            }
-                        ]
-                    })
+                                    sourceMap: true,
+                                },
+                            },
+                        ],
+                    }),
                 },
                 {
                     test: /\.(png|jpg|svg|webp)$/,
-                    loader: "url-loader"
-                }
-            ]
+                    loader: "url-loader",
+                },
+            ],
         },
         plugins: [
             CSSExtract,
             new CopyWebpackPlugin([
                 { from: "src/index.html", to: "index.html" },
-                { from: "src/start-page.html", to: "start-page.html" },
                 { from: "src/services.html", to: "services.html" },
                 { from: "src/tailor.html", to: "tailor.html" },
                 { from: "src/shoes.html", to: "shoes.html" },
@@ -61,25 +61,25 @@ module.exports = env => {
                 { from: "src/blog.html", to: "blog.html" },
                 { from: "src/sales.html", to: "sales.html" },
                 { from: "src/prices.html", to: "prices.html" },
-                { from: "src/company-page.html", to: "company-page.html" },
-                { from: "src/franchise.html", to: "franchise.html" },
-                { from: "src/charity.html", to: "charity.html" },
-                { from: "src/services-white.html", to: "services-white.html" },
                 { from: "src/img", to: "img" },
-                { from: "src/styles/fonts", to: "css/fonts" }
+                { from: "src/styles/fonts", to: "css/fonts" },
             ]),
             new HtmlWebpackPlugin({
                 template: "src/index.html",
-                hash: true
-            })
+                hash: true,
+            }),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery",
+            }),
         ],
         devtool: isProduction ? "source-map" : "inline-source-map",
         devServer: {
             contentBase: path.join(__dirname, "public"),
             port: 7070,
-            historyApiFallback: true
+            historyApiFallback: true,
             /*uncomment below in case of access from another device of this network. (192.168.0.102:7070)*/
             // host: '192.168.0.102'
-        }
+        },
     };
 };
