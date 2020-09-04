@@ -64,7 +64,7 @@ const Prices = () => {
                     </div>
                 </div>
                 <div className="prices__cancel-selection" onClick={onCancelClick}>
-                    <img src="img/cross.svg" alt="" />
+                    <img src="https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/cross.svg" alt="" />
                     <span className="prices__text">снять выделение</span>
                 </div>
                 <div className="prices__services-container">
@@ -82,7 +82,7 @@ const Prices = () => {
                             >
                                 <img
                                     src={
-                                        section.isActive ? "img/checkedArrow.svg" : "img/circle.svg"
+                                        section.isActive ? "https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/checkedArrow.svg" : "https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/circle.svg"
                                     }
                                 />
                             </div>
@@ -102,7 +102,7 @@ const Prices = () => {
                         />
                     </div>
                     <div className="prices__close" onClick={onSearchReset}>
-                        <img src="img/close.svg" />
+                        <img src="https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/close.svg" />
                     </div>
                 </div>
                 <div className="prices__results">
