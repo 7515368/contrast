@@ -1,5 +1,6 @@
 .info-block {
     min-width: 33.333%;
+    max-width: 33.333%;
     padding-right: 5%;
 }
 
@@ -71,6 +72,14 @@
     display: none;
     transform: translateX(100vw);
     transition: transform 0.5s ease;
+
+    .form-validate-result {
+        position: absolute;
+        bottom: 1vw;
+        left: 1vw;
+        right: 1vw;
+        padding: 1vw;
+    }
 }
 
 .info-block__popup-full-img-inner {

@@ -1,3 +1,5 @@
+import "./slick.js";
+
 function openModal(hrefModal) {
 
     if ($(hrefModal).length > 0){
@@ -6,9 +8,8 @@ function openModal(hrefModal) {
 		setTimeout(function() {
 			$(hrefModal).addClass('fadeIn').trigger('afterOpenModal');
 		}, 50);
-    
-        // bodyScrollLock.clearAllBodyScrollLocks();
-        // bodyScrollLock.disableBodyScroll(hrefModal, bodyScrollOptions);
+
+		$.fn.fullpage.setAutoScrolling(false);
     }
 
 }
@@ -18,10 +19,8 @@ function closeAllModals() {
 	
 	setTimeout(function() {
 		$('.popup-block.active').removeClass('active', function() {
-			// bodyScrollLock.clearAllBodyScrollLocks();
 		}).trigger('afterCloseModal');
 
-		// bodyScrollLock.clearAllBodyScrollLocks();
 	}, 200);
 }
 
@@ -30,10 +29,8 @@ function closeModal(hrefModal) {
 	
 	setTimeout(function() {
 		$(hrefModal).removeClass('active', function() {
-			// bodyScrollLock.clearAllBodyScrollLocks();
 		}).trigger('afterCloseModal');
 
-		// bodyScrollLock.clearAllBodyScrollLocks();
 	}, 200);
 }
 
@@ -53,8 +50,6 @@ $(document.body).on('click','[data-toggle="switch-modal"]',function(e) {
 	
 	$(hrefModal).addClass('active').addClass('fadeIn').scrollTop(0);
     
-	// bodyScrollLock.disableBodyScroll($(hrefModal)[0], bodyScrollOptions);
-	
 });
 
 // Basic open modal
@@ -80,4 +75,10 @@ $(document.body).on('click','[data-toggle="modal-dismiss"]',function(e) {
 	e.preventDefault();
 	
 	closeModal($(this).parents('.popup-block')[0]);
+});
+
+$('.popup-block__slider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false
 });

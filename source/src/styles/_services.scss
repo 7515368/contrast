@@ -288,7 +288,13 @@
     font-weight: 100;
 }
 
-
+.services {
+    &__inner {
+        .form-validate-result {
+            max-width: pxToVw3(545);
+        }
+    }
+}
 
 
 @media (min-width: 1600px) {

@@ -69,11 +69,94 @@
 		min-height: pxToVw(384);
     	color: #005090;
 		.inner-content {
-			height: auto;
+			height: 100%;
 			padding: pxToVw(100) pxToVw(50) pxToVw(120) pxToVw(80);
+			display: flex;	
+		}
+	}
+
+	&__popup-socials {
+		display: flex;
+		position: absolute;
+		top: 3vw;
+		right: pxToVw(50);
+
+		a {
+			font-size: unset;
+			margin: unset;
+			&:not(:last-child) {
+				margin-right: pxToVw(18);
+
+			}
+		}
+
+		img {
+			width: pxToVw(16);
+			height: pxToVw(16);
+		}
+	}
+
+	&__popup-full {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: minmax(60%, 1fr) auto;
+		overflow: hidden;
+		grid-template-rows: 100%;
+	}
+
+	&__popup-text {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-rows: max-content max-content 1fr;
+		overflow: auto;
+		padding-right: 1vw;
+	}
+	&__popup-text::-webkit-scrollbar {
+		width: 4px;
+		background: #e8f1f6;
+	}
+	&__popup-text::-webkit-scrollbar-thumb {
+		width: 4px;
+		background: #005090;
+	}
+
+	&__popup-full-img {
+		padding-left: 1vw;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__popup-inner {
+        top: 25vh;
+        bottom: 25vh;
+        width: 40vw;
+        .inner-content {
+			padding: 5vw;
+        	padding-left: 6vw;
 		}
 	}
 	
+	&__slider {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		.slick-slide {
+			display: grid !important; 
+		}
+
+		.slick-track {
+			height: 100%;
+		}
+
+		.slick-list {
+			height: 100%;
+		}
+	}
 }
 
 @media (min-width: 1600px) {
@@ -87,33 +170,67 @@
 				padding: 6vw 3.33333vw 8vw 5.33333vw;
 			}
 		}
+
+		&__popup-inner {
+			top: 25vh;
+			bottom: 25vh;
+			width: 40vw;
+			.inner-content {
+				padding: 5vw;
+				padding-left: 6vw;
+			}
+		}
 	}
 }
 
-@media (max-width: 767px) {
+
+
+@media (max-width: 1024px) {
 	.popup-block {
 		-webkit-overflow-scrolling: touch !important;
 		
 		&__overlay {
-			padding-top: 40px;
-			padding-bottom: 60px;
-			padding-left: 15px;
-			padding-right: 15px;
 		}
 		
 		&__popup {
 			width: 100%;
-			height: auto;
+			height: 100%;
 			
+			left: 0;
+			right: 0;
+			top: 0;
+			z-index: 100;
 			.inner-content {
-				padding-left: 15px;
-				padding-right: 15px;
-				
-				padding-top: 50px;
-				padding-bottom: 50px;
+				padding: 20px;
+				padding-top: 70px;
+			}
+
+			.info-block__text {
+				font-size: 16px;
+				line-height: 20px;
+				width: 100%;
+				padding-bottom: 100px;
+
+				display: block;
 			}
 		}
 		
+		&__close {
+			position: absolute;
+			top: 30px;
+			left: 20px;
+			transform: translateY(-50%);
+			width: 16px;
+			height: 16px;
+		}
+
+		&__popup-socials {
+			display: none;
+		}
+
+		&__popup-full {
+			height: 80%;
+		}
 	}
 }
 

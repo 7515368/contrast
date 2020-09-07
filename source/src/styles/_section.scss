@@ -274,6 +274,10 @@
         left: pxToVw3(323);
 
         max-width: pxToVw3(1500);
+
+        .form-validate-result {
+            max-width: pxToVw3(1000);
+        }
     }
 
     &__title {

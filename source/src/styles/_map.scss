@@ -297,6 +297,8 @@ input:checked + .map__option-checkbox-img {
     align-items: center;
     height: pxToVw(60);
     border-bottom: 1px solid #19619d;
+
+    cursor: pointer;
 }
 
 .map__adresses-row-cell {
@@ -591,6 +593,8 @@ input:checked + .map__option-checkbox-img {
         margin-bottom: 10px;
         padding: 5px 0;
         position: relative;
+
+        cursor: pointer;
     }
 
     .map__adresses-row-cell {

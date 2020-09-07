@@ -1,0 +1,25 @@
+.form-validate-result {
+    background-color: #fff;
+    padding-top: pxToVw3(20);
+    padding-bottom: pxToVw3(20);
+    padding-left: pxToVw3(25);
+
+    color: #005090;
+    display: flex;
+    align-items: center;
+
+    margin-top: pxToVw3(30);
+    .icon-wrapper {
+        margin-right: 40px;
+    }
+
+    p {
+        margin: 0;
+        font-weight: 500;
+    }
+
+    &--blue {
+        color: #fff;
+        background-color: #005090;
+    }
+}

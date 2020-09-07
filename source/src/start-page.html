@@ -143,8 +143,9 @@
                                     <div class="services__links">
                                         <a
                                             class="services__link services__link_arrow"
-                                            href=""
-                                            data-popup-show-more2
+                                            href="#"
+                                            data-toggle="modal"
+                                            data-target="#text-popup"
                                             >Подробнее
                                             <img
                                                 class="services__link-arrow"
@@ -1805,49 +1806,120 @@
                     <div class="footer__chat-num">3</div>
                 </div>
             </footer>
-            <div class="popup-block" id="news-popup" style="display: block; transform: translateX(0);">
+            <div class="popup-block" id="news-popup">
                 <div class="popup-block__overlay">
                     <div class="popup-block__popup">
                         <div class="inner-content">
                             <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close"><img src="img/full-menu-close.svg" /></a>
-                            <div class="info-block__popup-left">
-                                <div class="info-block__date" >gtgt</div>
-                                <h3 class="info-block__header" >gtgtg</h3>
-                                <p class="info-block__text" >gtgt</p>
+                            <div class="popup-block__popup-socials">
+                                <a href="#">
+                                    <img src="img/instagram.svg" />
+                                </a>
+                                <a href="#">
+                                    <img src="img/facebook.svg" />
+                                </a>
+                                <a href="#">
+                                    <img src="img/youtube.svg" />
+                                </a>
                             </div>
-                            <div class="info-block__popup-right">
-                                <img class="info-block__popup-img" src="img/img1.jpg" />
+                            <div class="popup-block__slider">
+                                <div class="popup-block__popup-full">
+                                    <div class="popup-block__popup-text">
+                                        <div class="info-block__date">05.10 / 2020</div>
+                                        <h3 class="info-block__header">Бесплатная доставка при заказе от 2000 руб!</h3>
+                                        <p class="info-block__text">Полный текст первого блока. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non soluta nisi quam? Commodi animi quod quis saepe dolor blanditiis voluptatem ab quia vel repellendus dolorem, earum eum aliquid! Facere consectetur autem aliquid asperiores saepe nemo quaerat, quis, nostrum ab quo cum quod corporis architecto natus consequatur aperiam eaque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="popup-block__popup-full-img">
+                                        <img src="img/img1.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="popup-block__popup-full">
+                                    <div class="popup-block__popup-text">
+                                        <div class="info-block__date">05.10 / 2020</div>
+                                        <h3 class="info-block__header">Бесплатная доставка при заказе от 2000 руб!</h3>
+                                        <p class="info-block__text">Полный текст первого блока. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non soluta nisi quam? Commodi animi quod quis saepe dolor blanditiis voluptatem ab quia vel repellendus dolorem, earum eum aliquid! Facere consectetur autem aliquid asperiores saepe nemo quaerat, quis, nostrum ab quo cum quod corporis architecto natus consequatur aperiam eaque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="popup-block__popup-full-img">
+                                        <img src="img/img1.jpg" alt=""/>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info-block__switch" >
-                                <div class="footer__portfolio-back" style="opacity: 0.5;" >
+                            <div class="info-block__switch">
+                                <div class="footer__portfolio-back" style="opacity: 0.5;" data-carousel2-back>
                                     <img src="img/sliderArrowRightBlue.svg" />
                                 </div>
-                                <div class="footer__portfolio-page" ></div>
+                                <div class="footer__portfolio-page" data-carousel2-current></div>
                                 <div class="footer__portfolio-page footer__portfolio-page_nomargin">
                                     /
                                 </div>
-                                <div class="footer__portfolio-page" ></div>
-                                <div class="footer__portfolio-forward">
+                                <div class="footer__portfolio-page" data-carousel2-total></div>
+                                <div class="footer__portfolio-forward" data-carousel2-forward>
                                     <img src="img/sliderArrowLeftBlue.svg" />
+                                </div>
+                            </div>
+                            <div class="info-block__request">
+                                <div class="info-block__request-hidden" data-request-form>
+                                    <div class="info-block__request-heading">
+                                        Оставить заявку на вызов специалиста
+                                    </div>
+                                    <div class="info-block__request-inputs">
+                                        <div class="info-block__request-input">
+                                            <input
+                                                type="text"
+                                                class="input input_mode2"
+                                                placeholder="Ваше имя"
+                                            />
+                                        </div>
+                                        <div class="info-block__request-input">
+                                            <input
+                                                type="text"
+                                                class="input input_mode2"
+                                                placeholder="Ваш телефон"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="info-block__request-close" data-request-close>
+                                        <img src="img/full-menu-close.svg" />
+                                    </div>
+                                </div>
+                                <div class="info-block__request-visible">
+                                    <div class="info-block__request-button" data-request-trigger>
+                                        Оставить заявку
+                                    </div>
+                                    <div class="info-block__request-button hidden" data-request-submit>
+                                        Отправить заявку
+                                    </div>
+                                    <div class="info-block__request-text">
+                                        Химчистка Контраст - химчистка с доставкой! Закажите химчистку с
+                                        доставкой, мы заберем и вернем ваши чистые вещи в удобное для вас время
+                                        и место! Звоните ежедневно с 8:00 до 21:00 по многоканальному телефону
+                                        <strong style="color: #005090; font-weight: bold;"
+                                            >+7 (499) 350-88-05</strong
+                                        >
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               
             </div>
-            <div class="info-block__popup info-block__popup2" data-popup-container2>
-                <div class="info-block__popup-close" data-popup-close2>
-                    <img src="img/full-menu-close.svg" />
-                </div>
-                <div class="info-block__popup-text">
-                    <div class="info-block__date" data-popup-date2></div>
-                    <h3 class="info-block__header" data-popup-header2></h3>
-                    <p class="info-block__text" data-popup-text2></p>
+            <div class="popup-block" id="text-popup">
+                <div class="popup-block__overlay">
+                    <div class="popup-block__popup popup-block__popup-inner">
+                        <div class="inner-content">
+                            <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close"><img src="img/full-menu-close.svg" /></a>
+                            <div class="popup-block__popup-text">
+                                <div class="info-block__date">05.10 / 2020</div>
+                                <h3 class="info-block__header">Бесплатная доставка при заказе от 2000 руб!</h3>
+                                <p class="info-block__text">Полный текст первого блока. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non soluta nisi quam? Commodi animi quod quis saepe dolor blanditiis voluptatem ab quia vel repellendus dolorem, earum eum aliquid! Facere consectetur autem aliquid asperiores saepe nemo quaerat, quis, nostrum ab quo cum quod corporis architecto natus consequatur aperiam eaque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>  
         <div class="form" id="form"></div>
     </body> 
     <script type="text/javascript" src="js/bundle.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </html> 
