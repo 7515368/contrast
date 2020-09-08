@@ -162,7 +162,9 @@ const fullpageHandler = () => {
         onLeave: function (origin, destination, direction) {
             fullpageChange(destination.item, destination.index);
             checkArrows(destination.index);
+            
         },
+        normalScrollElements: '.popup-block__popup-text'
     });
 
     fullpageChange(state.fullPageInstance.getActiveSection().item);

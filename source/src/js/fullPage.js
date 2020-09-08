@@ -139,7 +139,7 @@
             offsetSections: false,
             resetSliders: false,
             fadingEffect: false,
-            normalScrollElements: null,
+            normalScrollElements: '.popup-block__popup-text',
             scrollOverflow: false,
             scrollOverflowReset: false,
             scrollOverflowHandler: window.fp_scrolloverflow ? window.fp_scrolloverflow.iscrollHandler : null,

@@ -267,13 +267,17 @@ input:checked + .map__option-checkbox-img {
     position: static;
     height: pxToVw(210.6);
     margin-bottom: pxToVw(25.6);
+
+    &.map2 {
+        height: pxToVw2(333);
+    }
 }
 
 .map__scheme-object.selected + .map__scheme {
     opacity: 1;
     z-index: 1;
     transition: opacity 1s ease;
-    position: static;
+    position: relative;
     height: calc(100% - 19vw);
 }
 

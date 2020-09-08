@@ -9,7 +9,7 @@ function openModal(hrefModal) {
 			$(hrefModal).addClass('fadeIn').trigger('afterOpenModal');
 		}, 50);
 
-		$.fn.fullpage.setAutoScrolling(false);
+		fullpage_api.setAllowScrolling(false);
     }
 
 }

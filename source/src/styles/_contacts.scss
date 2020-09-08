@@ -19,7 +19,7 @@
 }
 
 .contacts__button {
-    width: pxToVw(95);
+    width: auto;
     height: pxToVw(15);
     border-radius: pxToVw(4.7);
     background: #005090;
@@ -52,7 +52,7 @@
     }
 
     .contacts__button {
-        width: pxToVw2(95);
+        width: auto;
         height: pxToVw2(15);
         border-radius: pxToVw2(4.7);
         font-size: pxToVw2(10.37);
