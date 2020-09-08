@@ -270,6 +270,14 @@ input:checked + .map__option-checkbox-img {
     &.map2 {
         height: pxToVw2(333);
     }
+
+    &.map-item-page {
+        .map__scheme-imgs {
+            img {
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 .map__scheme-object.selected + .map__scheme {

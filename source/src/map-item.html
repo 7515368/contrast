@@ -19,7 +19,7 @@
                     <div class="map map_item">
                         <div class="map__item">
                             <div class="map__big">
-                                <div class="map__scheme-object selected" data-adresses-map-object>
+                                <div class="map__scheme-object selected map-item-page" data-adresses-map-object>
                                     <div class="map__scheme-object-left">
                                         <div class="map__scheme-object-heading">
                                             Азбука вкуса
@@ -65,8 +65,8 @@
                                             </div>
                                         </div>
                                         <div class="map__scheme-imgs">
-                                            <img src="img/mayakovskaya_1.jpg" data-popup-show-more=""/>
-                                            <img src="img/scheme-img.png" data-popup-show-more=""/>
+                                            <img src="img/mayakovskaya_1.jpg" data-toggle="modal" data-target="#img-popup"/>
+                                            <img src="img/scheme-img.png" data-toggle="modal" data-target="#img-popup"/>
                                         </div>
                                     </div>
                                 </div>
@@ -1109,23 +1109,24 @@
                     <div class="footer__chat-num">3</div>
                 </div>
             </footer>
-            <div class="info-block__popup info-block__popup--img" data-popup-container>
-                <div class="info-block__popup-close" data-popup-close>
-                    <img src="img/full-menu-close.svg" />
-                </div>
-                <div class="info-block__popup-arrow" data-popup-arrow>
-                    <img src="img/arrow-down.svg" />
-                </div>
-                <div class="info-block__popup-full">
-                    <div class="info-block__popup-full-img-inner">
-                        <img src="img/mayakovskaya_1.jpg" alt="">
+            <div class="popup-block" id="img-popup">
+                <div class="popup-block__overlay">
+                    <div class="popup-block__popup popup-block__popup--img">
+                        <div class="inner-content">
+                            <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close"><img src="img/full-menu-close.svg" /></a>
+                            <div class="popup-block__popup-full">
+                                <div class="popup-block__popup-full-img-inner">
+                                    <img src="img/mayakovskaya_1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="info-block__popup-overlay" data-request-overlay></div>
             </div>
         </div>
         <div class="form" id="form"></div>
         <script type="text/javascript" src="js/bundle.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script type="text/javascript">
             ymaps.ready(init);
             function init() {
