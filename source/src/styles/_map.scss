@@ -126,7 +126,6 @@ input:checked + .map__option-checkbox-img {
 .map__option-text {
     font-size: pxToVw(14);
     font-weight: 300;
-    
 }
 .map__option-icon {
     position: absolute;
@@ -580,7 +579,6 @@ input:checked + .map__option-checkbox-img {
         position: static;
     }
 
-
     .map__adresses {
         position: static;
         margin-bottom: 50px;
@@ -598,7 +596,7 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__adresses-row-cell {
-        width: 100% !important;
+        width: 60% !important;
         font-size: 14px;
         line-height: 18px;
     }
@@ -631,6 +629,125 @@ input:checked + .map__option-checkbox-img {
         left: 30px;
         top: 20px;
         font-size: 12px;
+    }
+
+    .map_item {
+        padding: 20px;
+        height: 100%;
+        min-height: 100vh;
+        padding-bottom: 200px;
+    }
+
+    .map__item {
+        padding: 0;
+        height: 100%;
+        display: block;
+    }
+
+    .map__big {
+        width: 100%;
+        height: auto;
+    }
+
+    .map__small {
+        width: 100%;
+        padding: 0;
+    }
+
+    .map__scheme-object.selected {
+        height: auto;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .map__scheme-object-left {
+        width: 100%;
+        padding: 0;
+    }
+    .map__scheme-object-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .map__scheme-object-heading {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .map__scheme-object-time {
+        font-size: 12px;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+    }
+
+    .map__scheme-object-services-heading {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .map__scheme-services {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .map__scheme-services-row {
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .map__scheme-desc.height {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .map__scheme-desc-row {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .map__scheme-desc-row span {
+        font-size: 13px;
+        padding-right: 10px;
+    }
+
+    .map__scheme-imgs {
+        height: auto;
+        display: block;
+    }
+
+    .map__scheme-imgs img {
+        width: 100%;
+        max-width: 320px;
+        height: 200px;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .map__small .map__scheme-desc {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .map__scheme-desc-heading {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .map__scheme-desc-text {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+
+    .map__back-button {
+        font-size: 16px;
+        bottom: 100px;
+        left: 20px;
+    }
+
+    .map__back-button img {
+        width: 20px;
+        margin-left: 20px;
     }
 }
 
