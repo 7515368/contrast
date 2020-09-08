@@ -7,7 +7,6 @@ const Prices = () => {
     const [sections, updateSections] = useState(data.sections);
 
     const onSectionClick = (sectionId) => {
-        
         const sectionsCopy = [...sections];
         sectionsCopy.forEach((section) => {
             if (section.id === sectionId) {
@@ -40,7 +39,6 @@ const Prices = () => {
     const filter = (items) => {
         const filteredItems = items.filter((item) => {
             const { parentSection } = item;
-
             if (item.name.toLowerCase().includes(searchString.toLowerCase())) {
                 const section = sections.filter(
                     (sectionItem) => sectionItem.name === parentSection
@@ -54,6 +52,8 @@ const Prices = () => {
 
     const items = filter(data.items);
 
+    const { circle, close, checked, cross } = data.icons;
+
     return (
         <div className="prices">
             <div className="prices__left">
@@ -64,7 +64,7 @@ const Prices = () => {
                     </div>
                 </div>
                 <div className="prices__cancel-selection" onClick={onCancelClick}>
-                    <img src="https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/cross.svg" alt="" />
+                    <img src={cross.src} />
                     <span className="prices__text">снять выделение</span>
                 </div>
                 <div className="prices__services-container">
@@ -80,11 +80,7 @@ const Prices = () => {
                                     (section.isActive ? " prices__icon_checked" : "")
                                 }
                             >
-                                <img
-                                    src={
-                                        section.isActive ? "https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/checkedArrow.svg" : "https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/circle.svg"
-                                    }
-                                />
+                                <img src={section.isActive ? checked.src : circle.src} />
                             </div>
                             <div className="prices__service-name">{section.name}</div>
                         </div>
@@ -102,7 +98,7 @@ const Prices = () => {
                         />
                     </div>
                     <div className="prices__close" onClick={onSearchReset}>
-                        <img src="https://contrast.devua.pro/wp-content/themes/contrast/app/public/img/close.svg" />
+                        <img src={close.src} />
                     </div>
                 </div>
                 <div className="prices__results">
@@ -111,7 +107,7 @@ const Prices = () => {
                             <div className="prices__result-text">{item.name}</div>
                             <div className="prices__result-price">
                                 <span className="prices__text2">{item.price} ₽</span>
-                                <span className="prices__text3"> / 1 шт.</span>
+                                <span className="prices__text3"> / {item.unit}</span>
                             </div>
                         </div>
                     ))}

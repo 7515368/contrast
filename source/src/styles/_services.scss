@@ -14,8 +14,8 @@
 
 .services__heading {
     font-family: "Charter", serif;
-    font-size: pxToVw(100);
-    line-height: pxToVw(100);
+    font-size: pxToVw(90);
+    line-height: pxToVw(80);
 }
 
 .services__heading.small {
@@ -160,7 +160,8 @@
 
 .services__big-text {
     font-family: "Charter", serif;
-    font-size: pxToVw(100);
+    font-size: pxToVw(90);
+    line-height: pxToVw(80);
     margin-bottom: pxToVw(30);
     transform: translateX(pxToVw(-100));
 }
@@ -192,7 +193,8 @@
 .services__slide-container {
     position: absolute;
     min-width: pxToVw(960);
-    top: 43vh;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .services__slide-container:not(:first-of-type) {
@@ -276,8 +278,8 @@
 }
 
 .services__sale-icon {
-    position: absolute;
-    top: pxToVw(-166.4);
+    // position: absolute;
+    // top: pxToVw(-166.4);
 }
 
 .services__sale-icon-text {

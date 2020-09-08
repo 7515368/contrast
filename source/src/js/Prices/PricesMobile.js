@@ -38,10 +38,9 @@ const PricesMobile = () => {
 
     const [showSections, toggleShowSections] = useState(false);
     const onShowSectionsClick = () => {
-        toggleShowSections(!showSections)
-    }
+        toggleShowSections(!showSections);
+    };
 
-    
     const filter = (items) => {
         const filteredItems = items.filter((item) => {
             const { parentSection } = item;
@@ -59,6 +58,8 @@ const PricesMobile = () => {
 
     const items = filter(data.items);
 
+    const { circle, close, checked, cross } = data.icons;
+
     return (
         <div className="prices prices_mobile" style={{ height: innerHeight - 100 }}>
             <div className="prices__search-mobile">
@@ -71,7 +72,7 @@ const PricesMobile = () => {
                     />
                 </div>
                 <div className="prices__close-mobile" onClick={onSearchReset}>
-                    <img src="img/cross.svg" />
+                    <img src={close.src} />
                 </div>
             </div>
             <div className="prices__buttons-mobile">
@@ -88,13 +89,16 @@ const PricesMobile = () => {
                         <div className="prices__result-text-mobile">{item.name}</div>
                         <div className="prices__result-price-mobile">
                             <span className="prices__text2-mobile">{item.price} ₽</span>
-                            <span className="prices__text3-mobile"> / 1 шт.</span>
+                            <span className="prices__text3-mobile"> / {item.unit}</span>
                         </div>
                     </div>
                 ))}
             </div>
 
-            <div className="prices__left" style={showSections ? { display: "block" } : {display: "none"}}>
+            <div
+                className="prices__left"
+                style={showSections ? { display: "block" } : { display: "none" }}
+            >
                 <div className="prices__top">
                     <div
                         className="prices__button-mobile prices__button-mobile_margin-right"
@@ -110,7 +114,7 @@ const PricesMobile = () => {
                     </div>
                 </div>
                 <div className="prices__cancel-selection" onClick={onCancelClick}>
-                    <img src="img/cross.svg" alt="" />
+                    <img src={cross.src} />
                     <span className="prices__text">снять выделение</span>
                 </div>
                 <div className="prices__services-container">
@@ -127,9 +131,7 @@ const PricesMobile = () => {
                                 }
                             >
                                 <img
-                                    src={
-                                        section.isActive ? "img/checkedArrow.svg" : "img/circle.svg"
-                                    }
+                                    src={<img src={section.isActive ? checked.src : circle.src} />}
                                 />
                             </div>
                             <div className="prices__service-name">{section.name}</div>

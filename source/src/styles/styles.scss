@@ -89,14 +89,16 @@ $vwSize3: 1920 / 100;
 }
 
 @media (max-width: 1024px) {
-
+    .mobile-showed {
+        display: block !important;
+    }
     .content {
         background: #e8f1f6 url(../img/waves-mob.svg) no-repeat center bottom/ 100%;
         background-attachment: fixed;
     }
 
     .mobile-hidden {
-        display: none;
+        display: none !important;
     }
 }
 
