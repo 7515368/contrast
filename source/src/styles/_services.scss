@@ -293,7 +293,7 @@
 .services {
     &__inner {
         .form-validate-result {
-            max-width: pxToVw3(545);
+            max-width: pxToVw2(440);
         }
     }
 }
@@ -302,6 +302,12 @@
 @media (min-width: 1600px) {
     .services {
         padding-left: pxToVw2(200);
+
+        &__inner {
+            .form-validate-result {
+                max-width: pxToVw2(410);
+            }
+        }
     }
 
     .services_special {
