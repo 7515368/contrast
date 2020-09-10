@@ -23,3 +23,11 @@
         background-color: #005090;
     }
 }
+
+@media (max-width: 767px) {
+    .form-validate-result {
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}

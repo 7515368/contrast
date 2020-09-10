@@ -1,11 +1,9 @@
 .info-block {
-    min-width: 33.333%;
     max-width: 33.333%;
-    padding-right: 5%;
+    padding-right: 95px;
 }
 
 .info-block_50percent {
-    min-width: 50%;
 }
 .info-block__img {
     width: 100%;
@@ -253,10 +251,12 @@
     position: absolute;
     bottom: 1vw;
     left: 1vw;
-    right: 1vw;
+    right: 3.4vw;
     padding: 1vw;
     background: white;
     border: 1px solid #d1e3ed;
+
+    z-index: 15;
 }
 
 .info-block__request-hidden {

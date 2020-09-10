@@ -14,17 +14,46 @@
     margin-top: pxToVw(30);
     overflow: hidden;
     position: relative;
+
+    height: 100%;
+    .footer {
+        &__portfolio-back {
+            position: absolute;
+            bottom: pxToVw(35);
+            left: 0;
+
+            z-index: 10;
+        }
+        
+        &__portfolio-forward {
+            position: absolute;
+            bottom: pxToVw(35);
+            left: pxToVw3(130);
+
+            transform: rotate(180deg);
+
+            z-index: 10;
+        }
+    }
+
+    .portfolio {
+        &__switch {
+            left: pxToVw(70);
+            .current {
+                font-weight: 700;
+            }
+        }
+    }
 }
 .portfolio__items-inner {
     width: 100%;
+    height: 100%;
     white-space: nowrap;
     display: flex;
     transition: transform 1s ease;
 }
 .portfolio__item {
-    min-width: 25%;
-    max-width: 25%;
-    padding-right: 2%;
+    padding-right: pxToVw(40);
 }
 .portfolio__item-heading {
     margin-bottom: pxToVw(30);

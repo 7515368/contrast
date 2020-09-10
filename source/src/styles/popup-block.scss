@@ -121,6 +121,8 @@
 		grid-template-rows: max-content max-content 1fr;
 		overflow: auto;
 		padding-right: 1vw;
+
+		padding-left: 5px;
 	}
 	&__popup-text::-webkit-scrollbar {
 		width: 4px;
@@ -133,6 +135,7 @@
 
 	&__popup-full-img {
 		padding-left: 1vw;
+		padding-right: 5px;
 		img {
 			width: 100%;
 			height: 100%;
@@ -302,11 +305,17 @@
 				&__portfolio-back {
 					bottom: 63px;
 					left: 80px;
+					img {
+						width: 15px;
+					}
 				}
 				
 				&__portfolio-forward {
 					bottom: 63px;
 					left: 170px;
+					img {
+						width: 15px;
+					}
 				}
 			}
 		}

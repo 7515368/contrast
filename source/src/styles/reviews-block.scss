@@ -2,8 +2,27 @@
     margin-bottom: pxToVw3(160);
     position: relative;
     &__wrapper {
-        overflow: hidden;
         position: relative;
+
+        .footer {
+            &__portfolio-back {
+                position: absolute;
+                bottom: pxToVw(-60);
+                left: 0;
+    
+                z-index: 10;
+            }
+            
+            &__portfolio-forward {
+                position: absolute;
+                bottom: pxToVw(-60);
+                left: pxToVw3(130);
+    
+                transform: rotate(180deg);
+    
+                z-index: 10;
+            }
+        }
     }
     &__more {
         display: flex;
@@ -39,7 +58,6 @@
     }
 
     &__item-wrapper {
-        min-width: 33.4%;
         padding-right: 40px;
     }
 
@@ -51,13 +69,17 @@
 
     &__switch {
         position: absolute;
-        bottom: pxToVw(-60);
+        bottom: pxToVw(-62);
         font-size: pxToVw(12);
         display: flex;
         color: #67a1c4;
-        left: pxToVw(0);
+        left: pxToVw(40);
         user-select: none;
         transition: opacity 1s ease;
+
+        .current {
+            font-weight: 700;
+        }
     }
 
     &__item-name {
@@ -83,7 +105,6 @@
         margin-bottom: 50px;
 
         &__item-wrapper {
-            min-width: 50%;
             padding-right: 20px;
         }
 
@@ -116,6 +137,26 @@
 
         &__switch {
             bottom: -30px;
+            left: 20px;
+        }
+
+        &__wrapper {
+            .footer {
+                &__portfolio-back {
+                    bottom: -27px;
+                    img {
+                        width: 15px;
+                    }
+                }
+                
+                &__portfolio-forward {
+                    bottom: -27px;
+                    left: 60px;
+                    img {
+                        width: 15px;
+                    }
+                }
+            }
         }
     }
 }
@@ -124,8 +165,26 @@
 @media (max-width: 400px) {
     .reviews-block {
         &__item-wrapper {
-            min-width: 100%;
             padding-right: 5px;
+        }
+        
+        &__wrapper {
+            .footer {
+                &__portfolio-back {
+                    bottom: -27px;
+                    img {
+                        width: 15px;
+                    }
+                }
+                
+                &__portfolio-forward {
+                    bottom: -27px;
+                    left: 63px;
+                    img {
+                        width: 15px;
+                    }
+                }
+            }
         }
     }
 }

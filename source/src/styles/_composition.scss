@@ -12,7 +12,7 @@
 }
 .composition__left {
     width: 40%;
-    padding-right: pxToVw(12.8);
+    padding-right: pxToVw(30);
     height: 50%;
 }
 .composition__left_width1 {
@@ -62,6 +62,13 @@
     margin-bottom: pxToVw(6.4);
     font-size: pxToVw(14);
     line-height: pxToVw(20);
+
+    p {
+        margin-bottom: 0;
+        a {
+            display: inline-block;
+        }
+    }
 }
 .composition__item-quotes {
     padding-right: pxToVw(12.8);
@@ -616,7 +623,7 @@
     }
 
     .composition__left {
-        padding-right: pxToVw2(12.8);
+        padding-right: pxToVw2(30);
     }
 
     .composition__header {
