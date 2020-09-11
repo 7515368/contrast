@@ -91,13 +91,15 @@ if ($('.popup-block__slider').length > 0) {
 
 		$(thisCurrentCountBlock).text('1');
 		$(thisAllCountBlock).text(thisElemSlidesCount);
+		var sliderPrevArrowImg = $(thisElem).attr('data-prev-arrow-img');
+		var sliderNextArrowImg = $(thisElem).attr('data-next-arrow-img');
 
 		$(thisElem).slick({
 			slidesToShow: 1,
 			infinite: true,
 			arrows: true,
-			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="img/sliderArrowRightBlue.svg"></img></a>',
-			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="img/sliderArrowRightBlue.svg"></img></a>',
+			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
+			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>', 
 			dots: false,
 			responsive: [
 				{
@@ -176,16 +178,28 @@ if ($('.section__blog-articles-inner-two').length > 0) {
 		var thisCurrentCountBlock = $(this).parents('.section__blog-articles').find('.portfolio__switch').find('.current');
 
 
+		var thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / 2); 
+		var slidesToShowVal = 2;
+		var sliderPrevArrowImg = $(thisElem).attr('data-prev-arrow-img');
+		var sliderNextArrowImg = $(thisElem).attr('data-next-arrow-img');
+
 		$(thisCurrentCountBlock).text('1');
-		$(thisAllCountBlock).text(thisElemSlidesCount);
+		$(thisAllCountBlock).text(thisElemSlidesCountPages);
+
+		
+		if ($(window).width() < 768) {
+			thisElemSlidesCountPages = thisElemSlidesCount;
+			$(thisAllCountBlock).text(thisElemSlidesCount);
+			slidesToShowVal = 1;
+		}
 
 		$(thisElem).slick({
 			slidesToShow: 2,
 			slidesToScroll: 2,
 			infinite: true,
 			arrows: true,
-			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="img/sliderArrowRightBlue.svg"></img></a>',
-			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="img/sliderArrowRightBlue.svg"></img></a>',
+			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
+			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
 			dots: false,
 			responsive: [
 				{
@@ -196,7 +210,7 @@ if ($('.section__blog-articles-inner-two').length > 0) {
 		});
 
 		$(thisElem).on('afterChange', function(e, slick, currentSlide) {
-			$(thisCurrentCountBlock).text(currentSlide + 1);
+			$(thisCurrentCountBlock).text(parseInt(currentSlide / slidesToShowVal) + 1);
 		});
 	});
 }
@@ -210,17 +224,28 @@ if ($('.portfolio__items-inner').length > 0) {
 		var thisAllCountBlock = $(this).parents('.portfolio__items').find('.portfolio__switch').find('.all-count');
 		var thisCurrentCountBlock = $(this).parents('.portfolio__items').find('.portfolio__switch').find('.current');
 
+		var thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / 4); 
+		var slidesToShowVal = 4;
+		var sliderPrevArrowImg = $(thisElem).attr('data-prev-arrow-img');
+		var sliderNextArrowImg = $(thisElem).attr('data-next-arrow-img');
 
 		$(thisCurrentCountBlock).text('1');
-		$(thisAllCountBlock).text(thisElemSlidesCount);
+		$(thisAllCountBlock).text(thisElemSlidesCountPages);
+
+		
+		if ($(window).width() < 768) {
+			thisElemSlidesCountPages = thisElemSlidesCount;
+			$(thisAllCountBlock).text(thisElemSlidesCount);
+			slidesToShowVal = 1;
+		}
 
 		$(thisElem).slick({
 			slidesToShow: 4,
 			slidesToScroll: 4,
 			infinite: true,
 			arrows: true,
-			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="img/sliderArrowRightBlue.svg"></img></a>',
-			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="img/sliderArrowRightBlue.svg"></img></a>',
+			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
+			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
 			dots: false,
 			responsive: [
 				{
@@ -231,7 +256,7 @@ if ($('.portfolio__items-inner').length > 0) {
 		});
 
 		$(thisElem).on('afterChange', function(e, slick, currentSlide) {
-			$(thisCurrentCountBlock).text(currentSlide + 1);
+			$(thisCurrentCountBlock).text(parseInt(currentSlide / slidesToShowVal) + 1);
 		});
 	});
 }
@@ -246,16 +271,34 @@ if ($('.reviews-block__row').length > 0) {
 		var thisCurrentCountBlock = $(this).parents('.reviews-block__wrapper').find('.reviews-block__switch').find('.current');
 
 
+		var thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / 3); 
+		var slidesToShowVal = 3;
+		var sliderPrevArrowImg = $(thisElem).attr('data-prev-arrow-img');
+		var sliderNextArrowImg = $(thisElem).attr('data-next-arrow-img');
+
 		$(thisCurrentCountBlock).text('1');
-		$(thisAllCountBlock).text(thisElemSlidesCount);
+		$(thisAllCountBlock).text(thisElemSlidesCountPages);
+
+		
+		if ($(window).width() < 1024) {
+			thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / 2);
+			$(thisAllCountBlock).text(thisElemSlidesCountPages);
+			slidesToShowVal = 2;
+		}
+		
+		if ($(window).width() < 401) {
+			thisElemSlidesCountPages = thisElemSlidesCount;
+			$(thisAllCountBlock).text(thisElemSlidesCount);
+			slidesToShowVal = 1;
+		}
 
 		$(thisElem).slick({
 			slidesToShow: 3,
 			slidesToScroll: 3,
 			infinite: true,
 			arrows: true,
-			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="img/sliderArrowRightBlue.svg"></img></a>',
-			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="img/sliderArrowRightBlue.svg"></img></a>',
+			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
+			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
 			dots: false,
 			responsive: [
 				{
@@ -276,7 +319,7 @@ if ($('.reviews-block__row').length > 0) {
 		});
 
 		$(thisElem).on('afterChange', function(e, slick, currentSlide) {
-			$(thisCurrentCountBlock).text(currentSlide + 1);
+			$(thisCurrentCountBlock).text(parseInt(currentSlide / slidesToShowVal) + 1);
 		});
 	});
 }
@@ -291,16 +334,28 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 		var thisCurrentCountBlock = $(this).parents('.coordinator-block__slider').find('.coordinator-block__switch').find('.current');
 
 
+		var thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / 2); 
+		var slidesToShowVal = 2;
+		var sliderPrevArrowImg = $(thisElem).attr('data-prev-arrow-img');
+		var sliderNextArrowImg = $(thisElem).attr('data-next-arrow-img');
+
 		$(thisCurrentCountBlock).text('1');
-		$(thisAllCountBlock).text(thisElemSlidesCount);
+		$(thisAllCountBlock).text(thisElemSlidesCountPages);
+
+		
+		if ($(window).width() < 400) {
+			thisElemSlidesCountPages = thisElemSlidesCount;
+			$(thisAllCountBlock).text(thisElemSlidesCount);
+			slidesToShowVal = 1;
+		}
 
 		$(thisElem).slick({
 			slidesToShow: 2,
 			slidesToScroll: 2,
 			infinite: true,
 			arrows: true,
-			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="img/sliderArrowRightBlue.svg"></img></a>',
-			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="img/sliderArrowRightBlue.svg"></img></a>',
+			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
+			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
 			dots: false,
 			responsive: [
 				{
@@ -320,8 +375,9 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 			]
 		});
 
+		
 		$(thisElem).on('afterChange', function(e, slick, currentSlide) {
-			$(thisCurrentCountBlock).text(currentSlide + 1);
+			$(thisCurrentCountBlock).text(parseInt(currentSlide / slidesToShowVal) + 1);
 		});
 	});
 }

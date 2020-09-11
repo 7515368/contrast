@@ -57,7 +57,9 @@
                             Блог
                         </h2>
                         <div class="section__blog-articles">
-                            <div class="section__blog-articles-inner-two">
+                            <div class="section__blog-articles-inner-two"
+                                data-prev-arrow-img="img/sliderArrowRightBlue.svg"
+                                data-next-arrow-img="img/sliderArrowRightBlue.svg">
                                 <div class="info-block info-block_50percent" >
                                     <img
                                         class="info-block__img"
@@ -1380,8 +1382,8 @@
             <div class="popup-block" id="news-popup">
                 <div class="popup-block__overlay">
                     <div class="popup-block__popup">
-                        <div class="inner-content" data-popup-container>
-                            <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close" data-popup-close><img src="img/full-menu-close.svg" /></a>
+                        <div class="inner-content " data-popup-container>
+                            <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close" data-popup-close ><img src="img/full-menu-close.svg" /></a>
                             <div class="popup-block__popup-socials">
                                 <a href="#">
                                     <img src="img/instagram.svg" />
@@ -1394,24 +1396,37 @@
                                 </a>
                             </div>
                             <div class="popup-block__slider-wrapper">
-                                <div class="popup-block__slider">
+                                <div class="popup-block__slider" 
+                                data-prev-arrow-img="img/sliderArrowRightBlue.svg"
+                                data-next-arrow-img="img/sliderArrowRightBlue.svg"> 
                                     <div class="popup-block__popup-full">
                                         <div class="popup-block__popup-text">
                                             <div class="info-block__date">05.10 / 2020</div>
                                             <h3 class="info-block__header">Бесплатная доставка при заказе от 2000 руб!</h3>
                                             <p class="info-block__text">Полный текст первого блока. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non soluta nisi quam? Commodi animi quod quis saepe dolor blanditiis voluptatem ab quia vel repellendus dolorem, earum eum aliquid! Facere consectetur autem aliquid asperiores saepe nemo quaerat, quis, nostrum ab quo cum quod corporis architecto natus consequatur aperiam eaque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
-                                    </div><div class="popup-block__popup-full">
+                                        <div class="popup-block__popup-full-img">
+                                            <img src="img/img1.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="popup-block__popup-full">
                                         <div class="popup-block__popup-text">
                                             <div class="info-block__date">05.10 / 2020</div>
                                             <h3 class="info-block__header">Бесплатная доставка при заказе от 2000 руб!</h3>
                                             <p class="info-block__text">Полный текст первого блока. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non soluta nisi quam? Commodi animi quod quis saepe dolor blanditiis voluptatem ab quia vel repellendus dolorem, earum eum aliquid! Facere consectetur autem aliquid asperiores saepe nemo quaerat, quis, nostrum ab quo cum quod corporis architecto natus consequatur aperiam eaque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
-                                    </div><div class="popup-block__popup-full">
+                                        <div class="popup-block__popup-full-img">
+                                            <img src="img/img1.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="popup-block__popup-full">
                                         <div class="popup-block__popup-text">
                                             <div class="info-block__date">05.10 / 2020</div>
                                             <h3 class="info-block__header">Бесплатная доставка при заказе от 2000 руб!</h3>
                                             <p class="info-block__text">Полный текст первого блока. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis non soluta nisi quam? Commodi animi quod quis saepe dolor blanditiis voluptatem ab quia vel repellendus dolorem, earum eum aliquid! Facere consectetur autem aliquid asperiores saepe nemo quaerat, quis, nostrum ab quo cum quod corporis architecto natus consequatur aperiam eaque sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                        <div class="popup-block__popup-full-img">
+                                            <img src="img/img1.jpg" alt=""/>
                                         </div>
                                     </div>
                                 </div>
@@ -1427,11 +1442,47 @@
                                 <img src="img/arrow-down.svg">
                             </div>
                             <div class="info-block__popup-overlay" data-request-overlay=""></div>
-                            <div class="form-validate-result form-validate-result--blue">
-                                <div class="icon-wrapper">
-                                    <img src="img/tick-white.svg" alt="">
+                            <div class="info-block__request">
+                                <div class="info-block__request-hidden" data-request-form>
+                                    <div class="info-block__request-heading">
+                                        Оставить заявку на вызов специалиста
+                                    </div>
+                                    <div class="info-block__request-inputs">
+                                        <div class="info-block__request-input">
+                                            <input
+                                                type="text"
+                                                class="input input_mode2"
+                                                placeholder="Ваше имя"
+                                            />
+                                        </div>
+                                        <div class="info-block__request-input">
+                                            <input
+                                                type="text"
+                                                class="input input_mode2"
+                                                placeholder="Ваш телефон"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="info-block__request-close" data-request-close>
+                                        <img src="img/full-menu-close.svg" />
+                                    </div>
                                 </div>
-                                <p>Ваша заявка успешно отправлена</p>
+                                <div class="info-block__request-visible">
+                                    <div class="info-block__request-button" data-request-trigger>
+                                        Оставить заявку
+                                    </div>
+                                    <div class="info-block__request-button hidden" data-request-submit>
+                                        Отправить заявку
+                                    </div>
+                                    <div class="info-block__request-text">
+                                        Химчистка Контраст - химчистка с доставкой! Закажите химчистку с
+                                        доставкой, мы заберем и вернем ваши чистые вещи в удобное для вас время
+                                        и место! Звоните ежедневно с 8:00 до 21:00 по многоканальному телефону
+                                        <strong style="color: #005090; font-weight: bold;"
+                                            >+7 (499) 350-88-05</strong
+                                        >
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
