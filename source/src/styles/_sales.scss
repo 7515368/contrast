@@ -74,10 +74,22 @@
     }
 
     .sales__sales-container {
+        padding-top: 30px;
         padding-right: 15px;
     }
 
     .sales__heading {
         font-size: 20px;
     }
+
+    .sales.mobile-showed{
+        position: static;
+        padding: 40px 20px;
+    }
+
+    .sales.mobile-showed .sales__sales-container {
+        overflow: auto;
+        height: auto;
+    }
 }
+

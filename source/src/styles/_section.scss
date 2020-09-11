@@ -91,6 +91,7 @@
     font-size: pxToVw(16);
     top: pxToVw(55);
     position: absolute;
+    color: #005090;
 
     &.light {
         font-weight: 400;   
@@ -933,7 +934,10 @@
 }
 
 @media (max-width: 1024px) {
-
+    .section_sale.special {
+        height: max-content;
+    }
+    
     .section__arrow-right {
         display: none;
     }

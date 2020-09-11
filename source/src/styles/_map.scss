@@ -484,6 +484,10 @@ input:checked + .map__option-checkbox-img {
 }
 
 @media (max-width: 1024px) {
+    .map__scheme-services-row:last-child {
+        border-bottom: 1px solid #3d7aac;
+    }
+
     .map {
         position: static;
         padding: 20px;
@@ -647,7 +651,7 @@ input:checked + .map__option-checkbox-img {
         padding: 20px;
         height: 100%;
         min-height: 100vh;
-        padding-bottom: 200px;
+        padding-bottom: 120px;
     }
 
     .map__item {
@@ -731,8 +735,9 @@ input:checked + .map__option-checkbox-img {
         width: 100%;
         max-width: 320px;
         height: 200px;
-        margin: 0;
         object-fit: cover;
+        margin-bottom: 15px;
+        margin-right: 10px;
     }
 
     .map__small .map__scheme-desc {
@@ -753,8 +758,8 @@ input:checked + .map__option-checkbox-img {
 
     .map__back-button {
         font-size: 16px;
-        bottom: 100px;
-        left: 20px;
+        position: static;
+        padding-top: 50px;
     }
 
     .map__back-button img {
