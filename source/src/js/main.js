@@ -127,7 +127,10 @@ if ($('.section__blog-articles-inner').length > 0) {
 		var thisCurrentCountBlock = $(this).parents('.section__blog-articles').find('.portfolio__switch').find('.current');
 
 
-		var thisElemSlidesCountPages = parseInt(thisElemSlidesCount / 3); 
+		var thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / 3); 
+		var slidesToShowVal = 3;
+		var sliderPrevArrowImg = $(thisElem).attr('data-prev-arrow-img');
+		var sliderNextArrowImg = $(thisElem).attr('data-next-arrow-img');
 
 		$(thisCurrentCountBlock).text('1');
 		$(thisAllCountBlock).text(thisElemSlidesCountPages);
@@ -136,15 +139,17 @@ if ($('.section__blog-articles-inner').length > 0) {
 		if ($(window).width() < 768) {
 			thisElemSlidesCountPages = thisElemSlidesCount;
 			$(thisAllCountBlock).text(thisElemSlidesCount);
+			slidesToShowVal = 1;
 		}
 		
+
 		$(thisElem).slick({
 			slidesToShow: 3,
 			slidesToScroll: 3,
 			infinite: true,
 			arrows: true,
-			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="img/sliderArrowRightBlue.svg"></img></a>',
-			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="img/sliderArrowRightBlue.svg"></img></a>',
+			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
+			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
 			dots: false,
 			responsive: [
 				{
@@ -155,8 +160,9 @@ if ($('.section__blog-articles-inner').length > 0) {
 		});
 
 		$(thisElem).on('afterChange', function(e, slick, currentSlide) {
-			$(thisCurrentCountBlock).text(currentSlide + 1);
+			$(thisCurrentCountBlock).text(parseInt(currentSlide / slidesToShowVal) + 1);
 		});
+
 	});
 }
 
