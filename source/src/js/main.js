@@ -127,9 +127,17 @@ if ($('.section__blog-articles-inner').length > 0) {
 		var thisCurrentCountBlock = $(this).parents('.section__blog-articles').find('.portfolio__switch').find('.current');
 
 
-		$(thisCurrentCountBlock).text('1');
-		$(thisAllCountBlock).text(thisElemSlidesCount);
+		var thisElemSlidesCountPages = parseInt(thisElemSlidesCount / 3); 
 
+		$(thisCurrentCountBlock).text('1');
+		$(thisAllCountBlock).text(thisElemSlidesCountPages);
+
+		
+		if ($(window).width() < 768) {
+			thisElemSlidesCountPages = thisElemSlidesCount;
+			$(thisAllCountBlock).text(thisElemSlidesCount);
+		}
+		
 		$(thisElem).slick({
 			slidesToShow: 3,
 			slidesToScroll: 3,
@@ -311,3 +319,5 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 		});
 	});
 }
+
+

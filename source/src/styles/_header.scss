@@ -40,6 +40,10 @@
     opacity: 0;
 }
 
+.header__menu-important {
+    opacity: 1 !important;
+}
+
 .header__small-menu {
     position: absolute;
     top: pxToVw(45);
