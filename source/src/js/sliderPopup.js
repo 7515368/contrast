@@ -48,10 +48,6 @@ const popupCloseHandle = () => {
     popup.style.transform = "";
     document.removeEventListener("click", onDocumentClick);
 
-    setTimeout(() => {
-        popup.style.display = "none";
-    }, 500);
-
 };
 const renderDataToPopup = (target) => {
     const block = target.closest("[data-info-block]");
