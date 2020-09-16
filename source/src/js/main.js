@@ -96,7 +96,7 @@ if ($('.popup-block__slider').length > 0) {
 
 		$(thisElem).slick({
 			slidesToShow: 1,
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
 			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>', 
@@ -148,7 +148,7 @@ if ($('.section__blog-articles-inner').length > 0) {
 		$(thisElem).slick({
 			slidesToShow: 3,
 			slidesToScroll: 3,
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
 			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
@@ -196,7 +196,7 @@ if ($('.section__blog-articles-inner-two').length > 0) {
 		$(thisElem).slick({
 			slidesToShow: 2,
 			slidesToScroll: 2,
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
 			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
@@ -242,7 +242,7 @@ if ($('.portfolio__items-inner').length > 0) {
 		$(thisElem).slick({
 			slidesToShow: 4,
 			slidesToScroll: 4,
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
 			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
@@ -295,7 +295,7 @@ if ($('.reviews-block__row').length > 0) {
 		$(thisElem).slick({
 			slidesToShow: 3,
 			slidesToScroll: 3,
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
 			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',
@@ -352,7 +352,7 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 		$(thisElem).slick({
 			slidesToShow: 2,
 			slidesToScroll: 2,
-			infinite: true,
+			infinite: false,
 			arrows: true,
 			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
 			nextArrow: '<a href="javascript:;" class="footer__portfolio-forward next"><img src="' + sliderNextArrowImg + '"></img></a>',

@@ -61,6 +61,12 @@
     align-items: center;
     cursor: pointer;
     margin-right: 1vw;
+
+    transition: opacity 0.2s ease-in-out;
+    &.slick-disabled {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .footer__portfolio-back img {
@@ -74,6 +80,12 @@
     letter-spacing: pxToVw(1);
     cursor: pointer;
     margin-left: 1vw;
+
+    transition: opacity 0.2s ease-in-out;
+    &.slick-disabled {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 .footer__portfolio-forward img {

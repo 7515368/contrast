@@ -96,11 +96,11 @@
 
 .portfolio__switch {
     position: absolute;
-    bottom: pxToVw(30);
+    bottom: pxToVw(35);
     font-size: pxToVw(12);
     display: flex;
     color: #67a1c4;
-    left: pxToVw(357);
+    left: pxToVw(350);
     transform: translateX(-50%);
     user-select: none;
     transition: opacity 1s ease;
