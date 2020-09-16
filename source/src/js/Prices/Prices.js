@@ -54,6 +54,8 @@ const Prices = () => {
 
     const { circle, close, checked, cross } = data.icons;
 
+    const globalSeparator = data.globalSeparator;
+
     return (
         <div className="prices">
             <div className="prices__left">
@@ -107,7 +109,8 @@ const Prices = () => {
                             <div className="prices__result-text">{item.name}</div>
                             <div className="prices__result-price">
                                 <span className="prices__text2">{item.price}</span>
-                                <span className="prices__text3"> / {item.unit}</span>
+                                {item.unit &&
+                                <span className="prices__text3"> {item.separator ? item.separator : globalSeparator} {item.unit}</span>}
                             </div>
                         </div>
                     ))}

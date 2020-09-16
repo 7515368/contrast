@@ -1,5 +1,6 @@
 const parseData = () => {
     const prices = document.querySelector("[data-react-prices]").children;
+    const globalSeparator = document.querySelector("[data-price-separator]").dataset.priceSeparator;
     let sectionsNames = [];
 
     const items = Array.from(prices).map((element, id) => {
@@ -7,12 +8,16 @@ const parseData = () => {
 
         if (!sectionsNames.includes(sectionName)) sectionsNames.push(sectionName);
 
+        const unit = (element.children[2]) ? element.children[2].getAttribute("data-service-unit") : null;
+        const localSeparator = (element.children[3]) ? element.children[3].getAttribute("data-service-separator") : null;
+
         return {
             id,
             name: element.children[0].getAttribute("data-service-name"),
             price: element.children[1].getAttribute("data-service-price"),
-            unit: element.children[2].getAttribute("data-service-unit"),
-            parentSection: sectionName,
+            unit: unit,
+            separator: localSeparator,
+            parentSection: sectionName
         };
     });
 
@@ -29,7 +34,8 @@ const parseData = () => {
     return {
         sections,
         items,
-        icons
+        icons,
+        globalSeparator
     };
 };
 export default parseData;
