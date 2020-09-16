@@ -10,7 +10,7 @@
 }
 
 .map__filters {
-    color: #3d7aac;
+    color: #6696bd;
     display: flex;
     height: pxToVw(50);
     align-items: center;
@@ -306,7 +306,8 @@ input:checked + .map__option-checkbox-img {
 .map__adresses-row {
     display: flex;
     align-items: center;
-    height: pxToVw(60);
+    min-height: pxToVw(50);
+    padding: 5px 0;
     border-bottom: 1px solid #19619d;
 
     cursor: pointer;
@@ -321,6 +322,8 @@ input:checked + .map__option-checkbox-img {
     font-size: pxToVw(12);
     color: #6696bd;
     font-weight: 300;
+
+    padding-right: 30px;
 }
 
 .map__adresses-row-cell:nth-child(1) {
@@ -913,7 +916,7 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__adresses-row {
-        height: pxToVw2(60);
+        min-height: pxToVw2(60);
     }
 
     .map__adresses-row-cell {

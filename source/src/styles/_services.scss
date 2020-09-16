@@ -46,6 +46,12 @@
 .services__wrap {
     display: flex;
     margin-top: 1vw;
+
+    .form-validate-result {
+        max-width: none;
+        flex-grow: 1;
+        align-self: center;
+    }
 }
 
 .services__text._half {

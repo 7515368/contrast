@@ -382,4 +382,3 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 	});
 }
 
-

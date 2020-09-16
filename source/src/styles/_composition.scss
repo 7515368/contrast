@@ -67,7 +67,8 @@
         margin-bottom: 0;
         a {
             display: inline-block;
-        }
+            font-weight: 700;
+        } 
     }
 }
 .composition__item-quotes {
@@ -232,6 +233,7 @@
 .composition__adresses-item {
     margin-bottom: pxToVw(10);
     font-weight: 300;
+    display: block;  
 }
 
 .composition__adresses-item strong {
