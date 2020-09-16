@@ -31,8 +31,8 @@ if (state.placeholders.length) {
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Prices from "./prices/Prices";
-import PricesMobile from "./prices/PricesMobile";
+import Prices from "./Prices/Prices";
+import PricesMobile from "./Prices/PricesMobile";
 
 const targetEl = document.getElementById("react-prices");
 if (targetEl && innerWidth > 1024) ReactDOM.render(<Prices />, targetEl)

@@ -88,7 +88,7 @@ const PricesMobile = () => {
                     <div className="prices__result-mobile" key={item.id}>
                         <div className="prices__result-text-mobile">{item.name}</div>
                         <div className="prices__result-price-mobile">
-                            <span className="prices__text2-mobile">{item.price} ₽</span>
+                            <span className="prices__text2-mobile">{item.price}</span>
                             <span className="prices__text3-mobile"> / {item.unit}</span>
                         </div>
                     </div>

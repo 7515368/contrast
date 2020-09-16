@@ -106,7 +106,7 @@ const Prices = () => {
                         <div className="prices__result" key={item.id}>
                             <div className="prices__result-text">{item.name}</div>
                             <div className="prices__result-price">
-                                <span className="prices__text2">{item.price} ₽</span>
+                                <span className="prices__text2">{item.price}</span>
                                 <span className="prices__text3"> / {item.unit}</span>
                             </div>
                         </div>
