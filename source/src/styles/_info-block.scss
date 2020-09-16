@@ -284,7 +284,7 @@
     display: flex;
     align-items: center;
 }
-.info-block__request-button {
+.info-block__request-button { 
     white-space: nowrap;
     background: #005090;
     color: white;
@@ -292,7 +292,7 @@
     align-items: center;
     padding: 0 pxToVw(9);
     cursor: pointer;
-    width: pxToVw(120);
+    width: auto;
     height: pxToVw(21);
     border-radius: pxToVw(4);
     font-size: pxToVw(12);

@@ -382,3 +382,10 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 	});
 }
 
+$('.info-block__more').on('click',function() {
+	var SlideNum = $(this).parent().attr('data-slick-index');
+	
+	$('.popup-block__slider').slick('slickGoTo', parseInt(SlideNum));
+});
+
+

@@ -92,7 +92,7 @@ const init = () => {
     renderControls();
     render();
     addListeners();
-    autoSlider(5000);
+    autoSlider(4000);
 };
 
 init();

@@ -216,6 +216,12 @@
 
 	&__popup--img {
 		width: auto;
+		max-width: 50vw;
+
+		.inner-content {
+			padding-top: pxToVw(50);
+			padding-bottom: pxToVw(50);
+		}
 	}
 }
 

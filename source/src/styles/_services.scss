@@ -115,12 +115,9 @@
 }
 
 .services__form._fixed .full-menu__form-submit {
-    width: pxToVw(120);
-    height: pxToVw(15);
-    border-radius: pxToVw(4);
-    font-size: pxToVw(10);
-    margin-bottom: pxToVw(14);
-    margin-right: pxToVw(20);
+    font-size: pxToVw(11);
+    margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .services__form._fixed .full-menu__text3 {
@@ -193,7 +190,7 @@
     left: 0;
     padding-left: 16.5vw;
     background-size: cover;
-    transition: opacity 0.5s ease;
+    transition: opacity 2s ease;
 }
 
 .services__slide-container {
@@ -392,12 +389,7 @@
     }
 
     .services__form._fixed .full-menu__form-submit {
-        width: auto;
-        height: pxToVw2(15);
-        border-radius: pxToVw2(4);
-        font-size: pxToVw2(10);
-        margin-bottom: pxToVw2(14);
-        margin-right: pxToVw2(20);
+        
     }
 
     .services__form._fixed .full-menu__text3 {

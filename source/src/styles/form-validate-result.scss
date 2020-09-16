@@ -9,6 +9,8 @@
     align-items: center;
 
     margin-top: pxToVw3(30);
+
+    transition: background-color 0.2s ease-in-out;
     .icon-wrapper {
         margin-right: 40px;
     }
@@ -21,6 +23,10 @@
     &--blue {
         color: #fff;
         background-color: #005090;
+    }
+
+    &.error {
+        background-color:#bd362f;
     }
 }
 

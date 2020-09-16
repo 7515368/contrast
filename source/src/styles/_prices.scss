@@ -27,12 +27,12 @@
     font-weight: 500;
 }
 .prices__button {
-    width: pxToVw(65);
-    height: pxToVw(16);
+    width: auto;
+    height: pxToVw(21);
     background: #005090;
-    border-radius: pxToVw(5);
+    border-radius: pxToVw(4);
     color: white;
-    font-size: pxToVw(11);
+    font-size: pxToVw(12);
     font-weight: 300;
     display: flex;
     align-items: center;
@@ -40,6 +40,8 @@
     position: relative;
     top: pxToVw(2);
     cursor: pointer;
+
+    padding: 0 pxToVw(9);
 }
 .prices__cancel-selection {
     cursor: pointer;
