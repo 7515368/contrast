@@ -20,11 +20,11 @@
 
 .contacts__button {
     width: auto;
-    height: pxToVw(15);
-    border-radius: pxToVw(4.7);
+    height: pxToVw(21);
+    border-radius: pxToVw(4);
     background: #005090;
     color: white;
-    font-size: pxToVw(10.37);
+    font-size: pxToVw(12);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,14 +49,5 @@
     }
     .contacts__text {
         margin: pxToVw2(19.2) 0;
-    }
-
-    .contacts__button {
-        width: auto;
-        height: pxToVw2(15);
-        border-radius: pxToVw2(4.7);
-        font-size: pxToVw2(10.37);
-        margin-bottom: pxToVw2(12.8);
-        margin-top: pxToVw2(12.8);
     }
 }

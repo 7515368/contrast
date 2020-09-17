@@ -19,7 +19,7 @@
     .footer {
         &__portfolio-back {
             position: absolute;
-            bottom: pxToVw(35);
+            bottom: pxToVw(33);
             left: 0;
 
             z-index: 10;
@@ -27,7 +27,7 @@
         
         &__portfolio-forward {
             position: absolute;
-            bottom: pxToVw(35);
+            bottom: pxToVw(33);
             left: pxToVw3(130);
 
             transform: rotate(180deg);
@@ -96,7 +96,7 @@
 
 .portfolio__switch {
     position: absolute;
-    bottom: pxToVw(35);
+    bottom: pxToVw(31);
     font-size: pxToVw(12);
     display: flex;
     color: #67a1c4;

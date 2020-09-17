@@ -294,11 +294,7 @@
 }
 
 .services {
-    &__inner {
-        .form-validate-result {
-            max-width: pxToVw2(440);
-        }
-    }
+   
 }
 
 
@@ -306,13 +302,7 @@
     .services {
         padding-left: pxToVw2(200);
 
-        &__inner {
-            .form-validate-result {
-                max-width: pxToVw2(410);
-            }
-        }
     }
-
     .services_special {
         padding-left: pxToVw2(250);
         padding-bottom: pxToVw2(0);

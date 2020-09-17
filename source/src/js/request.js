@@ -24,19 +24,21 @@ const onRequestTriggerClick = () => {
         requestForm.style.opacity = 1;
         requestOverlay.style.opacity = 1;
         
-        // requestForm.fadeIn(100);
-        // requestOverlay.fadeIn(100);
     }, 0);
     // renderDataToPopup(target);
 };
 
+
+
 const formCloseHandle = () => {
-    popup.classList.remove("request-mode");
+    
     requestForm.style.opacity = 0;
     requestOverlay.style.opacity = 0;
-     
-    // requestForm.style.fadeOut(100);
-    // requestOverlay.style.fadeOut(100);
+
+    setTimeout(() => {
+
+        popup.classList.remove("request-mode");
+    }, 800);
 };
 
 // launch
