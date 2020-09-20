@@ -134,10 +134,14 @@
 	}
 
 	&__popup-full-img {
-		padding-left: 1vw;
+		padding-left: 2vw;
 		padding-right: 5px;
+		position: relative;
+		height: 100%;
+		width: auto;
+
 		img {
-			width: 100%;
+			width: auto;
 			height: 100%;
 			object-fit: cover;
 		}

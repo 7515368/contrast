@@ -383,9 +383,32 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 }
 
 $('.info-block__more').on('click',function() {
-	var SlideNum = $(this).parent().attr('data-slick-index');
+	var SlideNum = $(this).parent().attr('data-popup-index');
 	
 	$('.popup-block__slider').slick('slickGoTo', parseInt(SlideNum));
+});
+
+$('.reviews-block__more').on('click',function() {
+	var SlideNum = $(this).parent().attr('data-popup-index');
+	
+	$('.popup-block__slider').slick('slickGoTo', parseInt(SlideNum));
+});
+
+$(document).ready(function() {
+	$('.info-block__more').click(function(e){
+		e.preventDefault();
+
+		if ($(window).width() > 767) {
+			var thisTarget = $(this).attr('data-target'); 
+			openModal(thisTarget);
+		}
+		
+		if ($(window).width() < 767) {
+			$(this).parent().toggleClass('active');
+			$(this).parent().find('.info-block__mob-content').slideToggle(200);
+			$(this).toggleClass('active');
+		}
+	});
 });
 
 

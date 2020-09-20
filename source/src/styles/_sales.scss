@@ -24,6 +24,13 @@
     padding-bottom: pxToVw(30);
     border-bottom: 1px solid #d2e4ed;
     margin-bottom: pxToVw(20);
+
+    position: relative;
+    &.active {
+        .info-block__mob-socials {
+            display: flex;
+        }
+    }
 }
 
 .sales__date {
