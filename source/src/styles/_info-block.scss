@@ -59,6 +59,10 @@
             display: none;
         }
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .info-block__more:after {
