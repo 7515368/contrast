@@ -162,7 +162,16 @@ const fullpageHandler = () => {
         onLeave: function (origin, destination, direction) {
             fullpageChange(destination.item, destination.index);
             checkArrows(destination.index);
-            
+        },
+        // afterLoad: function (origin, destination, direction) {
+        //     fullpageChange(destination.item, destination.index);
+        //     checkArrows(destination.index);
+        // },
+        afterRender: function() {
+            fullpageChange(state.fullPageInstance.getActiveSection().item);
+            makePagination();
+            checkArrows(0);
+            appendLinksListeners();
         },
         normalScrollElements: '.popup-block__popup-text'
     });
