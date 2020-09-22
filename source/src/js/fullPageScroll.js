@@ -163,13 +163,6 @@ const fullpageHandler = () => {
             fullpageChange(destination.item, destination.index);
             checkArrows(destination.index);
         },
-        // afterLoad: function (origin, destination, direction) {
-        //     fullpageChange(destination.item, destination.index);
-        //     checkArrows(destination.index);
-        // },
-        afterRender: function() {
-            fullpageChange(state.fullPageInstance.getActiveSection().item);
-        }, 
         normalScrollElements: '.popup-block__popup-text'
     });
 
