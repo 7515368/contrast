@@ -169,10 +169,7 @@ const fullpageHandler = () => {
         // },
         afterRender: function() {
             fullpageChange(state.fullPageInstance.getActiveSection().item);
-            makePagination();
-            checkArrows(0);
-            appendLinksListeners();
-        },
+        }, 
         normalScrollElements: '.popup-block__popup-text'
     });
 
