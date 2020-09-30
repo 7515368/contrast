@@ -55,6 +55,14 @@
 .full-menu__link {
     font-size: pxToVw(15);
     margin-right: pxToVw(50);
+    a {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            text-decoration: none;
+
+            opacity: 0.7;
+        }
+    }
 }
 .full-menu__line {
     height: 1px;
