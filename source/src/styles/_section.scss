@@ -265,6 +265,29 @@
     opacity: 1;
 }
 
+.section__slider-delivery {
+    .coordinator-block {
+        &__slider {
+            .footer {
+                &__portfolio-back {
+                    bottom: pxToVw(65);
+                }
+                
+                &__portfolio-forward {
+                    bottom: pxToVw(65);
+                }
+            }
+        }
+
+        &__item-img {
+            max-width: 70%;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
 .section_b {
     background: url(../img/main5.jpg) no-repeat left top / cover;
 }
@@ -1566,6 +1589,9 @@
         }
     }
     
+    .section__slider-delivery {
+        display: none;
+    }
 }
 
 @media (min-width: 1600px) {

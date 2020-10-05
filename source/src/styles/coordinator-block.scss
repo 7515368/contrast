@@ -22,7 +22,7 @@
         .footer {
             &__portfolio-back {
                 position: absolute;
-                bottom: pxToVw(82);
+                bottom: pxToVw(66);
                 left: 0;
     
                 z-index: 10;
@@ -30,7 +30,7 @@
             
             &__portfolio-forward {
                 position: absolute;
-                bottom: pxToVw(82);
+                bottom: pxToVw(66);
                 left: pxToVw3(130);
     
                 transform: rotate(180deg);
@@ -101,7 +101,7 @@
 
     &__switch {
         position: absolute;
-        bottom: pxToVw(0);
+        bottom: pxToVw(-15);
         font-size: pxToVw(12);
         display: flex;
         color: #67a1c4;
@@ -128,6 +128,11 @@
         font-weight: 700;
 
         margin-bottom: pxToVw3(8);
+    }
+
+    &--delivery {
+        max-width: none;
+        width: 100%;
     }
 }
 
