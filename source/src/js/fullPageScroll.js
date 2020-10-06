@@ -163,13 +163,19 @@ const fullpageHandler = () => {
             fullpageChange(destination.item, destination.index);
             checkArrows(destination.index);
         },
+        afterRender: function () {
+            fullpageChange(fullpage_api.getActiveSection().item);
+            makePagination();
+            checkArrows(0);
+            appendLinksListeners();
+        },
         normalScrollElements: '.popup-block__popup-text'
     });
-
-    fullpageChange(state.fullPageInstance.getActiveSection().item);
-    makePagination();
-    checkArrows(0);
-    appendLinksListeners();
+ 
+    // fullpageChange(state.fullPageInstance.getActiveSection().item);
+    // makePagination();
+    // checkArrows(0);
+    // appendLinksListeners();
 };
 
 fullpageHandler();
