@@ -133,6 +133,44 @@
     &--delivery {
         max-width: none;
         width: 100%;
+        margin-left: 20px;
+
+        .section {
+            &__title2 {
+                font-family: "Charter", serif;
+                font-size: pxToVw(22);
+                margin-bottom: pxToVw(14);
+                width: 100%;
+            }
+        }
+
+        .coordinator-block {
+            &__slider {
+                &:nth-child(2) {
+                    .section__title2 {
+                        font-size: pxToVw(22);
+                    }
+                }
+            }
+        }
+
+        .coordinator-block__item {
+            padding-bottom: 50px;
+            p {
+                font-size: pxToVw(12);
+                line-height: pxToVw(16);
+
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .coordinator-block {
+        &--delivery {
+            margin-left: 0;
+        }
     }
 }
 
