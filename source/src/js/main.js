@@ -411,4 +411,17 @@ $(document).ready(function() {
 	});
 });
 
+$('.popup-block__img-slider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	infinite: false,
+	arrows: false,
+	dots: false,
+	swipe: false
+});
 
+$('.map__scheme-imgs-item').on('click',function() {
+	var SlideNum = $(this).attr('data-popup-index');
+	
+	$('.popup-block__img-slider').slick('slickGoTo', parseInt(SlideNum));
+});

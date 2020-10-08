@@ -956,6 +956,14 @@
     }
 }
 
+.section__sales-mob {
+    .section__slide {
+        &::after {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .section_sale.special {
         height: max-content;
@@ -1591,6 +1599,70 @@
     
     .section__slider-delivery {
         display: none;
+    }
+
+    .section_sales-mob {
+        height: 110vw;
+        .section__slide {
+            &::after {
+                display: none;
+            }
+
+            .section__text-mob {
+                margin-top: 45vw;
+
+                color: #fff;
+
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .section__h2-mob {
+                font-weight: 500;
+            }
+
+            .services {
+                &__big-text {
+                    line-height: 46px;
+
+                    font-size: 36px;
+
+                    margin-bottom: 5px;
+                }
+
+                &__heading {
+                    line-height: 23px;
+                    font-size: 18px;
+
+                    width: 60%;
+                }
+
+                &__text {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+
+                &__links {
+                    font-size: 16px;
+                    line-height: 18px;
+
+                    margin-top: 10px;
+                }
+
+                &__link {
+                    display: block;
+
+                    margin-right: 10px;
+                }
+
+                &__link-arrow {
+                    width: 90px;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        
     }
 }
 
