@@ -382,7 +382,7 @@ if ($('.coordinator-block__slider-wrapper').length > 0) {
 	});
 }
 
-$('.info-block__more').on('click',function() {
+$('.modal__open').on('click',function() {
 	var SlideNum = $(this).parent().attr('data-popup-index');
 	
 	$('.popup-block__slider').slick('slickGoTo', parseInt(SlideNum));
@@ -395,7 +395,7 @@ $('.reviews-block__more').on('click',function() {
 });
 
 $(document).ready(function() {
-	$('.info-block__more').click(function(e){
+	$('.modal__open').click(function(e){
 		e.preventDefault();
 
 		if ($(window).width() > 767) {
