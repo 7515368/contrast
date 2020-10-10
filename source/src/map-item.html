@@ -65,8 +65,13 @@
                                             </div>
                                         </div>
                                         <div class="map__scheme-imgs">
-                                            <img src="img/mayakovskaya_1.jpg" data-toggle="modal" data-target="#img-popup"/>
-                                            <img src="img/scheme-img.png" data-toggle="modal" data-target="#img-popup"/>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#img-popup" data-popup-index="0"
+                                            class="map__scheme-imgs-item">
+                                                <img src="img/mayakovskaya_1.jpg" />
+                                            </a>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#img-popup" data-popup-index="1" class="map__scheme-imgs-item">
+                                                <img src="img/scheme-img.png" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -1114,14 +1119,26 @@
                     <div class="popup-block__popup popup-block__popup--img">
                         <div class="inner-content">
                             <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close"><img src="img/full-menu-close.svg" /></a>
-                            <div class="popup-block__popup-full">
-                                <div class="popup-block__popup-full-img-inner">
-                                    <img src="img/mayakovskaya_1.jpg" alt="">
+                            <div class="popup-block__img-slider">
+                                <div class="popup-block__img-slider-item">
+                                    <div class="popup-block__popup-full">
+                                        <div class="popup-block__popup-full-img-inner">
+                                            <img src="img/mayakovskaya_1.jpg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="popup-block__img-slider-item">
+                                    <div class="popup-block__popup-full">
+                                        <div class="popup-block__popup-full-img-inner">
+                                            <img src="img/scheme-img.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="form" id="form"></div>
