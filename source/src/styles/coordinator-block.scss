@@ -3,14 +3,33 @@
 
     display: flex;
     max-width: pxToVw3(1000);
+
+    padding-bottom: 50px;
+
+    &::before {
+        content: "";
+        width: 1px;
+        height: 100%;
+
+        position: absolute;
+        left: 50%;
+        top: 0;
+
+        transform: translateX(-50%);
+
+        background-color: #65a2c2;
+    }
     &__slider {
         position: relative;
 
         max-width: 50%;
 
-        border-right: 1px solid #65A2C2;
+        // border-right: 1px solid #65A2C2;
 
         max-height: 900px;
+
+        display: flex;
+        flex-direction: column;
         .section {
             &__title2 {
                 margin-top: 0;
@@ -22,7 +41,7 @@
         .footer {
             &__portfolio-back {
                 position: absolute;
-                bottom: pxToVw(66);
+                bottom: pxToVw(-39);
                 left: 0;
     
                 z-index: 10;
@@ -30,7 +49,7 @@
             
             &__portfolio-forward {
                 position: absolute;
-                bottom: pxToVw(66);
+                bottom: pxToVw(-39);
                 left: pxToVw3(130);
     
                 transform: rotate(180deg);
@@ -81,7 +100,7 @@
             margin-bottom: pxToVw3(40);
         }
 
-        &:nth-child(1) {
+        &:nth-child(odd) {
             border-right: 1px solid #D1E3ED;
         }
 
@@ -101,7 +120,7 @@
 
     &__switch {
         position: absolute;
-        bottom: pxToVw(-15);
+        bottom: pxToVw(-40);
         font-size: pxToVw(12);
         display: flex;
         color: #67a1c4;
@@ -124,7 +143,7 @@
     }
 
     &__item-title {
-        font-size: pxToVw3(14);
+        font-size: pxToVw3(18);
         font-weight: 700;
 
         margin-bottom: pxToVw3(8);
@@ -135,6 +154,9 @@
         width: 100%;
         margin-left: 20px;
 
+        padding-bottom: 50px;
+
+        
         .section {
             &__title2 {
                 font-family: "Charter", serif;
@@ -155,7 +177,7 @@
         }
 
         .coordinator-block__item {
-            padding-bottom: 50px;
+            padding-bottom: 0;
             p {
                 font-size: pxToVw(12);
                 line-height: pxToVw(16);

@@ -270,11 +270,11 @@
         &__slider {
             .footer {
                 &__portfolio-back {
-                    bottom: pxToVw(53);
+                    bottom: pxToVw3(-47);
                 }
                 
                 &__portfolio-forward {
-                    bottom: pxToVw(53);
+                    bottom: pxToVw3(-47);
                 }
             }
         }
@@ -1602,8 +1602,11 @@
     }
 
     .section_sales-mob {
-        height: 110vw;
+        min-height: 110vw;
+        height: 100vh;
         .section__slide {
+            min-height: 110vw;
+            height: auto;
             &::after {
                 display: none;
             }
