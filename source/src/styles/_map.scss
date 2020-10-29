@@ -310,7 +310,6 @@ input:checked + .map__option-checkbox-img {
     padding: 5px 0;
 
     border-bottom: 1px solid #19619d;
-    cursor: pointer;
 }
 
 .map__adresses-row-cell {
@@ -328,6 +327,7 @@ input:checked + .map__option-checkbox-img {
 
 .map__adresses-row-cell:nth-child(1) {
     width: 40%;
+    cursor: pointer;
 }
 
 .map__adresses-row-cell:nth-child(3) {
@@ -616,7 +616,6 @@ input:checked + .map__option-checkbox-img {
         padding: 5px 0;
         position: relative;
 
-        cursor: pointer;
     }
 
     .map__adresses-row-cell {
