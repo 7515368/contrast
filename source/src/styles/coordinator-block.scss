@@ -23,9 +23,6 @@
         position: relative;
 
         max-width: 50%;
-
-        // border-right: 1px solid #65A2C2;
-
         max-height: 900px;
 
         display: flex;
@@ -52,6 +49,7 @@
                 bottom: pxToVw(-39);
                 left: pxToVw3(130);
     
+                transform: rotate(180deg);
                 z-index: 10;
             }
         }
@@ -70,8 +68,8 @@
 
             .section {
                 &__title2 {
-                    padding-left: 60px;
-                    font-size: pxToVw3(28);
+                    padding-left: pxToVw3(60);
+                    font-size: pxToVw3(30);
                 }
             }
 
