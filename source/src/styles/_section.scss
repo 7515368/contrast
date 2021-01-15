@@ -529,6 +529,7 @@
     }
 
     &__white-block-item {
+        width: 25%;
         flex-grow: 1;
 
         display: flex;
@@ -774,7 +775,7 @@
             &__basic-text {
                 margin-bottom: pxToVw3(15);
 
-                line-height: pxToVw3(35);
+                line-height: pxToVw3(25);
                 font-size: pxToVw3(17);
                 padding-right: 3px;
             }
@@ -854,7 +855,7 @@
         padding-left: pxToVw3(40);
         padding-right: pxToVw3(40);
 
-        font-size: pxToVw3(19);
+        font-size: pxToVw3(18);
         line-height: pxToVw3(20);
         font-weight: 700;
 
@@ -1032,7 +1033,7 @@
             &__basic-text {
                 margin-bottom: 0;
                 font-size: pxToVw3(17);
-                line-height: pxToVw3(34);
+                line-height: pxToVw3(22);
             }
         }
 
