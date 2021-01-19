@@ -86,15 +86,15 @@
 }
 
 .section__name {
-    font-family: "Charter", serif;
+    // font-family: "Charter", serif;
     font-weight: bold;
     font-size: pxToVw(16);
-    top: pxToVw(55);
+    top: pxToVw(61);
     position: absolute;
     color: #005090;
 
     &.light {
-        font-weight: 400;   
+        font-weight: 700;   
         font-size: pxToVw3(17);
     }
 }
@@ -159,9 +159,9 @@
     font-size: pxToVw(16);
     font-weight: bold;
     position: absolute;
-    top: pxToVw(45);
+    top: pxToVw(48);
     left: pxToVw(280);
-    font-family: "Charter", serif;
+    // font-family: "Charter", serif;
 
     &.light {
         font-weight: 400;   
@@ -280,10 +280,10 @@
         }
 
         &__item-img {
-            max-width: 70%;
+            // max-width: 70%;
 
-            margin-left: auto;
-            margin-right: auto;
+            // margin-left: auto;
+            // margin-right: auto;
         }
     }
 }
@@ -355,20 +355,29 @@
     &__company-wrapper {
         position: absolute;
         bottom: pxToVw3(120);
-        left: pxToVw3(323);
+        left: pxToVw(280);
 
-        max-width: pxToVw3(1500);
+        max-width: pxToVw3(1450);
     }
     
     &__company-3-wrapper {
         position: absolute;
-        top: pxToVw3(200);
-        left: pxToVw3(323);
+        top: pxToVw(100);
+        left: pxToVw(280);
 
         max-width: pxToVw3(1500);
 
         .form-validate-result {
             max-width: pxToVw3(1000);
+        }
+
+        .section__title2 {
+            margin-bottom: pxToVw(20);
+        }
+
+        .section__blue-text {
+            color: #65A2C2;
+            font-weight: 300;
         }
     }
 
@@ -377,10 +386,12 @@
         line-height: pxToVw3(50);
 
         margin-bottom: pxToVw3(50);
+
+        font-family: 'Charter Roman', serif;
     }
 
     &__basic-text {
-        font-size: pxToVw(16);
+        font-size: pxToVw(17);
         line-height: pxToVw(24);
         font-weight: 300;
 
@@ -394,32 +405,32 @@
             margin: 0;
 
             display: flex;
-
             li {
                 position: relative;
 
                 font-size: pxToVw3(12);
                 line-height: pxToVw3(14);
-
-
-                padding-right: pxToVw3(35);
                 &:not(:last-child) {
                     margin-right: pxToVw3(80);
                 }
-
-                &::before {
-                    content: "";
-                    width: pxToVw3(15);
-                    height: pxToVw3(1);
-
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-
-                    transform: translateY(-50%);
-                    background-color: #fff;
-                }
             }
+        }
+    }
+
+    &__company-list-link {
+        cursor: pointer;
+        font-size: pxToVw(14);
+
+        transition: all 0.2s ease-in-out;
+        img {
+            width: pxToVw(15);
+            margin-left: pxToVw(15);
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            opacity: 0.7;
         }
     }
     
@@ -431,10 +442,27 @@
         background-color: #E8F1F6;
 
         display: block;
-        padding-right: 105px;
+        padding-right: 60px;
+
+        padding-bottom: 230px;
     }
-    
-    
+
+    &__company-2-overlay-scroll {
+        overflow-y: auto;
+        height: 100%;
+        padding-right: 40px;
+    }
+
+    &__company-2-overlay-scroll::-webkit-scrollbar {
+		width: 4px;
+        background: white;
+        border-radius: 5px;
+	}
+	&__company-2-overlay-scroll::-webkit-scrollbar-thumb {
+		width: 4px;
+        background: #65a2c2;
+        border-radius: 5px;
+	}
 
     &__title2 {
         font-size: pxToVw3(33);
@@ -443,6 +471,8 @@
         margin-bottom: pxToVw3(35);
         margin-top: pxToVw3(15);
         font-weight: 300;
+
+        font-family: 'Charter Roman', serif;
     }
 
     &__company-table {
@@ -461,6 +491,8 @@
                     padding-bottom: pxToVw3(18);
 
                     text-align: right;
+
+                    font-weight: 300;
                     &:nth-child(1) {
                         border-right: 1px solid #D1E3ED;
 
@@ -479,7 +511,7 @@
         position: absolute;
         left: 0;
         
-        bottom: pxToVw3(210);
+        bottom: pxToVw3(90);
 
         margin-left: pxToVw3(65);
         margin-right: pxToVw3(65);
@@ -497,13 +529,14 @@
     }
 
     &__white-block-item {
+        width: 25%;
         flex-grow: 1;
 
         display: flex;
         align-items: center;
         
         &:not(:last-child) {
-            margin-right: pxToVw3(90);
+            margin-right: pxToVw3(80);
         }
 
         .number {
@@ -524,6 +557,9 @@
             font-weight: 100;
 
             flex-shrink: 0;
+
+            height: 100%;
+            max-height: 105px;
         }
 
         .title {
@@ -649,7 +685,7 @@
             font-size: pxToVw3(16);
             line-height: pxToVw3(20);
 
-            font-weight: 400;
+            font-weight: 300;
         }
     }
 
@@ -664,14 +700,15 @@
 
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
-        margin-top: pxToVw3(75);
+        margin-top: pxToVw3(20);
         .section__title2 {
             margin: 0;
             width: pxToVw3(360);
             flex-shrink: 0;
 
-            margin-right: 100px;
+            color: #005090;
         }
     }
 
@@ -691,6 +728,10 @@
 
         &:last-child {
             padding-right: 0;
+
+            &::after {
+                display: none;
+            }
         }
 
         &::after {
@@ -701,8 +742,9 @@
 
             position: absolute;
             right: 0;
+            top: 50%;
 
-            top: pxToVw3(25);
+            transform: translateY(-50%);
         }
     }
 
@@ -716,9 +758,10 @@
 
         position: absolute;
 
-        right: pxToVw3(160);
+        right: pxToVw3(140);
         top: 0;
         width: pxToVw3(600);
+        height: 100vh;
 
         padding-top: pxToVw3(150);
 
@@ -732,7 +775,9 @@
             &__basic-text {
                 margin-bottom: pxToVw3(15);
 
-                line-height: pxToVw3(35);
+                line-height: pxToVw3(25);
+                font-size: pxToVw3(17);
+                padding-right: 3px;
             }
 
             &__name {
@@ -740,6 +785,21 @@
             }
         }
     }
+
+    &__section-4-overlay-scroll {
+        overflow-y: auto;
+        height: 100%;
+        padding-right: 40px;
+    }
+
+    &__section-4-overlay-scroll::-webkit-scrollbar {
+		width: 4px;
+		background: #e8f1f6;
+	}
+	&__section-4-overlay-scroll::-webkit-scrollbar-thumb {
+		width: 4px;
+		background: #19619d;
+	}
 
     &__company-numbers-franchise {
         .section {
@@ -795,7 +855,7 @@
         padding-left: pxToVw3(40);
         padding-right: pxToVw3(40);
 
-        font-size: pxToVw3(19);
+        font-size: pxToVw3(18);
         line-height: pxToVw3(20);
         font-weight: 700;
 
@@ -810,11 +870,12 @@
     &__company-6-wrapper {
         position: absolute;
         top: pxToVw3(200);
-        left: pxToVw3(323);
+        left: pxToVw(280);
 
         max-width: pxToVw3(1500);
 
         display: flex;
+
     }
 
     &__company-contacts {
@@ -882,7 +943,7 @@
     &__small-text {
         font-size: pxToVw3(17);
         line-height: pxToVw3(20);
-
+        font-weight: 300;
         a {
             font-weight: 700;
         }
@@ -913,6 +974,7 @@
                     justify-content: center;
 
                     margin-right: pxToVw3(20);
+                    font-size: pxToVw3(18);
                 }
 
                 &:not(:last-child) {
@@ -936,14 +998,56 @@
             &__title2 {
                 margin-top: 0;
 
-                margin-bottom: pxToVw3(25);
+                margin-bottom: pxToVw3(15);
             }
 
             &__basic-text {
                 margin-bottom: pxToVw3(15);
 
                 line-height: pxToVw3(35);
+                color: #65A2C2;
             }
+        }
+    }
+
+    &__charity-overlay-scroll {
+        overflow-y: auto;
+        height: 100%;
+        padding-right: 40px;
+    }
+
+    &__charity-overlay-scroll::-webkit-scrollbar {
+		width: 4px;
+		background: #fff;
+	}
+	&__charity-overlay-scroll::-webkit-scrollbar-thumb {
+		width: 4px;
+		background: #005090;
+    }
+    
+    &__charity-info {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .section {
+            &__basic-text {
+                margin-bottom: 0;
+                font-size: pxToVw3(17);
+                line-height: pxToVw3(22);
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #D1E3ED;
+        }
+    }
+
+    &__charity-last-info {
+        padding-top: 20px;
+        .section__basic-text {
+            line-height: pxToVw3(22);
+            color: #005092;
+            font-size: pxToVw3(17);
         }
     }
 
@@ -953,6 +1057,21 @@
     
     &__company-6 {
         color: #005090;
+    }
+
+    &__section-4-info {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .section {
+            &__basic-text {
+                margin-bottom: 0;
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #65A2C2;
+        }
     }
 }
 
@@ -1749,6 +1868,14 @@
         left: pxToVw2(280);
     }
 
+    .section__company-wrapper {
+        left: pxToVw2(280);
+    }
+
+    .section__company-6-wrapper {
+        left: pxToVw2(280);
+    }
+
     .section_services {
         min-height: pxToVw2(700);
     }
@@ -1763,7 +1890,8 @@
 
     .section {
         &__company-2-overlay {
-            padding-right: pxToVw3(105);
+            padding-right: pxToVw3(90);
+            padding-bottom: pxToVw3(280);
         }
         
         &__franchise-overlay {
@@ -1772,8 +1900,24 @@
         }
         
         &__charity-overlay {
-            padding-right: pxToVw3(160);
+            padding-right: pxToVw3(130);
             padding-top: pxToVw3(200);
+        }
+
+        &__company-3-wrapper {
+            left: pxToVw2(280);
+        }
+
+        &__company-list {
+            ul {
+                li {
+                    font-size: pxToVw2(14);
+                }
+            }
+        }
+
+        &__company-list-link {
+            font-size: pxToVw2(14);
         }
     }
 }

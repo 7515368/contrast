@@ -45,11 +45,16 @@ const onMenuItemMouseOver = (e) => {
 
 const onMenuItemClick = (e) => {
     e.preventDefault();
+    e.stopPropagation();
     const contentName = e.target.dataset.menuItem;
+    var href = e.target.href;
+    if (!$(e.target).is('a')) {
+        href = $(e.target).parents('a').attr('href');
+    }
     if (contentName !== "services" && contentName !== "about") {
         closeMenu();
         setTimeout(() => {
-            location = e.target.href;
+            location = href;
         }, 750);
     }
 };

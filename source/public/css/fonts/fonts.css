@@ -40,6 +40,42 @@
 
 @font-face {
     font-family: 'Charter';
+    src: local('Charter Bold Italic'), local('Charter-BoldItalic'),
+        url('Charter-BoldItalic.woff2') format('woff2'),
+        url('Charter-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter Italic'), local('Charter-Italic'),
+        url('Charter-Italic.woff2') format('woff2'),
+        url('Charter-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter Bold'), local('Charter-Bold'),
+        url('Charter-Bold.woff2') format('woff2'),
+        url('Charter-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: local('Charter'),
+        url('Charter.woff2') format('woff2'),
+        url('Charter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Charter Roman';
     src: url('Charter-Roman.woff2') format('woff2'),
         url('Charter-Roman.woff') format('woff');
     font-weight: normal;

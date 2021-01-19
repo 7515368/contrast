@@ -1,5 +1,5 @@
 .reviews-block {
-    margin-bottom: pxToVw3(160);
+    margin-bottom: pxToVw3(100);
     position: relative;
     &__wrapper {
         position: relative;
@@ -7,7 +7,7 @@
         .footer {
             &__portfolio-back {
                 position: absolute;
-                bottom: pxToVw(-60);
+                bottom: pxToVw(-42);
                 left: 0;
     
                 z-index: 10;
@@ -15,7 +15,7 @@
             
             &__portfolio-forward {
                 position: absolute;
-                bottom: pxToVw(-60);
+                bottom: pxToVw(-42);
                 left: pxToVw3(130);
     
                 transform: rotate(180deg);
@@ -69,7 +69,7 @@
 
     &__switch {
         position: absolute;
-        bottom: pxToVw(-62);
+        bottom: pxToVw(-45);
         font-size: pxToVw(12);
         display: flex;
         color: #67a1c4;
