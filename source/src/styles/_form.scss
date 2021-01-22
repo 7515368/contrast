@@ -36,7 +36,7 @@
 }
 
 .form__header {
-    font-weight: 600;
+    font-weight: 500;
     font-size: pxToVw(30);
     line-height: pxToVw(60);
 }
@@ -69,7 +69,7 @@
 .form__button {
     width: pxToVw(416);
     height: pxToVw(50);
-    font-weight: 600;
+    font-weight: 500;
     font-weight: bold;
     font-size: pxToVw(16);
     line-height: pxToVw(24);
@@ -83,7 +83,7 @@
 }
 
 .form__footer {
-    font-weight: 600;
+    font-weight: 500;
     font-size: pxToVw(22);
     line-height: pxToVw(50);
     color: $blueColor;
@@ -172,7 +172,7 @@
 
 .form__success-header,
 .form__failure-header {
-    font-weight: 600;
+    font-weight: 500;
     font-size: pxToVw(30);
     line-height: pxToVw(40);
 }
