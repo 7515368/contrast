@@ -283,6 +283,7 @@
 
         &__item-img {
             max-width: 150px;
+            height: 160px;
 
             margin: 0 auto;
             margin-bottom: 15px;
@@ -323,6 +324,17 @@
 
         &__slider-wrapper {
             height: auto !important;
+        }
+
+        .section__title2 {
+            font-size: 25px;
+            line-height: 28px;
+
+            text-align: center;
+        }
+
+        &::before {
+            display: none;
         }
     }
 }
