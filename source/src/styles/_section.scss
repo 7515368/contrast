@@ -1751,7 +1751,7 @@
 
             border: none;
             text-align: left;
-
+            text-transform: none;
             font-family: 'Charter Roman', serif;
         }
 
@@ -1782,8 +1782,10 @@
                 font-weight: 400;
                 font-size: 25px;
                 line-height: 27px;
+                text-transform: uppercase;
 
                 margin-bottom: 15px;
+                
 
                 font-family: "Museo Sans", sans-serif;
             }
@@ -1931,7 +1933,6 @@
             line-height: 16px;
         }
 
-
         &__charity-overlay {
             .section {
                 &__name {
@@ -1964,6 +1965,8 @@
                 margin-left: 20px;
                 margin-right: 20px;
                 color: #005092;
+                font-size: 20px;
+                font-weight: 500;
 
                 max-width: none;
 
@@ -2005,6 +2008,7 @@
                 .section__basic-text {
                     font-size: 12px;
                     line-height: 25px;
+                    color: #005092;
                 }
 
                 &.sm-border {
@@ -2037,6 +2041,7 @@
                 margin-left: 20px;
                 margin-right: 20px;
                 color: #005092;
+                font-weight: 500;
 
                 max-width: none;
 
@@ -2142,6 +2147,53 @@
         &__company-2 {
             .section__white-block {
                 border-bottom: 2px solid #005090;
+            }
+        }
+
+        &__company-3-wrapper {
+            .services__form {
+                &._fixed {
+                    max-width: none !important;
+                    width: 100% !important;
+                }
+            }
+               
+        }
+
+        &__partners-mob {
+            .section__h2-mob {
+                text-transform: none;
+                text-align: left;
+
+                margin-left: 20px;
+                margin-right: 20px;
+                color: #005092;
+                font-size: 25px;
+                line-height: 26px;
+                font-weight: 500;
+                margin-bottom: 20px;
+
+                max-width: none;
+
+                width: calc(100% - 40px);
+            }
+
+            .section__text-mob {
+                line-height: 20px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        &__partners {
+            .section__name {
+                display: none;
+            }
+            .section__header {
+                display: none;
+            }
+            .section__basic-text {
+                display: none;
             }
         }
     }
