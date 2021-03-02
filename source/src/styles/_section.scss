@@ -504,6 +504,10 @@
         }
     }
 
+    &__company-table-mb {
+        display: none;
+    }
+
     &__white-block {
         background-color: #fff;
 
@@ -1095,6 +1099,22 @@
             background-size: pxToVw3(1920) pxToVw3(250);
             background-color: #E8F1F6;
         }
+
+        .section__overlay-scroll {
+            overflow-y: auto;
+            height: 100%;
+        }
+
+        .section__overlay-scroll::-webkit-scrollbar {
+            width: 4px;
+            background: white;
+            border-radius: 5px;
+        }
+        .section__overlay-scroll::-webkit-scrollbar-thumb {
+            width: 4px;
+            background: #65a2c2;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -1430,6 +1450,7 @@
 
         &__company-table {
             margin-bottom: 20px;
+            display: none;
             table {
                 tr {
                     th {
@@ -1442,6 +1463,19 @@
             }
         }
 
+        &__company-table-mb {
+            display: block;
+
+            table {
+                tr {
+                    th {
+                        &:nth-child(1) {
+                            border-right: 0
+                        }
+                    }
+                }
+            }
+        }
         &__white-block {
             width: calc(100% - 40px);
             position: relative;
@@ -1500,6 +1534,10 @@
         &__company-3 {
             padding: 20px;
             height: auto;
+
+            .section__name2 {
+                display: none;
+            }
         }
         
         &__company-5 {
@@ -1537,6 +1575,12 @@
                     bottom: 0;
 
                     background-color: #005090;
+                }
+            }
+
+            .section__text-mob-desc {
+                b {
+                    font-weight: 700;
                 }
             }
         }
@@ -1587,8 +1631,7 @@
             &:nth-child(8) {
                 max-width: none;
                 padding-left: 0;
-                padding-right: 20px;
-
+                padding-right: 0;
                 p {
                     max-width: none;
                 }
@@ -1597,7 +1640,7 @@
             &:nth-child(9) {
                 max-width: none;
                 padding-left: 0;
-                padding-right: 20px;
+                padding-right: 0;
 
                 border-bottom: 1px solid #D1E3ED;
             }
@@ -1610,6 +1653,10 @@
                 .number {
                     margin-bottom: 15px;
                 }
+            }
+
+            &:first-child {
+                border-top: 1px solid #D1E3ED;
             }
         }
 
@@ -1704,6 +1751,8 @@
 
             border: none;
             text-align: left;
+
+            font-family: 'Charter Roman', serif;
         }
 
         &__section-4-overlay {
@@ -1730,11 +1779,13 @@
             }
 
             .section__title2 {
-                font-weight: 700;
+                font-weight: 400;
                 font-size: 25px;
                 line-height: 27px;
 
                 margin-bottom: 15px;
+
+                font-family: "Museo Sans", sans-serif;
             }
         }
 
@@ -1809,6 +1860,7 @@
             padding-left: 12px;
             padding-right: 12px;
 
+            border-top: 2px solid #005090;
             .section__title2 {
                 font-size: 25px;
                 line-height: 28px;
@@ -1901,6 +1953,195 @@
 
                 margin-left: auto;
                 margin-right: auto;
+            }
+        }
+
+        &__charity-mob {
+            .section__h2-mob {
+                text-transform: none;
+                text-align: left;
+
+                margin-left: 20px;
+                margin-right: 20px;
+                color: #005092;
+
+                max-width: none;
+
+                width: calc(100% - 40px);
+            }
+
+            .section__text-mob {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        &__charity-overlay {
+            padding-bottom: 90px;
+            bottom: 0;
+            &::before {
+                content: "";
+                width: calc(100% - 40px);
+                height: 2px;
+                background-color: #005090;
+
+                position: absolute;
+                left: 20px;
+                top: 0;
+            }
+            
+            .section__name {
+                display: none;
+            }
+
+            .section__charity-info {
+                .section__title2 {
+                    font-size: 25px;
+                    line-height: 26px;
+
+                    margin-bottom: 20px;
+                }
+
+                .section__basic-text {
+                    font-size: 12px;
+                    line-height: 25px;
+                }
+
+                &.sm-border {
+                    border-bottom: 2px solid #005090;
+                }
+            }
+
+            .section__charity-last-info {
+                .section__basic-text {
+                    font-size: 12px;
+                    line-height: 16px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        &__charity-overlay-scroll {
+            padding-right: 0;
+        }
+
+        &__franchise-mob {
+            margin-bottom: 40px;
+            .section__h2-mob {
+                text-transform: none;
+                text-align: left;
+
+                margin-left: 20px;
+                margin-right: 20px;
+                color: #005092;
+
+                max-width: none;
+
+                width: calc(100% - 40px);
+            }
+
+            .section__text-mob {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        &__franchise-2-mob {
+            padding-top: 20px;
+            &::before {
+                content: "";
+                width: calc(100% - 40px);
+                height: 2px;
+                background-color: #005090;
+
+                position: absolute;
+                left: 20px;
+                top: 0;
+            }
+            .section__name2 {
+                display: none;
+            }
+
+            .section__title2 {
+                font-size: 25px;
+                line-height: 28px;
+
+                margin-bottom: 30px;
+            }
+
+            .section__company-numbers-franchise .section__company-numbers-item {
+                &:nth-child(4) {
+                    max-width: none;
+                    border-bottom: 1px solid #D1E3ED;
+                }
+                
+                &:nth-child(5) {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 18px;
+                    .section__company-numbers-item-wrapper {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        &__franchise-3 {
+            .section__name {
+                display: none;
+            }
+
+            .section__title2 {
+                font-size: 25px;
+                line-height: 28px;
+                text-align: center;
+
+                margin-bottom: 25px;
+            }
+
+            .section__numbered-list {
+                border-bottom: 2px solid #005090;
+                padding-bottom: 40px;
+                margin-bottom: 25px;
+                ul {
+                    li {
+                        flex-direction: column;
+                        align-items: center;
+
+                        text-align: center;
+
+                        .circle {
+                            width: 25px;
+                            height: 25px;
+                            font-size: 16px;
+
+                            margin-bottom: 15px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            max-width: 220px;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+
+            .section__small-text {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+
+        &__company-2 {
+            .section__white-block {
+                border-bottom: 2px solid #005090;
             }
         }
     }

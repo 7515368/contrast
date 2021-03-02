@@ -66,6 +66,10 @@
                 max-width: 130px;
                 max-height: 55px;
             }
+
+            &:last-child {
+                border-bottom: 0;
+            }
         }
 
         &__row {
