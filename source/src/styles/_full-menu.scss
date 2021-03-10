@@ -147,11 +147,18 @@
   font-weight: 700;
   font-size: pxToVw(16);
   margin-right: pxToVw(60);
+  margin-bottom: pxToVw(10);
   .city {
     font-weight: normal;
     padding-left: 10px;
     font-size: pxToVw(14);
   }
+}
+
+.full-menu__bottom-left-phones {
+  display: flex;
+  flex-direction: column;
+  margin-top: pxToVw(-15);
 }
 
 .full-menu__socials img {
@@ -426,9 +433,13 @@
   }
 
   .full-menu__phone {
-    font-size: 12px;
+    font-size: 11px;
     margin-right: 40px;
     margin-left: 40px;
+    margin-bottom: 5px;
+    .city {
+      font-size: 12px;
+    }
   }
 
   .full-menu__socials img {
