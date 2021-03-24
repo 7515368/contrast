@@ -94,7 +94,7 @@ const Prices = () => {
                     <div className="prices__input">
                         <input
                             type="text"
-                            placeholder="Поиск по ценам"
+                            placeholder="Найти пальто"
                             value={searchString}
                             onChange={onSearchChange}
                         />

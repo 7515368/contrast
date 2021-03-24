@@ -36,6 +36,9 @@
     font-size: pxToVw(16);
     line-height: pxToVw(20);
     font-weight: 300;
+    a {
+        font-weight: 700;
+    }
 }
 .info-block__more {
     display: flex;

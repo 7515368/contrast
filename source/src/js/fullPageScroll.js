@@ -12,6 +12,7 @@ const state = {
     menuWhite: document.querySelector("[data-menu-white]"),
     menuBlue: document.querySelector("[data-menu-blue]"),
     footerPhone: document.querySelector("[data-footer-phone]"),
+    footerPhoneInner: document.querySelector("[data-footer-phone-inner]"),
     breadcrumbs: document.querySelector("[data-breadcrumbs]"),
     switch: document.querySelector("[data-carousel-switch]"),
     links: document.querySelectorAll("[data-fullpage-scroll-to]"),
@@ -21,6 +22,7 @@ const fullpageChange = (currentSection, index) => {
     const {
         smallMenu,
         footerPhone,
+        footerPhoneInner,
         logoWhite,
         logoBlue,
         menuWhite,
@@ -33,6 +35,7 @@ const fullpageChange = (currentSection, index) => {
 
     const {
         phoneColor,
+        phoneColorInner,
         menuColor,
         logoColor,
         burgerColor,
@@ -40,6 +43,7 @@ const fullpageChange = (currentSection, index) => {
         paginationColor,
     } = currentSection.dataset;
     footerPhone && (footerPhone.style.color = phoneColor || "white");
+    footerPhoneInner && (footerPhoneInner.style.color = phoneColor || "white");
     smallMenu && (smallMenu.style.color = menuColor || "white");
     breadcrumbs && (breadcrumbs.style.color = breadcrumbsColor || "white");
     paginationInner && (paginationInner.style.color = paginationColor || "white");

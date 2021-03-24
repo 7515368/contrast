@@ -96,6 +96,8 @@
     border-bottom: 1px solid #19619d;
     align-items: center;
     position: relative;
+
+    cursor: pointer;
 }
 
 .map__option:last-child {
@@ -383,9 +385,11 @@ input:checked + .map__option-checkbox-img {
 .map__scheme-services-row {
     border-bottom: 1px solid #3d7aac;
     font-size: pxToVw(12);
-    height: pxToVw(25);
     display: flex;
     align-items: center;
+
+    padding-top: pxToVw(5);
+    padding-bottom: pxToVw(5);
 }
 .map__scheme-services-row:last-child {
     border-bottom: none;
@@ -538,7 +542,10 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__scheme {
-        display: none !important;
+        // display: none !important;
+
+        width: 200px;
+        height: 200px;
     }
 
     .map__adresses {
@@ -715,7 +722,9 @@ input:checked + .map__option-checkbox-img {
 
     .map__scheme-services-row {
         font-size: 14px;
-        height: 30px;
+
+        padding-top: 5px;
+        padding-bottom: 5px;  
     }
 
     .map__scheme-desc.height {
@@ -957,7 +966,9 @@ input:checked + .map__option-checkbox-img {
 
     .map__scheme-services-row {
         font-size: pxToVw2(12);
-        height: pxToVw2(25);
+
+        padding-top: pxToVw2(6);
+        padding-bottom: pxToVw2(6);
     }
 
     .map__scheme-imgs a {
