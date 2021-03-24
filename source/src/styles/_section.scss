@@ -471,6 +471,8 @@
         margin-left: 20px;
 
         position: relative;
+
+        
         img {
             width: 100%;
             height: 100%;
@@ -488,6 +490,10 @@
             content: "";
             display: block;
             padding-bottom: 52%;
+        }
+
+        @media (min-width: 1024px) {
+            display: none;
         }
     }
     
@@ -513,6 +519,10 @@
             content: "";
             display: block;
             padding-bottom: 52%;
+        }
+
+        @media (min-width: 1024px) {
+            display: none;
         }
     }
 
@@ -806,8 +816,9 @@
 
     &__company-4 {
         background-color: #005092;
-        background-image: none;
         background-size: cover;
+
+        background-image: url(../img/company-4-bg.jpg);
     }
 
     &__section-4-overlay {
@@ -1775,6 +1786,7 @@
             background-color: transparent;
             height: auto;
 
+            background-image: none;
             .section__name {
                 display: none;
             }
@@ -1786,7 +1798,7 @@
 
         &__section-4-overlay {
             height: auto;
-            color: #fff;
+            color: #005092;
         }
 
         &__section-4-overlay-scroll {
