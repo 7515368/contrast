@@ -373,11 +373,15 @@
             .footer {
                 &__portfolio-back {
                     bottom: 4px;
-                    
+
+                    left: 50%;
+                    transform: translateX(-50px);
                 }
                 
                 &__portfolio-forward {
                     bottom: 4px;
+                    left: 50%;
+                    transform: rotate(180deg) translateX(-30px);
                 }
             }
 
@@ -385,10 +389,21 @@
                 .footer {
                     &__portfolio-back {
                         bottom: 4px;
-                        
+                        left: 50%;
+                        transform: translateX(-50px);
                     }
                 }
+
+                .coordinator-block__switch {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
+        }
+
+        &__switch {
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         // &__slider-wrapper {

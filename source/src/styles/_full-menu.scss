@@ -368,6 +368,25 @@
 }
 
 @media (max-width: 1024px) {
+  .full-menu {
+    top: 100%;
+    bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    transition: all 0.5s ease-in-out !important;
+
+    transform: translateY(100%);
+    &.opened {
+      transform: translateY(0);
+      top: 10px;
+
+      transition: all 1s ease-in-out !important;
+    }
+  }
   .services__form._fixed .full-menu__text3 {
     font-size: 10px !important;
     padding-top: 30px;
@@ -434,8 +453,8 @@
 
   .full-menu__phone {
     font-size: 11px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 25px;
+    margin-left: 35px;
     margin-bottom: 5px;
     .city {
       font-size: 12px;
@@ -443,9 +462,9 @@
   }
 
   .full-menu__socials img {
-    width: 20px;
+    width: 23px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .full-menu__bottom-right {

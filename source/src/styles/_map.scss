@@ -503,7 +503,7 @@ input:checked + .map__option-checkbox-img {
     .map {
         position: static;
         padding: 20px;
-        padding-top: 100px;
+        padding-top: 50px;
         align-items: flex-start;
         flex-direction: column;
     }
@@ -525,7 +525,7 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__filter_padding-left {
-        display: none;
+        // display: none;
     }
 
     .map__filter_border {
@@ -542,15 +542,23 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__scheme {
-        // display: none !important;
-
-        width: 200px;
-        height: 200px;
+        position: relative;
+        width: 100%;
+        height: 350px;
+    
+        display: none;
+        &.active {
+            display: block;
+        }
     }
 
     .map__adresses {
-        display: block;
-        opacity: 1;
+        opacity: 0;
+
+        display: none;
+        &.active {
+            display: block;
+        }
     }
 
     .map__searchbar-input {
@@ -636,7 +644,7 @@ input:checked + .map__option-checkbox-img {
     }
 
     .map__adresses-inner {
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     .map__route-button {
