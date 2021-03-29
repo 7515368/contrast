@@ -482,6 +482,7 @@
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
+            object-fit: cover;
         }
 
         &::before {
@@ -511,6 +512,7 @@
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
+            object-fit: cover;
         }
 
         &::before {
@@ -2377,8 +2379,10 @@
                 }
             }
         }
+    }
 
-        
+    .section__company-2 {
+        background: none !important;
     }
 }
 
