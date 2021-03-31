@@ -49,7 +49,6 @@
                 bottom: pxToVw(-39);
                 left: pxToVw3(130);
     
-                transform: rotate(180deg);
                 z-index: 10;
             }
         }
@@ -381,7 +380,7 @@
                 &__portfolio-forward {
                     bottom: 4px;
                     left: 50%;
-                    transform: rotate(180deg) translateX(-30px);
+                    transform: translateX(-30px);
                 }
             }
 
