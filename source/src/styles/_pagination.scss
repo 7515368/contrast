@@ -15,6 +15,11 @@
     font-size: pxToVw(10);
     transition: color 1s ease 0s;
     cursor: pointer;
+
+    // нужен чтобы скрыть последний пункт (футер)
+    &:last-child {
+        display: none;
+    }
 }
 
 .pagination__item._active {

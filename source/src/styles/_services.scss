@@ -193,6 +193,11 @@
     transition: opacity 2s ease;
 }
 
+.services__slide-white {
+    color: #005090;
+    background-color: #fff;
+}
+
 .services__slide-container {
     position: absolute;
     min-width: pxToVw(960);

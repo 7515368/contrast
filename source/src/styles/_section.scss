@@ -4,6 +4,12 @@
     position: relative;
     overflow: hidden;
 
+    &.fp-auto-height {
+        height: auto !important;
+        .fp-slide, .fp-tableCell {
+            height: auto !important;
+        }
+    }
 }
 
 .section__slide {

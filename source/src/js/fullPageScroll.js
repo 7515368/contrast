@@ -166,6 +166,13 @@ const fullpageHandler = () => {
         onLeave: function (origin, destination, direction) {
             fullpageChange(destination.item, destination.index);
             checkArrows(destination.index);
+            if ($(destination.item).hasClass('last-section-footer')) {
+                $('.footer__phone').fadeOut();
+                $('.header__menu').fadeOut();
+            } else {
+                $('.footer__phone').fadeIn();
+                $('.header__menu').fadeIn();
+            }
         },
         afterRender: function () {
             fullpageChange(fullpage_api.getActiveSection().item);
