@@ -224,14 +224,33 @@
     height: pxToVw(20);
     display: flex;
     line-height: pxToVw(20);
+
+    &.blue {
+        img {
+            display: none;
+        }
+
+        svg {
+            display: block;
+        }
+    }
 }
 .services__slider-left-arrow-cont img {
     width: pxToVw(24);
+}
+
+.services__slider-left-arrow-cont svg {
+    width: pxToVw(24);
+    display: none;
 }
 .services__slider-left-arrow-cont img:nth-child(2) {
     display: none;
 }
 .services__slider-left-arrow-cont img:nth-child(2) {
+    transform: rotateZ(180deg);
+}
+
+.services__slider-left-arrow-cont svg {
     transform: rotateZ(180deg);
 }
 
@@ -242,11 +261,25 @@
     display: block;
 }
 
+.services__slider-left-arrow-cont.active.blue img:nth-child(2) {
+    display: none;
+}
+
 .services__slider-left-arrow {
 }
 .services__slider-dots {
     display: flex;
     padding: 0 pxToVw(10);
+
+    &.blue {
+        .services__slider-dot {
+            border-color: #005090;
+
+            &.active {
+                background-color: #005090;
+            }
+        }
+    }
 }
 .services__slider-dot {
     width: pxToVw(7);
@@ -255,6 +288,8 @@
     border-radius: 50%;
     margin: 0 pxToVw(5);
     cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
 }
 .services__slider-dot.active {
     background: white;
@@ -264,13 +299,31 @@
     height: pxToVw(20);
     display: flex;
     line-height: pxToVw(20);
+
+    &.blue {
+        img {
+            display: none;
+        }
+
+        svg {
+            display: block;
+        }
+    }
 }
 .services__slider-right-arrow-cont img {
     width: pxToVw(24);
 }
 
+.services__slider-right-arrow-cont svg {
+    width: pxToVw(24);
+    display: none;
+}
+
 .services__slider-right-arrow-cont img:nth-child(1) {
     transform: rotateZ(180deg);
+}
+
+.services__slider-right-arrow-cont svg {
 }
 
 .services__slider-right-arrow-cont img:nth-child(2) {
@@ -283,6 +336,10 @@
 
 .services__slider-right-arrow-cont.active img:nth-child(2) {
     display: block;
+}
+
+.services__slider-right-arrow-cont.active.blue img:nth-child(2) {
+    display: none;
 }
 
 .services__sale-icon {
@@ -440,6 +497,10 @@
         line-height: pxToVw2(20);
     }
     .services__slider-left-arrow-cont img {
+        width: pxToVw2(24);
+    }
+    
+    .services__slider-left-arrow-cont svg {
         width: pxToVw2(24);
     }
 

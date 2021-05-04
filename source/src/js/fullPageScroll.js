@@ -182,6 +182,8 @@ const fullpageHandler = () => {
         },
         normalScrollElements: '.popup-block__popup-text, .section__company-2-overlay-scroll, .section__section-4-overlay-scroll, .section__charity-overlay-scroll'
     });
+    
+    window.fullpageInstance = state.fullPageInstance;
  
     // fullpageChange(state.fullPageInstance.getActiveSection().item);
     // makePagination();
