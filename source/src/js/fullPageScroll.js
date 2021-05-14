@@ -173,6 +173,10 @@ const fullpageHandler = () => {
                 $('.footer__phone').fadeIn();
                 $('.header__menu').fadeIn();
             }
+
+            if ($(destination.item).hasClass('section-sale')) {
+                window.slider3_GoToZeroSlide();
+            }
         },
         afterRender: function () {
             fullpageChange(fullpage_api.getActiveSection().item);
@@ -182,9 +186,9 @@ const fullpageHandler = () => {
         },
         normalScrollElements: '.popup-block__popup-text, .section__company-2-overlay-scroll, .section__section-4-overlay-scroll, .section__charity-overlay-scroll'
     });
-    
+
     window.fullpageInstance = state.fullPageInstance;
- 
+
     // fullpageChange(state.fullPageInstance.getActiveSection().item);
     // makePagination();
     // checkArrows(0);

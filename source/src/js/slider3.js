@@ -67,7 +67,7 @@ const render = () => {
                 breadcrumbsColor = $(sl).attr('data-breadcrumbs-color'),
                 paginationColor = $(sl).attr('data-pagination-color'),
                 controlColors = burgerColor;
-                
+
                 footerPhone && (footerPhone.style.color = phoneColor || "white");
                 footerPhoneInner && (footerPhoneInner.style.color = phoneColor || "white");
                 smallMenu && (smallMenu.style.color = menuColor || "white");
@@ -120,6 +120,14 @@ const renderControls = () => {
 
     sliderControlsLeft.classList.add("active");
     sliderControlsRight.classList.add("active");
+};
+
+window.slider3_GoToZeroSlide = () => {
+    clearInterval(intervalId);
+    autoSlider(10000);
+    currentSlideNum = 0;
+    render();
+    renderControls();
 };
 
 const onLeftClick = () => {
