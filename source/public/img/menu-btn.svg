@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111.042" height="115.617" viewBox="0 0 111.042 115.617">
+  <defs>
+    <filter id="Контур_63" x="0" y="0" width="111.042" height="115.617" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#005092" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="menu-btn" transform="translate(-23.999 -552.176)">
+    <g transform="matrix(1, 0, 0, 1, 24, 552.18)" filter="url(#Контур_63)">
+      <path id="Контур_63-2" data-name="Контур 63" d="M52,591.447v17.076a10.733,10.733,0,0,0,5.366,9.295l14.789,8.538a10.734,10.734,0,0,0,10.733,0l14.788-8.538a10.731,10.731,0,0,0,5.366-9.295V591.447a10.731,10.731,0,0,0-5.366-9.3l-14.788-8.538a10.734,10.734,0,0,0-10.733,0l-14.789,8.538A10.733,10.733,0,0,0,52,591.447Z" transform="translate(-24 -552.18)" fill="#005092"/>
+    </g>
+    <g id="Сгруппировать_67" data-name="Сгруппировать 67">
+      <line id="Линия_41" data-name="Линия 41" x2="21.018" transform="translate(67.011 591.527)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+      <line id="Линия_42" data-name="Линия 42" x2="21.018" transform="translate(67.011 599.985)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+      <line id="Линия_43" data-name="Линия 43" x2="21.018" transform="translate(67.011 608.443)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/>
+    </g>
+  </g>
+</svg>

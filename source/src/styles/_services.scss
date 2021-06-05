@@ -564,7 +564,6 @@
 
                 margin-bottom: 13px;
             }
-
             
         }
 
@@ -575,6 +574,35 @@
             padding-bottom: pxToVw3(4);
             margin-top: -5px;
         }
+    }
+}
+
+.full-menu{
+    &__form-inputs{
+        .form__input-wrap{
+            width: 24%;
+
+            input{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.form__input-wrap{
+    position: relative;
+}
+
+.form__input-icon{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: pxToVw(15);
+    height: pxToVw(15);
+    img{
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -704,5 +732,19 @@
                 }
             }
         }
+    }
+
+    .full-menu{
+        &__form-inputs{
+            .form__input-wrap{
+                width: 100%;
+            }
+        }
+    }
+
+    .form__input-icon{
+        width: 10px;
+        height: 10px;
+        top: 18%;
     }
 }

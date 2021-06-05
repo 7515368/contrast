@@ -8,6 +8,59 @@
     top: pxToVw(45);
     left: pxToVw(272);
     font-size: pxToVw(12.8);
+    &:hover{
+        .header__submenu{
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
+
+.header__submenu{
+    position: absolute;
+    top: -3vw;
+    left: pxToVw(-25);
+    width: pxToVw(260);
+    background-color: #fff;
+    box-shadow: 0px 20px 20px 0px rgba(103, 161, 196, 0.45);
+    padding: 3vw 0 1.66667vw 0;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+    &-list{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    &-header{
+        display: flex;
+        align-items: center;
+        font-size: pxToVW(17);
+        color: #005090;
+        margin-left: pxToVw(25);
+        margin-right: pxToVw(25);
+        padding-bottom: pxToVw(14);
+        border-bottom: 1px solid #C9DEE9;
+        margin-bottom: pxToVw(14);
+    }
+}
+
+.header__submenu-item{
+    margin-bottom: pxToVw(10);
+    padding-left: pxToVw(25);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.header__submenu-link{
+    color: #005090;
+    font-size: pxToVw(11);
+    font-weight: 500;
+    transition: 0.3s;
+    &:hover{
+        color: #65A2C2;
+    }
 }
 
 .header__logo {
@@ -26,11 +79,11 @@
 
 .header__menu {
     position: fixed;
-    width: pxToVw(20);
-    height: pxToVw(15);
-    top: 50%;
+    width: pxToVw(111);
+    height: pxToVw(116);
+    top: 50.5%;
     transform: translateY(-50%);
-    left: pxToVw(55);
+    left: pxToVw(15);
     z-index: 100;
     cursor: pointer;
     transition: opacity 1s ease;
@@ -53,7 +106,7 @@
 
 .header__link {
     margin: 0 pxToVw(20);
-    font-size: pxToVw(12);
+    font-size: pxToVw(13);
     font-weight: 300;
 }
 
@@ -158,9 +211,11 @@
     }
 
     .header__menu {
-        width: pxToVw2(20);
-        height: pxToVw2(15);
-        left: pxToVw2(55);
+        width: pxToVw2(111);
+        height: pxToVw2(116);
+        top: 50.5%;
+        transform: translateY(-50%);
+        left: pxToVw(15);
     }
 
     .header__small-menu {
@@ -169,8 +224,8 @@
     }
 
     .header__link {
-        margin: 0 pxToVw(20);
-        font-size: pxToVw(12);
+        margin: 0 pxToVw(55);
+        font-size: pxToVw(13);
     }
 
     .header__small-menu-blue {

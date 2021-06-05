@@ -58,6 +58,7 @@
     margin-bottom: pxToVw(30);
 }
 
+
 .form__input {
     width: 100%;
     height: pxToVw(40);
@@ -194,6 +195,7 @@
     padding-right: pxToVw(50);
 }
 
+
 @media (max-width: 1024px) {
     .form__wrapper {
         width: 300px;
@@ -316,11 +318,5 @@
         font-size: 12px;
         line-height: 15px;
         margin-top: 5px;
-    }
-
-    .form__footer-icon {
-        width: 15px;
-        height: 15px;
-        margin-right: 5px;
     }
 }
