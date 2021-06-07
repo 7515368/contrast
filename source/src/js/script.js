@@ -18,6 +18,7 @@ import "./request.js";
 import "./main.js";
 import "./scroll-lock.js";
 import "./slick.js";
+import "./datepicker";
 
 const state = { placeholders: document.querySelectorAll("input") };
 
