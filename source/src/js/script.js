@@ -19,6 +19,7 @@ import "./main.js";
 import "./scroll-lock.js";
 import "./slick.js";
 import "./datepicker";
+import "./select2";
 
 const state = { placeholders: document.querySelectorAll("input") };
 

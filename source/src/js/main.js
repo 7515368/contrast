@@ -1,4 +1,5 @@
 import "./slick.js";
+import "./select2.js";
 
 function openModal(hrefModal) {
 
@@ -448,3 +449,12 @@ if ($('.footer-slide__recommends-row').length > 0) {
 		});
 	});
 }
+
+$('.select').select2({
+	width: '100%',	
+	minimumResultsForSearch: -1,
+	dropdownAutoWidth : true,	
+	placeholder: function(){
+		$(this).data('placeholder');
+	}
+});
