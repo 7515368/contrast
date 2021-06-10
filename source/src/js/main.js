@@ -1,5 +1,6 @@
 import "./slick.js";
 import "./select2.js";
+import "./datepicker";
 
 function openModal(hrefModal) {
 
@@ -457,4 +458,9 @@ $('.select').select2({
 	placeholder: function(){
 		$(this).data('placeholder');
 	}
+});
+
+
+$('#datepicker').datepicker({
+	autoClose: true
 });
