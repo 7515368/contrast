@@ -178,3 +178,11 @@ $vwSize3: 1920 / 100;
     margin-right: auto;
     height: 100%;
 }
+
+@media (min-width: 1025px) {
+    .fullpage-wrapper{
+        .section{
+            height: 100vh;
+        }
+    }
+}
