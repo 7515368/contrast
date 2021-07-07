@@ -47,7 +47,7 @@ const render = () => {
             sl.style.opacity = "1";
             sl.style.zIndex = "1";
 
-            if (window.fullpageInstance.getActiveSection().index == '1') {
+            if (window.fullpageInstance && window.fullpageInstance.getActiveSection().index == '1') {
                 var smallMenu = state.smallMenu,
                 footerPhone = state.footerPhone,
                 footerPhoneInner = state.footerPhoneInner,
