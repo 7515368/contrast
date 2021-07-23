@@ -60,6 +60,7 @@ module.exports = (env) => {
                 { from: "src/page404.html", to: "page404.html" },
                 { from: "src/blog.html", to: "blog.html" },
                 { from: "src/sales.html", to: "sales.html" },
+                { from: "src/sales-slider.html", to: "sales-slider.html" }, 
                 { from: "src/prices.html", to: "prices.html" },
                 { from: "src/charity.html", to: "charity.html" },
                 { from: "src/company-page.html", to: "company-page.html" },

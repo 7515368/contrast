@@ -308,7 +308,7 @@
     background: url("../img/services.jpg") no-repeat center 0 / cover;
     min-height: pxToVw(700);
 }
-
+ 
 .section_services_white {
     background:#fff;
     background: url("../img/man_shirts_1920x1200.jpg") no-repeat center 0 / cover;
@@ -1207,6 +1207,11 @@
             display: none;
         }
     }
+}
+
+.section__slide-white {
+    color: #005090;
+    background-color: #fff;
 }
 
 @media (max-width: 1024px) {
@@ -2361,6 +2366,22 @@
     .section__company-2, .section__charity-3, .section__franchise-3 {
         background: none !important;
     }
+
+    .section__slide-white {
+        color: #005090 !important;
+        background-color: #fff;
+        .section__text-mob {
+            color: #005090 !important;
+        }
+    }
+
+    .section__sales-mob {
+        .section__slide-white {
+            .section__text-mob {
+                color: #005090 !important; 
+            }
+        }
+    }
 }
 
 @media (min-width: 1600px) {
@@ -2494,11 +2515,5 @@
         &__company-list-link {
             font-size: pxToVw2(14);
         }
-    }
-}
-
-@media (max-width: 400px) {
-    .section {
-        
     }
 }

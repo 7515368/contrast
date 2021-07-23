@@ -348,7 +348,6 @@
     &__mob-content {
         display: none;
         margin-top: 20px;
-
         p {
             font-size: 12px;
             line-height: 16px;
@@ -503,6 +502,10 @@
     .info-block__more:after {
         display: none;
     }
+
+    // .info-block__mob-content-img {
+    //     height: 200px;
+    // }
 }
 
 @media (min-width: 1600px) {
