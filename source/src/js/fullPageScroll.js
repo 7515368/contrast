@@ -184,7 +184,8 @@ const fullpageHandler = () => {
             checkArrows(0);
             appendLinksListeners();
         },
-        normalScrollElements: '.popup-block__popup-text, .section__company-2-overlay-scroll, .section__section-4-overlay-scroll, .section__charity-overlay-scroll'
+        normalScrollElements: '.popup-block__popup-text, .section__company-2-overlay-scroll, .section__section-4-overlay-scroll, .section__charity-overlay-scroll',
+        licenseKey: '4133A027-4F1E4BAD-A57AF494-E4BCD2C0'
     });
 
     window.fullpageInstance = state.fullPageInstance;
