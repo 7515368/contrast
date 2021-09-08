@@ -47,7 +47,7 @@ const render = () => {
             sl.style.opacity = "1";
             sl.style.zIndex = "1";
 
-            if (window.fullpageInstance && window.fullpageInstance.getActiveSection().index == '1') {
+            if (window.fullpageInstance) {
                 var smallMenu = state.smallMenu,
                 footerPhone = state.footerPhone,
                 footerPhoneInner = state.footerPhoneInner,
@@ -159,6 +159,7 @@ const addListeners = () => {
 
 const handleAutoSliderClick = () => {
     currentSlideNum++;
+    console.log(currentSlideNum);
     if (currentSlideNum > slides.length - 1) {
         currentSlideNum = 0;
     }

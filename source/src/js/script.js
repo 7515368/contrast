@@ -15,7 +15,7 @@ import "./slider3.js";
 import "./sliderPopup.js";
 import "./sliderPopup2.js";
 import "./request.js";
-import "./main.js";
+import "./main.js"; 
 import "./scroll-lock.js";
 import "./slick.js";
 import "./datepicker";
