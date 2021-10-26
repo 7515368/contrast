@@ -67,6 +67,7 @@
     background: white;
     padding: pxToVw(20);
 
+    border-radius: 16px;
    
 }
 
@@ -77,7 +78,7 @@
 
 .services__form._fixed {
     margin-top: pxToVw(20);
-    width: pxToVw(384);
+    width: pxToVw(800);
     max-width: pxToVw(550);
     padding: pxToVw(20);
 }
@@ -107,17 +108,71 @@
 }
 
 .services__form._fixed input {
-    width: 43%;
+    width: 55%;
     height: pxToVw(30);
     font-size: pxToVw(12);
     padding: pxToVw(1) pxToVw(2) pxToVw(5);
     border-radius: 0;
+    &:nth-child(2) {
+        width: 43%;
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+}
+
+.services__form-required-message {
+    font-size: pxToVw3(10);
+    line-height: pxToVw3(11);
+
+    margin-bottom: pxToVw3(25);
+    padding-left: pxToVw3(20);
+    color: #65A2C2;
+
+    position: relative;
+    &::before {
+        content: "";
+        width: pxToVw3(7);
+        height: pxToVw3(7);
+
+        background-color: red;
+        border-radius: 50%;
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
 }
 
 .services__form._fixed .full-menu__form-submit {
     font-size: pxToVw(11);
     margin-bottom: 0;
     margin-bottom: 0;
+}
+
+.services__form._fixed .full-menu__form-inputs.required-input-wrapper {
+    position: relative;
+    .required-input {
+        padding-left: pxToVw(15); 
+    }
+    &::before {
+        content: "";
+        width: pxToVw3(10);
+        height: pxToVw3(10);
+
+        background-color: red;
+        border-radius: pxToVw3(5);
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+
+        margin-top: pxToVw3(-2);
+
+        transform: translateY(-50%);
+    }
 }
 
 .services__form._fixed .full-menu__text3 {
@@ -416,7 +471,7 @@
 
     .services__form._fixed {
         margin-top: pxToVw2(12.8);
-        width: pxToVw2(384);
+        width: pxToVw2(800);
         max-width: pxToVw2(550);
         padding: pxToVw2(20);
     }
@@ -586,7 +641,7 @@
 .full-menu{
     &__form-inputs{
         .form__input-wrap{
-            width: 30%;
+            width: 41%;
 
             input{
                 width: 100%;
@@ -758,7 +813,7 @@
 
     .services__form._fixed {
         min-width: 300px;
-        max-width: 300px;
+        max-width: 600px;
         margin: 0 auto;
         padding: 10px;
     }

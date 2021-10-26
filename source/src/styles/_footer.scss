@@ -1,15 +1,25 @@
 .footer__phone {
     position: absolute;
-    bottom: pxToVw(60);
+    bottom: pxToVw(30);
     left: pxToVw(43);
     z-index: 100;
     cursor: pointer;
     font-size: pxToVw(16);
     color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    .small-text {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 3px;
+    }
 }
 
 .footer__phone-inner {
-    bottom: pxToVw(30);
+    bottom: pxToVw(75);
+    left: pxToVw(43);
 }
 
 .footer__phone_blue {

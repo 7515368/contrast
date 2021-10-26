@@ -13,7 +13,7 @@ const state = {
 //menu open-close
 const openMenu = () => {
     const { dataFullMenu } = state;
-    dataFullMenu.classList.add("opened");
+    dataFullMenu.classList.add("opened"); 
 };
 
 const closeMenu = () => {

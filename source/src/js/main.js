@@ -81,6 +81,12 @@ $(document.body).on('click','[data-toggle="modal-dismiss"]',function(e) {
 	closeModal($(this).parents('.popup-block')[0]);
 });
 
+$(document.body).on('click','[data-menu-open]',function(e) {
+	e.preventDefault();
+	
+	closeModal('.popup-block').hide();
+});
+
 if ($('.popup-block__slider').length > 0) {
 	$('.popup-block__slider').each(function() {
 		var thisElem = $(this);
@@ -460,7 +466,28 @@ $('.select').select2({
 	}
 });
 
-
 $('#datepicker').datepicker({
 	autoClose: true
 });
+
+$('.form-with-submit-validation input[required]').on('input change keyup', function() {
+	var thisForm = $(this).parents('form');
+  
+	if (allFilled(thisForm)) {
+	  $(thisForm).find('button[type="submit"]').removeAttr('disabled');
+	} else {
+	  $(thisForm).find('button[type="submit"]').attr('disabled', 'disabled');
+	}
+  });
+  
+  function allFilled(form) {
+	var filled = true;
+	
+	$(form).find('input[required]').each(function() {
+	  if ($(this).val() == '') {
+		filled = false;
+	  }
+	});
+  
+	return filled;
+}
