@@ -421,12 +421,12 @@
     height: 20px;
     border-radius: 5px;
     font-size: 9px;
-    margin-right: 20px;
-    margin-left: 25px;
+    margin-right: 10px;
+    margin-left: 15px;
   }
 
   .full-menu__link {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 10px;
     font-weight: 500;
     text-transform: uppercase;
@@ -446,7 +446,7 @@
   }
 
   .full-menu__lang-link {
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 7px;
   }
 
@@ -470,7 +470,7 @@
   }
 
   .full-menu__phone {
-    font-size: 11px;
+    font-size: 13px;
     margin-right: 25px;
     margin-left: 0;
     margin-bottom: 5px;
@@ -478,7 +478,7 @@
     display: flex;
     flex-direction: column-reverse;
     .city {
-      font-size: 12px;
+      font-size: 13px;
       padding-left: 0;
       margin-bottom: 5px;
     }
@@ -487,7 +487,7 @@
   .full-menu__socials {
     position: absolute;
     top: 145px;
-    right: 30px;
+    right: 20px;
 
     display: flex;
     flex-direction: column;
