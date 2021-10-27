@@ -404,6 +404,9 @@
     min-height: unset;
     max-height: unset;
     position: relative;
+
+    padding-right: 65px;
+    justify-content: space-between;
   }
   .full-menu__logo {
     margin: 0 20px;
@@ -421,7 +424,7 @@
     height: 20px;
     border-radius: 5px;
     font-size: 9px;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-left: 15px;
   }
 
@@ -438,11 +441,14 @@
   }
 
   .full-menu__lang {
-    position: absolute;
-    right: 60px;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // right: 60px;
+    // top: 50%;
+    // transform: translateY(-50%);
 
+    position: relative;
+    right: auto;
+    top: auto;
   }
 
   .full-menu__lang-link {
@@ -525,7 +531,7 @@
   }
 
   .full-menu__main {
-    margin-top: 50px;
+    margin-top: 38px;
     padding-left: 20px;
     position: relative;
   }
