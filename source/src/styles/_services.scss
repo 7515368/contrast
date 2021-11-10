@@ -132,8 +132,8 @@
     position: relative;
     &::before {
         content: "";
-        width: pxToVw3(7);
-        height: pxToVw3(7);
+        width: 4px;
+        height: 4px;
 
         background-color: red;
         border-radius: 50%;
@@ -159,11 +159,11 @@
     }
     &::before {
         content: "";
-        width: pxToVw3(10);
-        height: pxToVw3(10);
+        width: 5px;
+        height: 5px;
 
         background-color: red;
-        border-radius: pxToVw3(5);
+        border-radius: 50%;
 
         position: absolute;
         left: 0;
