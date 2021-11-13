@@ -14,7 +14,7 @@
 
 .section__slide {
     height: 100%;
-    width: 100%;
+    width: 100%; 
 }
 
 .section__text {
@@ -142,13 +142,20 @@
 
 .section__404info {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .section__404icon {
-    width: pxToVw(170);
-    margin-right: pxToVw(50);
+    width: pxToVw(150);
+    margin-bottom: pxToVw(50);
     position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .mob-img {
+        display: none;
+    }
 }
 
 .section__404icon-text {
@@ -159,6 +166,17 @@
     text-align: center;
     width: 100%;
     font-weight: 300;
+}
+.section__404text {
+    font-family: 'Charter Roman', serif;
+    font-size: pxToVw3(105);
+    line-height: pxToVw3(85);
+
+    max-width: pxToVw3(700);
+}
+
+.section-404 {
+    background: no-repeat center top / cover;
 }
 
 .section__name2 {
@@ -2427,6 +2445,67 @@
             .section__text-mob {
                 color: #005090 !important; 
             }
+        }
+    }
+
+    .section-404 {
+        background-image: none !important;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 550px;
+
+            // max-width: 380px;
+            max-height: 380px;
+
+            
+            background-image: url(../img/404-bg-sm.png);
+            background-size: 320px;
+            background-repeat: no-repeat;
+            background-position: top center;
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+            transform: translateX(-50%);
+        }
+
+        
+    }
+
+    .section {
+        &__404icon {
+            margin-bottom: 45px;
+            img {
+                display: none;
+            }
+
+            .mob-img {
+                display: block;
+            }
+        }
+
+        &__404icon-text {
+            color: #005090;
+        }
+
+        &__404text {
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #005090;
+            max-width: 190px;
+
+            font-family: "Museo Sans", sans-serif;
+            font-weight: 300;
+        }
+
+        &__404info {
+            align-items: center;
+
+            z-index: 5;
+            position: relative;
         }
     }
 }

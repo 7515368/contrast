@@ -184,6 +184,25 @@
         margin-right: 10px;
         width: 15px;
         height: 15px;
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+
+        transform: translateY(-50%);
+        
+    }
+    .header__menu._mobile.header__menu-close {
+        display: none;
+    }
+
+    .header__wrapper.active {
+        .header__menu._mobile.header__menu-open {
+            display: none;
+        }
+        .header__menu._mobile.header__menu-close {
+            display: block;
+        }
     }
 
     .header__small-menu {

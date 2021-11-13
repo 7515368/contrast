@@ -17,12 +17,16 @@ const state = {
 const openMenu = () => {
     const { dataFullMenu } = state;
     dataFullMenu.classList.add("opened");
+
+    document.querySelector('.header__wrapper').classList.add('active');
 };
 
 const closeMenu = () => {
     const { dataFullMenu } = state;
     dataFullMenu.classList.remove("opened");
     resetActiveSections();
+
+    document.querySelector('.header__wrapper').classList.remove('active');
 };
 
 state.menuOpenTriggers.forEach((trigger) => (trigger.onclick = openMenu));
@@ -147,6 +151,6 @@ const onWindowLoad = () => {
     state.dataFullMenu.style.transition = "transform .5s ease 0.25s";
     state.servicesSubItems.forEach((item, i) => item.setAttribute("data-section-item", i));
 };
-
+ 
 window.addEventListener("load", onWindowLoad);
 //on load
