@@ -148,9 +148,12 @@
   font-size: pxToVw(16);
   margin-right: pxToVw(60);
   margin-bottom: pxToVw(10);
+
+  display: flex;
+  flex-direction: column-reverse;
   .city {
     font-weight: normal;
-    padding-left: 10px;
+    margin-bottom: 3px;
     font-size: pxToVw(14);
   }
 }
@@ -158,7 +161,7 @@
 .full-menu__bottom-left-phones {
   display: flex;
   flex-direction: column;
-  margin-top: pxToVw(-15);
+  margin-top: pxToVw(-45);
 }
 
 .full-menu__socials img {
