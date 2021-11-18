@@ -45,9 +45,12 @@
 }
 .prices__cancel-selection {
     cursor: pointer;
-    margin: pxToVw(20) 0;
+    // margin: pxToVw(20) 0;
     display: flex;
     align-items: center;
+
+    flex-shrink: 0;
+
 }
 
 .prices__cancel-selection img {
@@ -286,6 +289,52 @@
 .prices__text3-mobile {
     font-size: 12px;
     font-weight: 300;
+}
+
+.prices {
+    &__buttons-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: pxToVw(30);
+        .full-menu__form-submit._float {
+            margin-right: 0;
+            float: right;
+
+            margin-bottom: 0;
+
+            font-size: pxToVw(10);
+        }
+    }
+
+    &__left-form {
+        .services__form._fixed {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    &__left-form-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .services__form-required-message {
+            margin-bottom: 0;
+
+            margin-left: pxToVw(30);
+        }
+        .full-menu__form-submit {
+            font-size: pxToVw(7);
+
+            padding-left: pxToVw(6);
+            padding-right: pxToVw(6);
+
+            flex-shrink: 0;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

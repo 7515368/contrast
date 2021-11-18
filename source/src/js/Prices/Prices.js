@@ -65,9 +65,14 @@ const Prices = () => {
                         Все цены
                     </div>
                 </div>
-                <div className="prices__cancel-selection" onClick={onCancelClick}>
-                    <img src={cross.src} />
-                    <span className="prices__text">снять выделение</span>
+                <div className="prices__buttons-row">
+                    <div className="prices__cancel-selection" onClick={onCancelClick}>
+                        <img src={cross.src} />
+                        <span className="prices__text">снять выделение</span>
+                    </div>
+                    <button className="full-menu__form-submit _float" type="file">
+                        Cкачать прайс-лист
+                    </button>
                 </div>
                 <div className="prices__services-container">
                     {sections.map((section) => (
@@ -87,6 +92,30 @@ const Prices = () => {
                             <div className="prices__service-name">{section.name}</div>
                         </div>
                     ))}
+                </div>
+                <div className="prices__left-form">
+                    <form action="#" className="services__form _fixed form-with-submit-validation">
+                        <div className="services__form-text">
+                            Если остались вопросы, 
+                            оставьте телефон, мы перезвоним
+                        </div>
+                        <div className="full-menu__form-inputs required-input-wrapper">
+                            <input
+                                type="text"
+                                className="input input_mode1 required-input"
+                                placeholder="Ваш телефон"
+                                required
+                            />
+                        </div>
+                        <div className="prices__left-form-bottom">
+                            <button className="full-menu__form-submit" type="submit">
+                                Отправить заявку
+                            </button>
+                            <div className="services__form-required-message">
+                                поле обязательно для заполнения
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div className="prices__right">

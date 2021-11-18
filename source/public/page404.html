@@ -12,17 +12,18 @@
         <div class="content page404" id="content" data-height-adjust="true">
             <main class="main" id="main" data-fullpage="true">
                 <section
-                    class="section section_d"
-                    data-logo-color="blue"
-                    data-burger-color="blue"
+                    class="section section-404"
+                    data-logo-color="white"
+                    data-burger-color="blue" 
                     data-last-section="true"
-                    data-menu-color="#65A2C2"
-                    data-phone-color="#65A2C2"
+                    
+                    style="background-image: url(img/404-bg.jpg);"
                 >
                     <div class="section__404">
                         <div class="section__404info">
                             <div class="section__404icon">
-                                <img src="img/cycle.svg" />
+                                <img src="img/cycle-white.png" class=""/>
+                                <img src="img/cycle-white-bg.svg" class="mob-img"/>
                                 <div class="section__404icon-text">
                                     404
                                 </div>
@@ -1000,6 +1001,18 @@
                 </div>
             </nav>
             <header class="header">
+                <div class="header__wrapper">
+                    <img class="header__menu header__menu_blue _mobile header__menu-open" src="img/menu.svg"
+                    data-menu-open />
+                    <img class="header__menu header__menu_blue _mobile header__menu-close" src="img/menu.svg"
+                    data-menu-close />
+                    <a href="/">
+                        <img class="header__logo" src="img/logo.svg" data-logo-white />
+                    </a>
+                    <a href="#" class="header__phoneIcon">
+                        <img src="img/phoneIcon.svg" alt="" />
+                    </a>
+                </div>
                 <a href="/">
                     <img class="header__logo" src="img/logo.svg" data-logo-white />
                     <img

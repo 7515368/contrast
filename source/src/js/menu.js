@@ -13,7 +13,9 @@ const state = {
 //menu open-close
 const openMenu = () => {
     const { dataFullMenu } = state;
+    // const { menuOpenTriggers } = state;
     dataFullMenu.classList.add("opened"); 
+    // menuOpenTriggers.classList.add("opened"); 
 };
 
 const closeMenu = () => {
