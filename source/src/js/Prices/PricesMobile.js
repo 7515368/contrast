@@ -130,9 +130,7 @@ const PricesMobile = () => {
                                     (section.isActive ? " prices__icon_checked" : "")
                                 }
                             >
-                                <img
-                                    src={<img src={section.isActive ? checked.src : circle.src} />}
-                                />
+                                <img src={section.isActive ? checked.src : circle.src} />
                             </div>
                             <div className="prices__service-name">{section.name}</div>
                         </div>
