@@ -31,11 +31,16 @@ const parseData = () => {
     icons.cross = iconsContainer.querySelector("[data-icon-cross]");
     icons.close = iconsContainer.querySelector("[data-icon-close]");
 
+    const downloadUrl = document.querySelector("[data-download-url]").dataset.downloadUrl;
+    const downloadText = document.querySelector("[data-download-text]").dataset.downloadText;
+
     return {
         sections,
         items,
         icons,
-        globalSeparator
+        globalSeparator,
+        downloadUrl,
+        downloadText
     };
 };
 export default parseData;
