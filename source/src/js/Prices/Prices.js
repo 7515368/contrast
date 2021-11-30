@@ -59,7 +59,7 @@ const Prices = () => {
     let downloadBtn
 
     if (data.downloadUrl && data.downloadText) {
-        downloadBtn = <a href={data.downloadUrl} className="full-menu__form-submit _float">
+        downloadBtn = <a href={data.downloadUrl} target="_blank" className="full-menu__form-submit _float">
             {data.downloadText}
         </a>
     }
