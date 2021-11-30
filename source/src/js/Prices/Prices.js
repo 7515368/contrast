@@ -1,60 +1,68 @@
-import React, { useState } from "react";
-import parseData from "./parseData";
+import React, { useState } from 'react'
+import parseData from './parseData'
 
 const Prices = () => {
-    const data = parseData();
+    const data = parseData()
 
-    const [sections, updateSections] = useState(data.sections);
+    const [sections, updateSections] = useState(data.sections)
 
     const onSectionClick = (sectionId) => {
-        const sectionsCopy = [...sections];
+        const sectionsCopy = [...sections]
         sectionsCopy.forEach((section) => {
             if (section.id === sectionId) {
-                section.isActive = !section.isActive;
+                section.isActive = !section.isActive
             }
-        });
-        updateSections(sectionsCopy);
-    };
+        })
+        updateSections(sectionsCopy)
+    }
     const onCancelClick = () => {
-        const sectionsCopy = [...sections];
-        sectionsCopy.forEach((section) => (section.isActive = false));
-        updateSections(sectionsCopy);
-    };
+        const sectionsCopy = [...sections]
+        sectionsCopy.forEach((section) => (section.isActive = false))
+        updateSections(sectionsCopy)
+    }
     const onAllClick = () => {
-        const sectionsCopy = [...sections];
-        sectionsCopy.forEach((section) => (section.isActive = true));
-        updateSections(sectionsCopy);
-    };
+        const sectionsCopy = [...sections]
+        sectionsCopy.forEach((section) => (section.isActive = true))
+        updateSections(sectionsCopy)
+    }
 
-    const [searchString, updateSearchString] = useState("");
+    const [searchString, updateSearchString] = useState('')
 
     const onSearchChange = (e) => {
-        const { value } = e.target;
-        updateSearchString(value);
-    };
+        const { value } = e.target
+        updateSearchString(value)
+    }
     const onSearchReset = () => {
-        updateSearchString("");
-    };
+        updateSearchString('')
+    }
 
     const filter = (items) => {
         const filteredItems = items.filter((item) => {
-            const { parentSection } = item;
+            const { parentSection } = item
             if (item.name.toLowerCase().includes(searchString.toLowerCase())) {
                 const section = sections.filter(
                     (sectionItem) => sectionItem.name === parentSection
-                )[0];
+                )[0]
 
-                if (section.isActive) return true;
+                if (section.isActive) return true
             }
-        });
-        return filteredItems;
-    };
+        })
+        return filteredItems
+    }
 
-    const items = filter(data.items);
+    const items = filter(data.items)
 
-    const { circle, close, checked, cross } = data.icons;
+    const { circle, close, checked, cross } = data.icons
 
-    const globalSeparator = data.globalSeparator;
+    const globalSeparator = data.globalSeparator
+
+    let downloadBtn
+
+    if (data.downloadUrl && data.downloadText) {
+        downloadBtn = <a href={data.downloadUrl} target="_blank" className="full-menu__form-submit _float">
+            {data.downloadText}
+        </a>
+    }
 
     return (
         <div className="prices">
@@ -67,12 +75,10 @@ const Prices = () => {
                 </div>
                 <div className="prices__buttons-row">
                     <div className="prices__cancel-selection" onClick={onCancelClick}>
-                        <img src={cross.src} />
+                        <img src={cross.src}/>
                         <span className="prices__text">снять выделение</span>
                     </div>
-                    <button className="full-menu__form-submit _float" type="file">
-                        Cкачать прайс-лист
-                    </button>
+                    {downloadBtn}
                 </div>
                 <div className="prices__services-container">
                     {sections.map((section) => (
@@ -83,20 +89,20 @@ const Prices = () => {
                         >
                             <div
                                 className={
-                                    "prices__icon" +
-                                    (section.isActive ? " prices__icon_checked" : "")
+                                    'prices__icon' +
+                                    (section.isActive ? ' prices__icon_checked' : '')
                                 }
                             >
-                                <img src={section.isActive ? checked.src : circle.src} />
+                                <img src={section.isActive ? checked.src : circle.src}/>
                             </div>
                             <div className="prices__service-name">{section.name}</div>
                         </div>
                     ))}
                 </div>
-                <div className="prices__left-form">
+                <div className="prices__left-form" style={{ display: 'none' }}>
                     <form action="#" className="services__form _fixed form-with-submit-validation">
                         <div className="services__form-text">
-                            Если остались вопросы, 
+                            Если остались вопросы,
                             оставьте телефон, мы перезвоним
                         </div>
                         <div className="full-menu__form-inputs required-input-wrapper">
@@ -129,7 +135,7 @@ const Prices = () => {
                         />
                     </div>
                     <div className="prices__close" onClick={onSearchReset}>
-                        <img src={close.src} />
+                        <img src={close.src}/>
                     </div>
                 </div>
                 <div className="prices__results">
@@ -139,14 +145,15 @@ const Prices = () => {
                             <div className="prices__result-price">
                                 <span className="prices__text2">{item.price}</span>
                                 {item.unit &&
-                                <span className="prices__text3"> {item.separator ? item.separator : globalSeparator} {item.unit}</span>}
+                                <span
+                                    className="prices__text3"> {item.separator ? item.separator : globalSeparator} {item.unit}</span>}
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Prices;
+export default Prices
