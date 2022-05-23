@@ -70,6 +70,7 @@ module.exports = (env) => {
                 { from: "src/start-page-video.html", to: "start-page-video.html" },
                 { from: "src/partners.html", to: "partners.html" },
                 { from: "src/portfolio.html", to: "portfolio.html" },
+                { from: "src/clean-box.html", to: "clean-box.html" },
                 { from: "src/img", to: "img" },
                 { from: "src/styles/fonts", to: "css/fonts" },
             ]),
