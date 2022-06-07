@@ -326,6 +326,14 @@
 }
 .section_services_cleanbox {
   background: url("../img/cleanbox.jpg") no-repeat center 0 / cover;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.section_services_portfolio {
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .section_services_white {

@@ -18,6 +18,9 @@
   height: 100%;
   display: flex;
   transition: transform 1s ease;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 }
 
 .portfolio__video-items {
@@ -25,6 +28,9 @@
   overflow: auto;
   padding-right: 1vw;
   display: block;
+  @media (max-width: 1024px) {
+    padding: 20px;
+  }
 }
 .portfolio__video-items::-webkit-scrollbar {
   width: 4px;
@@ -48,6 +54,10 @@
   width: 70%;
   object-fit: cover;
   margin-bottom: 20px;
+  @media (max-width: 1024px) {
+    height: 50vh;
+    width: 100%;
+  }
 }
 .portfolio__video-item .portfolio__item-img {
   position: relative;
@@ -66,6 +76,13 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  @media (max-width: 1024px) {
+    width: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
 }
 
 .popup-block-video-popup .popup-block__overlay {
