@@ -86,12 +86,13 @@
 }
 
 .popup-block-video-popup .popup-block__overlay {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(232, 241, 246, 0.8);
 }
 .popup-block-video-popup .popup-block__popup {
   right: 50%;
   transform: translateX(50%);
   background: #005090;
+  border-radius: 6px;
 }
 
 .popup-block-video-popup .popup-block__close {
