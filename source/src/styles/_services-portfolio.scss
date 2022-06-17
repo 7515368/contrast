@@ -110,7 +110,18 @@
   bottom: -50px;
   left: 0;
 }
+.popup-block-video-popup {
+  .popup-block__popup {
+    bottom: auto;
+  }
 
+  video,
+  iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+}
 @media (max-width: 1024px) {
   .popup-block-video-popup {
     .popup-block__popup {
@@ -123,6 +134,7 @@
       transform: translate(-50%, -50%);
       border-radius: 6px;
     }
+    video,
     iframe {
       width: 100%;
       height: auto;

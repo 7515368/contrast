@@ -29,6 +29,8 @@ function closeAllModals() {
 function closeModal(hrefModal) {
 	$(hrefModal).trigger('beforeCloseModal').removeClass('fadeIn');
 
+	hrefModal.querySelector('video').pause();
+
 	setTimeout(function () {
 		$(hrefModal).removeClass('active', function () {
 		}).trigger('afterCloseModal');
