@@ -28,8 +28,11 @@ function closeAllModals() {
 
 function closeModal(hrefModal) {
 	$(hrefModal).trigger('beforeCloseModal').removeClass('fadeIn');
-
-	hrefModal.querySelector('video').pause();
+	console.log(hrefModal);
+	var tempVideoEl = hrefModal.querySelector('video')
+	if (tempVideoEl) {
+		tempVideoEl.pause();
+	}
 
 	setTimeout(function () {
 		$(hrefModal).removeClass('active', function () {
@@ -79,7 +82,7 @@ $(document.body).on('click', '.popup-block__overlay', function (e) {
 // Attribute for closing modals
 $(document.body).on('click', '[data-toggle="modal-dismiss"]', function (e) {
 	e.preventDefault();
-
+	console.log(e.target);
 	closeModal($(this).parents('.popup-block')[0]);
 });
 
