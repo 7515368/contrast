@@ -15,8 +15,7 @@ import "./slider3.js";
 import "./sliderPopup.js";
 import "./sliderPopup2.js";
 import "./request.js";
-import "./main.js"; 
-import "./scroll-lock.js";
+import "./main.js";
 import "./slick.js";
 import "./datepicker";
 import "./select2";
@@ -38,4 +37,4 @@ import PricesMobile from "./Prices/PricesMobile";
 
 const targetEl = document.getElementById("react-prices");
 if (targetEl && innerWidth > 1024) ReactDOM.render(<Prices />, targetEl)
-else if(targetEl && innerWidth <= 1024) ReactDOM.render(<PricesMobile />, targetEl)
+else if (targetEl && innerWidth <= 1024) ReactDOM.render(<PricesMobile />, targetEl)

@@ -82,7 +82,6 @@ $(document.body).on('click', '.popup-block__overlay', function (e) {
 // Attribute for closing modals
 $(document.body).on('click', '[data-toggle="modal-dismiss"]', function (e) {
 	e.preventDefault();
-	console.log(e.target);
 	closeModal($(this).parents('.popup-block')[0]);
 });
 

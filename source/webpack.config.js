@@ -86,9 +86,9 @@ module.exports = (env) => {
         devtool: isProduction ? "source-map" : "inline-source-map",
         devServer: {
             contentBase: path.join(__dirname, "public"),
-            port: 7070,
+            port: 3000,
             historyApiFallback: true,
-            /*uncomment below in case of access from another device of this network. (192.168.0.102:7070)*/
+            /*uncomment below in case of access from another device of this network. (192.168.0.102:3000)*/
             // host: '192.168.0.102'
         },
     };
