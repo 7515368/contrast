@@ -236,8 +236,8 @@ if ($('.portfolio__items-inner').length > 0) {
 		var thisAllCountBlock = $(this).parents('.portfolio__items').find('.portfolio__switch').find('.all-count');
 		var thisCurrentCountBlock = $(this).parents('.portfolio__items').find('.portfolio__switch').find('.current');
 
-		var thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / 4);
-		var slidesToShowVal = 4;
+		var slidesToShowVal = 2;
+		var thisElemSlidesCountPages = Math.ceil(thisElemSlidesCount / slidesToShowVal);
 		var sliderPrevArrowImg = $(thisElem).attr('data-prev-arrow-img');
 		var sliderNextArrowImg = $(thisElem).attr('data-next-arrow-img');
 
@@ -252,8 +252,8 @@ if ($('.portfolio__items-inner').length > 0) {
 		}
 
 		$(thisElem).slick({
-			slidesToShow: 4,
-			slidesToScroll: 4,
+			slidesToShow: slidesToShowVal,
+			slidesToScroll: slidesToShowVal,
 			infinite: false,
 			arrows: true,
 			prevArrow: '<a href="javascript:;" class="footer__portfolio-back prev"><img src="' + sliderPrevArrowImg + '"></img></a>',
