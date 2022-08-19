@@ -2639,3 +2639,11 @@
     }
   }
 }
+
+.charity_heading {
+  font-family: "Charter", serif;
+  font-size: pxToVw(90);
+  line-height: pxToVw(80);
+  margin-bottom: 50px;
+  display: block;
+}
