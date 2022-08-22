@@ -588,3 +588,7 @@ function allFilled(form) {
 
 	return filled;
 }
+
+$('.cookies_btn').click(function () {
+	$('.cookies').hide();
+});

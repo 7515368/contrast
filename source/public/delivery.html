@@ -27,7 +27,8 @@
                     выездной химчистки вы не потратите ни минуты на уход за своими вещами!
                 </p>
 
-                <a href="#" class="btn btn-open-video">Доставка у вас дома</a>
+                <a href="#" class="btn btn-open-video" data-toggle="modal" data-target="#video-popup">Доставка у вас
+                    дома</a>
 
             </div>
             <form action="" class="services__form _fixed form-with-submit-validation">
@@ -79,7 +80,8 @@
                                 Не тратьте время на то, что можно поручить нашей команде. С
                                 нашим сервисом выездной химчистки вы не потратите ни минуты на
                                 уход за своими вещами!
-                                <a href="#" class="btn btn-open-video">Доставка <br> у вас дома</a>
+                                <a href="#" class="btn btn-open-video" data-toggle="modal"
+                                    data-target="#video-popup">Доставка <br> у вас дома</a>
                             </div>
 
                             <form class="services__form _fixed form-with-submit-validation">
@@ -1431,12 +1433,32 @@
             <img src="img/cookies.svg" class="cookies_image" alt="">
             <div class="cookies_text">
                 Мы используем куки для наилучшего представления нашего сайта.
-            </div><a href="" class="cookies_btn">Хорошо</a>
+            </div><a href="#" class="cookies_btn">Хорошо</a>
         </div>
 
     </div>
     <div class="form" id="form"></div>
+
+    <div class="popup-block popup-block-video-popup" id="video-popup">
+        <div class="popup-block__overlay">
+
+            <div class="popup-block__popup">
+                <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close"
+                    data-popup-close="">
+                    <img src="img/full-menu-close.svg">
+                </a>
+                <video controls loop="false">
+                    <source src="https://d2z8nyy70yf33i.cloudfront.net/wp-content/uploads/V6_UNIT9-HOMEPAGE-REEL-2.mp4"
+                        type="video/mp4">
+                    <source src="https://d2z8nyy70yf33i.cloudfront.net/wp-content/uploads/V6_-UNIT9-HOME-REEL.webm"
+                        type="video/webm">
+                </video>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="js/bundle.js"></script>
+
 </body>
 
 </html>
