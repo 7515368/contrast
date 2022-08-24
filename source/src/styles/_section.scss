@@ -2670,6 +2670,7 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .btn-open-video::after {
   content: "";
   display: inline-block;
@@ -2725,5 +2726,11 @@
   }
   .cookies_btn {
     font-size: 12px;
+  }
+  .btn-open-video {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-17px);
   }
 }
