@@ -1,6 +1,7 @@
 import "./slick.js";
 import "./select2.js";
 import "./datepicker";
+import Cookies from './js.cookie.min'
 
 function openModal(hrefModal) {
 
@@ -591,4 +592,6 @@ function allFilled(form) {
 
 $('.cookies_btn').click(function () {
 	$('.cookies').hide();
+
+	Cookies.set('cookies_accept', true);
 });
