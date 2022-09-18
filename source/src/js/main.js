@@ -591,5 +591,7 @@ function allFilled(form) {
 $('.cookies_btn').click(function () {
 	$('.cookies').hide();
 
-	Cookies.set('cookies_accept', true);
+	Cookies.set('cookies_accept', true, {
+		expires: 365
+	});
 });
