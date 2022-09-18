@@ -595,3 +595,9 @@ $('.cookies_btn').click(function () {
 		expires: 365
 	});
 });
+
+document.addEventListener('update-city', (e) => {
+	Cookies.set('user_city', e.detail, {
+		expires: 365
+	});
+})
