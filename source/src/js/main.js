@@ -29,10 +29,9 @@ function closeAllModals() {
 
 function closeModal(hrefModal) {
 	$(hrefModal).trigger('beforeCloseModal').removeClass('fadeIn');
-	console.log(hrefModal);
-	var tempVideoEl = hrefModal.querySelector('video')
+	var tempVideoEl = $(hrefModal).find('video')
 	if (tempVideoEl) {
-		tempVideoEl.pause();
+		tempVideoEl.trigger('pause');
 	}
 
 	setTimeout(function () {
@@ -41,7 +40,6 @@ function closeModal(hrefModal) {
 	}, 200);
 
 	fullpage_api.setAllowScrolling(true);
-
 }
 
 $(document).keydown(function (event) {
@@ -89,7 +87,7 @@ $(document.body).on('click', '[data-toggle="modal-dismiss"]', function (e) {
 $(document.body).on('click', '[data-menu-open]', function (e) {
 	e.preventDefault();
 
-	closeModal('.popup-block').hide();
+	closeModal('.popup-block');
 });
 
 if ($('.popup-block__slider').length > 0) {
