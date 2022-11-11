@@ -601,3 +601,12 @@ document.addEventListener('update-city', (e) => {
 		expires: 365
 	});
 })
+$('.hint-btn').click(function () {
+	$('.hint-text-cover, .hint-text_mobile').show();
+
+});
+$('.hint-close').click(function () {
+	$('.hint-text-cover').hide();
+
+});
+
