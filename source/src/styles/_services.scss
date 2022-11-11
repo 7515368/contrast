@@ -179,10 +179,11 @@
     border-radius: 50%;
 
     position: absolute;
-    left: 0;
+    left: auto;
+    right: 5px;
     top: 50%;
 
-    margin-top: pxToVw3(-2);
+    margin-top: pxToVw3(-30);
 
     transform: translateY(-50%);
     @media (max-width: 1200px) {
@@ -886,7 +887,7 @@
   }
 
   .services__form._fixed .full-menu__form-inputs {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .services__form._fixed input {
@@ -940,8 +941,8 @@
   .services__form._fixed {
     min-width: 300px;
     max-width: 600px;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 0 auto 40px;
+    padding: 20px;
   }
 
   .services__form._fixed .full-menu__form-inputs {
@@ -1073,6 +1074,9 @@
     display: block;
     top: 0;
     left: 0;
+    display: none;
+  }
+  .section_delivery {
     display: none;
   }
 }
