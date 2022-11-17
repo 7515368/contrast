@@ -12,7 +12,9 @@ function openModal(hrefModal) {
 			$(hrefModal).addClass('fadeIn').trigger('afterOpenModal');
 		}, 50);
 
-		fullpage_api.setAllowScrolling(false);
+		if (typeof fullpage_api !== 'undefined') {
+			fullpage_api.setAllowScrolling(false);
+		}
 	}
 
 }
@@ -39,7 +41,9 @@ function closeModal(hrefModal) {
 		}).trigger('afterCloseModal');
 	}, 200);
 
-	fullpage_api.setAllowScrolling(true);
+	if (typeof fullpage_api !== 'undefined') {
+		fullpage_api.setAllowScrolling(true);
+	}
 }
 
 $(document).keydown(function (event) {
