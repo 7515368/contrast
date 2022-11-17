@@ -229,7 +229,7 @@
   margin-bottom: pxToVw(20);
 }
 
-.full-menu__form-inputs input {
+.full-menu__form-inputs input[type="text"] {
   font-size: pxToVw(12);
   border: none;
   color: #005090;
@@ -502,7 +502,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #E8F1F6;
+    background-color: #e8f1f6;
     border-radius: 15px;
 
     padding-top: 16px;
