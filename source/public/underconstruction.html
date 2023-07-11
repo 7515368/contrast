@@ -6,954 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contrast</title>
-    <!-- <link rel="stylesheet" href="css/fonts/fonts.css" />
-        <link href="css/styles.css" rel="stylesheet" /> -->
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+    height: 100%;
+}
+html {
+    font-family: "Museo Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.content {
+    overflow: auto;
+    height: 100%;
+}
+.main {
+    height: 100%;
+    width: 100%;
+    transform: translateY(0px);
+    transition: transform 700ms ease 0s;
+    color: white;
+}
+.section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.section__404 {
+    width: 100%;
+    height: 100%;
+    padding: 0 3.33333vw 0 21.33333vw;
+    display: flex;
+    align-items: center;
+}
+.section__404info {
+    display: flex;
+    flex-direction: column;
+}
+.section__404text {
+    font-family: "Charter Roman", serif;
+    font-size: 5.46875vw;
+    line-height: 4.42708vw;
+    max-width: 36.45833vw;
+}
+.header__logo {
+    position: absolute;
+    width: 10vw;
+    height: 2.66667vw;
+    top: 2.66667vw;
+    left: 2.66667vw;
+    z-index: 100;
+    transition: opacity 1s ease;
+}
+footer {
+    display: block;
+    font-family: "Museo Sans", sans-serif;
+    font-weight: 500;
+
+}
+.footer__phone {
+    position: absolute;
+    bottom: 5.33333vw;
+    left: 2.86667vw;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 1.06667vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: color 1.5s ease 0s;
+    text-decoration: none;
+}
+.footer__phone-inner {
+    bottom: 2vw;
+    left: 2.86667vw;
+}
+.footer__phone .small-text {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 3px;
+}
+.main {
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    transform: translate3d(0px, 0px, 0px);
+}
+  </style>
 </head>
 
 <body>
     <div class="content page404" id="content" data-height-adjust="true">
         <main class="main" id="main" data-fullpage="true">
-            <section class="section section-404" data-logo-color="white" data-burger-color="blue"
-                data-last-section="true" style="background-image: url(img/404-bg.jpg);">
+            <section class="section section-404" data-logo-color="white" 
+                data-last-section="true" style="    background-color: #015190;">
                 <div class="section__404">
-                    <!-- <div class="section__404info">
-                        <div class="section__404icon">
-                            <img src="img/cycle-white.png" class="" />
-                            <img src="img/cycle-white-bg.svg" class="mob-img" />
-                            <div class="section__404icon-text">
-                                404
-                            </div>
-                        </div> -->
                     <div class="section__404text">
-                        Страница не существует или была удалена
+                        Сайт в режиме техобслуживания
                     </div>
                 </div>
-    </div>
-    </section>
-    </main>
-    <!-- <nav class="full-menu" data-full-menu data-fullpage="true">
-            <div class="full-menu__top">
-                <a href="/" class="full-menu__logo">
-                    <img src="img/logo-small.svg" />
-                </a>
-                <div class="full-menu__city">
+            </section>
+        </main>
+        <header class="header">
+                <div class="header__wrapper">
+            
+                
+                        <div class="header__logo">
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.2 39.85"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polygon class="cls-1" points="52.36 39.7 50.74 37.12 49.11 39.7 47.8 39.7 50.11 36.31 48.01 33.25 49.4 33.25 50.83 35.58 52.28 33.25 53.52 33.25 51.46 36.31 53.73 39.7 52.36 39.7"/><polygon class="cls-1" points="59.88 39.7 59.88 34.72 59.84 34.72 56.72 39.7 55.43 39.7 55.43 33.25 56.54 33.25 56.54 38.22 56.58 38.22 59.7 33.25 60.99 33.25 60.99 39.7 59.88 39.7"/><polygon class="cls-1" points="68.62 39.7 68.62 34.64 68.59 34.64 66.48 37.12 66.47 37.12 64.34 34.64 64.33 34.64 64.33 39.7 63.22 39.7 63.22 33.25 64.5 33.25 66.47 35.67 66.48 35.67 68.44 33.25 69.72 33.25 69.72 39.7 68.62 39.7"/><path class="cls-1" d="M75.57,39.7V37a5.24,5.24,0,0,1-1.71.33c-1.64,0-2.36-.67-2.36-2.34V33.25h1.11v1.39c0,1.1.15,1.76,1.47,1.76a4,4,0,0,0,1.49-.29V33.25h1.11V39.7Z"/><polygon class="cls-1" points="83.27 39.7 83.27 34.72 83.23 34.72 80.11 39.7 78.82 39.7 78.82 33.25 79.93 33.25 79.93 38.22 79.97 38.22 83.09 33.25 84.38 33.25 84.38 39.7 83.27 39.7"/><path class="cls-1" d="M89.45,39.85A3.34,3.34,0,0,1,86,36.48a3.25,3.25,0,0,1,3.47-3.38,4.5,4.5,0,0,1,1.46.3v1a3,3,0,0,0-1.4-.41,2.3,2.3,0,0,0-2.35,2.47,2.38,2.38,0,0,0,2.39,2.46A3,3,0,0,0,91,38.48v1a4.2,4.2,0,0,1-1.57.34"/><polygon class="cls-1" points="95.2 34.16 95.2 39.7 94.08 39.7 94.08 34.16 91.88 34.16 91.88 33.25 97.39 33.25 97.39 34.16 95.2 34.16"/><polygon class="cls-1" points="98.63 39.7 98.63 33.25 99.74 33.25 99.74 36.22 99.77 36.22 102.42 33.25 103.81 33.25 101.01 36.25 104.38 39.7 102.96 39.7 99.77 36.36 99.74 36.36 99.74 39.7 98.63 39.7"/><path class="cls-1" d="M109.37,39.7v-.87h0a2.75,2.75,0,0,1-2,1c-1.48,0-2.31-.79-2.31-2,0-1.8,2-2.14,2.83-2.14a4.62,4.62,0,0,1,1.41.25v-.49c0-.95-.5-1.43-1.57-1.43a2.9,2.9,0,0,0-1.93.76v-1a3.72,3.72,0,0,1,2.08-.72c1.79,0,2.52.87,2.52,2.62v4Zm-.11-3a3,3,0,0,0-1-.23c-.57,0-2,.13-2,1.33a1.17,1.17,0,0,0,1.22,1.12,2.82,2.82,0,0,0,1.83-.87Z"/><path class="cls-1" d="M71.65,11.64h5v14h3.07v-14h5v-1.3H71.65ZM44.42,10a7.58,7.58,0,0,0-5.27,2,7.94,7.94,0,0,0-2.35,6c0,4.39,2.71,8.05,7.6,8.05,4.66,0,7.82-3.25,7.82-8s-3.29-8-7.8-8m.14,14.53a3.8,3.8,0,0,1-3.37-2.14,9.56,9.56,0,0,1-1-4.48,8.92,8.92,0,0,1,1-4.48,3.63,3.63,0,0,1,3.23-2,3.7,3.7,0,0,1,3.28,2,9.45,9.45,0,0,1,1,4.6c0,5.52-3.07,6.48-4.25,6.48m21.14-7.6h-7V10.34h-3V25.6h3V18.28h7V25.6h3V10.34h-3Zm64.42-6.57v1.3h5v14h3.07v-14h5v-1.3Zm-12.43,1.57A7.76,7.76,0,0,0,115.05,18a7.93,7.93,0,0,0,2.35,5.74,7.72,7.72,0,0,0,5.84,2.13,13.42,13.42,0,0,0,4.59-.82V23.49a11.55,11.55,0,0,1-4,.93c-3.89,0-5.35-3.1-5.35-6.53a6.81,6.81,0,0,1,1.73-5,4.86,4.86,0,0,1,3.39-1.34,10.13,10.13,0,0,1,4.25,1V10.91a13.09,13.09,0,0,0-4.36-.84,8.73,8.73,0,0,0-5.78,1.84M92.21,10.34H87.73V25.6h3V20h1.69c5.08,0,6-3,6-5.07,0-1.94-.79-4.57-6.21-4.57m2.19,7.39a3.62,3.62,0,0,1-2.67.93h-1v-7H92.1a3.09,3.09,0,0,1,2.27.79,3.51,3.51,0,0,1,.91,2.62,3.79,3.79,0,0,1-.88,2.68m10.37-7.55L99.15,25.6H101l1.91-5.41h5s2,5.44,2,5.41h3.37l-6.08-15.42Zm-1.48,8.73,2-5.61,2.1,5.61ZM34.16,24.46c-2-2.47-4.37-5.73-5.27-7a1.72,1.72,0,0,0-.2-.2l5.61-7H31.94L25.7,18.07s2.86,4.13,3.95,5.66c2.68,3.76,5.07,5.74,8.29,5.74a4.25,4.25,0,0,0,2.6-.78v0s-3.12-.23-6.38-4.21M19.22,7.65c.9,1.58,1.49,5,1.49,8.52V25.6H24V18.15c0-5.39-2-8.29-4.77-10.5"/><path class="cls-1" d="M18.51,16s.37-7.53-6-12.07C8,.65,4,0,1.89,0,.86,0,.33.28.1.84s0,1.38.91,2.23c1.76,1.72,3.11,4,2.7,6.72-.47,3.22-1,7.46,3.89,8.56a18.07,18.07,0,0,0,5,.45c-3.61,1.33-5,3.77-4.75,5.8.52,4,5.61,4.43,7.54,1.54a3.92,3.92,0,0,1-1.48.31,2.43,2.43,0,0,1-2.74-2.79c.21-3.18,5.15-5.69,5.15-5.69a.33.33,0,0,1-.1,0s-6.07-.51-7.79-3.08.06-5-.53-7.41a8.22,8.22,0,0,0-2.5-4S15.16,6.36,18.51,16"/></g></g></svg>
+                        </div>
+                </div>
+                
+        </header>
+        <footer class="footer">
+            <a href="tel:+74997033070" class="footer__phone" data-footer-phone>
+                <span class="small-text">
                     Москва
-                </div>
-                <div class="full-menu__link">
-                    <a href="#" target="_blank">Личный кабинет</a>
-                </div>
-                <div class="full-menu__line"></div>
-                <div class="full-menu__lang">
-                    <a class="full-menu__lang-link active" href="#">RUS</a>
-                    <a class="full-menu__lang-link" href="#">ENG</a>
-                </div>
-            </div>
-            <div class="full-menu__main">
-                <div class="full-menu__back-button" data-menu-back-button>
-                    <img src="img/left-arrow.svg" />
-                </div>
-                <div class="full-menu__menu-items" data-menu-items-container>
-                    <a href="delivery.html" class="full-menu__menu-item" data-menu-item="delivery">Доставка</a>
-                    <a href="#" class="full-menu__menu-item" data-menu-item="services">Услуги</a>
-                    <a href="map.html" class="full-menu__menu-item" data-menu-item="adresses">Адреса</a>
-                    <a href="/sales.html" class="full-menu__menu-item" data-menu-item="prices">Акции</a>
-                    <a href="/blog.html" class="full-menu__menu-item" data-menu-item="news">Блог</a>
-                    <a href="#" class="full-menu__menu-item" data-menu-item="about">О компании</a>
-                </div>
-                <div class="full-menu__content">
-                    <div class="full-menu__content-inner" data-menu-content="delivery">
-                        <p class="full-menu__header">Доставка</p>
-                        <p class="full-menu__subheader">
-                            Будем у Вас в любое назначенное время 24/7
-                        </p>
-                        <p class="full-menu__text">
-                            Все клиентские заявки обрабатываются у нас максимально быстро — в
-                            течение 15 минут, а «скорая помощь» от нашей химчистки прибывает к
-                            Клиенту за срок менее 2 часов или точно к назначенному времени.
-                        </p>
-
-                        <a class="full-menu__content-link" href="services.html">
-                            Перейти в раздел <img src="img/arrow-right.svg" />
-                        </a>
-                        <p class="full-menu__text2">
-                            Оставить заявку на вызов специалиста
-                        </p>
-                        <div class="full-menu__form">
-                            <div class="full-menu__form-inputs">
-                                <input type="text" class="input input_mode1" placeholder="Ваше имя" />
-                                <input type="text" class="input input_mode1" placeholder="Ваш телефон" />
-                            </div>
-                            <button class="full-menu__form-submit">Отправить заявку</button>
-                            <p class="full-menu__text3">
-                                Это бесплатно и ни к чему вас не обязывает<br />
-                                Отправляя заявку, вы соглашаетесь на обработку ваших
-                                персональных данных.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="full-menu__content-inner double" data-menu-content="services">
-                        <div class="full-menu__content-sections">
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Рубашки, сорочки
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Куртки, пуховики
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Мех, дубленка
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Свадебные и вечерние платья
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Театральные костюмы
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Постельное белье
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>Шторы</a>
-                            <a class="full-menu__section" href="services.html" data-section-item>Ковры</a>
-                            <a class="full-menu__section" href="services.html" data-section-item>Сумки</a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Детская одежда, игрушки
-                            </a>
-                            <a class="full-menu__section" href="tailor.html" data-section-item>
-                                Услуги портного
-                            </a>
-                            <a class="full-menu__section" href="shoes.html" data-section-item>
-                                Ремонт и чистка обуви
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>Озонирование</a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Персональные стикеры
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>Монограммы</a>
-                        </div>
-                        <div class="full-menu__contents">
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    Здесь будет текст
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    Lorem ipsum dolor sit amet.
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой з��ботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="full-menu__content-inner" data-menu-content="adresses">
-                        <p class="full-menu__subheader2">
-                            Слоган или красивый заголовок
-                        </p>
-                        <p class="full-menu__text">
-                            Немного статистики и цифр. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                            quis nosLorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        </p>
-
-                        <a class="full-menu__content-link" href="map.html">
-                            Перейти в раздел <img src="img/arrow-right.svg" />
-                        </a>
-                    </div>
-                    <div class="full-menu__content-inner" data-menu-content="prices">
-                        <p class="full-menu__subheader2">
-                            Слоган или красивый заголовок2
-                        </p>
-                        <p class="full-menu__text">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                            volutpat. Ut wisi enim ad minim veniam, quis nosLorem ipsum dolor
-                            sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                            euismod tincidunt ut laoreet dolore magna
-                        </p>
-
-                        <a class="full-menu__content-link" href="services.html">
-                            Перейти в раздел <img src="img/arrow-right.svg" />
-                        </a>
-                    </div>
-                    <div class="full-menu__content-inner" data-menu-content="news">
-                        <p class="full-menu__subheader2">
-                            Слоган или красивый заголовок
-                        </p>
-                        <p class="full-menu__text">
-                            Немного статистики и цифр. Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                            quis nosLorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        </p>
-
-                        <a class="full-menu__content-link" href="services.html">
-                            Перейти в раздел <img src="img/arrow-right.svg" />
-                        </a>
-                    </div>
-                    <div class="full-menu__content-inner double" data-menu-content="about">
-                        <div class="full-menu__content-sections">
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Компания
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Отзывы клиентов
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Партнеры
-                            </a>
-                            <a class="full-menu__section" href="services.html" data-section-item>
-                                Контакты
-                            </a>
-                        </div>
-                        <div class="full-menu__contents">
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <p class="full-menu__subheader2">
-                                    С особой заботой<br />
-                                    о Вашей сорочке
-                                </p>
-                                <a class="full-menu__content-link" href="services.html">
-                                    Перейти в раздел <img src="img/arrow-right.svg" />
-                                </a>
-                                <div class="full-menu__price-list">
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка, сорочка мужская (химчистка), блуза
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>580 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка (стирка, с крахмалом и кондиционером)
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>340 ₽</span> / 1 шт.
-                                        </div>
-                                    </div>
-                                    <div class="full-menu__price-row">
-                                        <div class="full-menu__price-row-left">
-                                            Рубашка — влажнотепловая обработка
-                                        </div>
-                                        <div class="full-menu__price-row-right">
-                                            <span>240 ₽ / 1 шт.</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="full-menu__section-content" data-section-content>
-                                <div class="contacts">
-                                    <div class="contacts__row">
-                                        <div class="contacts__row-top">
-                                            Наше место положение
-                                        </div>
-                                        <div class="contacts__row-bottom">
-                                            109469, москва, ул. Братиславская, 32
-                                        </div>
-                                    </div>
-                                    <div class="contacts__row">
-                                        <div class="contacts__row-top">
-                                            Позвоните нам
-                                        </div>
-                                        <div class="contacts__row-bottom">
-                                            +7 (499) 703-30-70
-                                        </div>
-                                    </div>
-                                    <div class="contacts__row">
-                                        <div class="contacts__row-top">
-                                            Написать нам
-                                        </div>
-                                        <div class="contacts__row-bottom">
-                                            info@contrast-cleaners.ru
-                                        </div>
-                                    </div>
-                                    <div class="contacts__text">
-                                        Напишите нам
-                                    </div>
-                                    <form class="contacts__form">
-                                        <input type="text" class="input input_mode2" placeholder="Ваше имя" />
-                                        <input type="text" class="input input_mode2" placeholder="Ваш телефон" />
-                                        <input type="text" class="input input_mode2" placeholder="E-mail" />
-                                        <textarea class="input input_textarea"></textarea>
-                                        <button class="contacts__button">Отправить</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="full-menu__bottom">
-                <div class="full-menu__bottom-left">
-                    <div class="full-menu__bottom-left-phones">
-                        <div class="full-menu__phone">
-                            7-499-703-30-70 <span class="city">Москва</span>
-                        </div>
-                        <div class="full-menu__phone full-menu__phone-inner">
-                            7-499-703-30-70 <span class="city">Питер</span>
-                        </div>
-                    </div>
-                    <div class="full-menu__socials">
-                        <a href="#">
-                            <img src="img/instagram.svg" />
-                        </a>
-                        <a href="#">
-                            <img src="img/facebook.svg" />
-                        </a>
-                        <a href="#">
-                            <img src="img/youtube.svg" />
-                        </a>
-                    </div>
-                </div>
-                <div class="full-menu__bottom-right">
-                    <div class="full-menu__copyright">
-                        © 1998–2019 Химчистка Контраст
-                    </div>
-                </div>
-            </div>
-            <div class="full-menu__close" data-menu-close>
-                <img src="img/full-menu-close.svg" />
-            </div>
-        </nav> -->
-    <header class="header">
-        <div class="header__wrapper">
-            <img class="header__menu header__menu_blue _mobile header__menu-open" src="img/menu.svg" data-menu-open />
-            <img class="header__menu header__menu_blue _mobile header__menu-close" src="img/menu.svg" data-menu-close />
-            <a href="/">
-                <img class="header__logo" src="img/logo.svg" data-logo-white />
+                </span>
+                7-499-703-30-70
             </a>
-            <a href="#" class="header__phoneIcon">
-                <img src="img/phoneIcon.svg" alt="" />
+            <a href="tel:+74997033070" class="footer__phone footer__phone-inner" data-footer-phone-inner>
+                <span class="small-text">
+                    Питер
+                </span>
+                7-499-703-30-70
             </a>
-        </div>
-        <a href="/">
-            <img class="header__logo" src="img/logo.svg" data-logo-white />
-            <img class="header__logo header__logo_blue" src="img/logo-blue.svg" data-logo-blue style="opacity: 0;" />
-        </a>
-        <img class="header__menu" src="img/menu-btn.svg" data-menu-white data-menu-open />
-        <img class="header__menu header__menu_blue" src="img/menu-btn.svg" data-menu-blue data-menu-open
-            style="opacity: 0;" />
-        <!-- <nav class="header__small-menu" data-small-menu="">
-                <img class="header__menu header__menu_blue _mobile" src="img/menu-blue.svg" data-menu-blue=""
-                    data-menu-open="" />
-                <a href="#" class="header__link" style="transition: color 1s ease 0s;">Доставка</a>
-                <a href="#" class="header__link" style="transition: color 1s ease 0s;">Цены</a>
-                <a href="#" class="header__link" style="transition: color 1s ease 0s;">Адреса</a>
-                <div class="header__lang">
-                    <a href="#" class="header__lang-item active">
-                        RU
-                    </a>
-                    <a href="#" class="header__lang-item">
-                        EN
-                    </a>
-                </div>
-            </nav> -->
-    </header>
-    <footer class="footer">
-        <a href="tel:+74997033070" class="footer__phone" data-footer-phone>
-            <span class="small-text">
-                Москва
-            </span>
-            7-499-703-30-70
-        </a>
-        <a href="tel:+74997033070" class="footer__phone footer__phone-inner" data-footer-phone-inner>
-            <span class="small-text">
-                Питер
-            </span>
-            7-499-703-30-70
-        </a>
 
-        <div class="footer__chat">
-            <img class="footer__chat-img" src="img/chat.svg" />
-            <div class="footer__chat-num">3</div>
-        </div>
-    </footer>
+        
+        </footer>
     </div>
-    <div class="form" id="form"></div>
-    <script type="text/javascript" src="js/bundle.js"></script>
 </body>
 
 </html>
