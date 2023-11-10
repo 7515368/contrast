@@ -17,7 +17,7 @@
                 <div>Отзывы</div>
             </div>
             <div class="section__slide" data-section-slide-mob="1"
-                style="background-image: url(img/services.jpg); background-position: center;"></div>
+                style="background-image: url(img/Reviews_800x800.jpg); background-position: center;"></div>
             <div class="section__text-mob">
                 <h2 class="section__h2-mob">
                   Ваше мнение очень важно для нас!
@@ -25,168 +25,116 @@
                 <p class="section__text-mob-desc">
                    Уважаемый клиент! мы надеемся, что вы остались довольны нашими услугами. Мы всегда стремимся улучшать качество нашей работы и Ваше мнение очень важно для нас. Если у Вас есть какие-либо предложения или замечания, пожалуйста, поделитесь ими с нами. Спасибо за вашу помощь в улучшении нашего сервиса.
                 </p>
+                <form class="reviews__form _fixed form-with-submit-validation">
+                    <div class="reviews__form-text">
+                        Оставить отзыв
+                    </div>
 
-              
-            </div>
-            <form action="" class="services__form _fixed form-with-submit-validation">
-                <div class="services__form-text">
-                    Оставить заявку на вызов специалиста
-                </div>
-                <div class="full-menu__form-inputs required-input-wrapper">
-                    <input type="text" class="input input_mode1 _small" placeholder="Телефон" required />
-                </div>
-                <div class="full-menu__form-inputs required-input-wrapper">
-                    <input type="text" class="input input_mode1 _small" placeholder="ФИО" required />
-                </div>
-                <div class="full-menu__form-inputs required-input-wrapper">
-                    <input type="text" class="input input_mode1 _small" placeholder="Адрес" required />
-                </div>
-                <div class="full-menu__form-inputs checkbox-inputs">
-                    <input type="checkbox" class="checkbox" id="express-m" name="express-m" /> <label
-                        for="express-m">Экспресс</label>
-                    <div class="hint hint-btn"> <span>?</span></div>
-                </div>
-                <div class="full-menu__form-inputs checkbox-inputs">
-                    <input type="checkbox" class="checkbox" id="big-m" name="big-m" /> <label
-                        for="big-m">Крупногабаритные
-                        вещи</label>
+                    <div class="reviews__form-rating">
+                       <a href="" class="reviews__form-rating--like">+</a> <a href="" class="reviews__form-rating--dislike">-</a>
+                        
+                    </div>
+                    <div class="form-inputs full required-input-wrapper">
+                        <input type="text" class="input  full required-input" placeholder="Ваше имя"
+                            required />
+                    </div>
+                    <div class="form-inputs-row">
+                        <div class="form-inputs required-input-wrapper">
+                            <input type="text" class="input full required-input" placeholder="Телефон"
+                                required />
 
-                </div>
-                <div class="hint-text-cover">
-                    <div class="hint-text hint-text_mobile">
-                        <h3> <span>?</span>С услугой экспресс-доставки мы заберем ваши вещи в
-                            химчистку в течение 90 мин с момента звонка!</h3>
+                        </div>
+                        <div class="form-inputs required-input-wrapper">
+                            <input type="email" class="input full required-input" placeholder="Ваш e-mail"
+                                required />
+                        </div>
+                    </div>
 
-                        <p>Обратите внимание на условия экспресс-доставки:</p>
-                        <ul>
-                            <li>услуга бесплатна при сумме заказа от 700 рублей (при заказе на
-                                меньшую сумму, разница в цене оплачивается отдельно);</li>
-                            <li>услуга действует в следующих округах Москвы: ЦАО, ЗАО, ЮЗАО,
-                                СЗАО
-                                (напишите ваш адрес и мы сориентируем по доступности этой
-                                услуги);
-                            </li>
-                            <li>машины экспресс-доставки принимают все позиции, кроме
-                                крупногабаритных вещей;</li>
-                            <li>сроки при химчистке одежды равны срокам в приемном пункте,
-                                если Вы желаете почистить вещи в режиме ЭКСПРЕСС (от 2 часов)
-                                сообщите об этом
-                                координатору (на услугу ЭКСПРЕСС химчистка действует наценка 50%
-                                к
-                                стоимости заказа);</li>
-                            <li>при отказе от химчистки клиент оплачивает стоимость доставки в
-                                размере 700 руб.</li>
-                        </ul>
+                   
 
-                        <a href="#" class="hint-close"><img src="img/close.svg" alt=""></a>
+             
+                    <div class="full-menu__form-inputs">
+                      <textarea name="" class="input full"  id="" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
+                    </div>
+
+                  
+
+                    <button class="full-menu__form-submit _float" type="submit" disabled>
+                        Отправить заявку
+                    </button>
+                   
+                    <div class="reviews__form-required-message">
+                        поле обязательно для заполнения <br>
+                        Отправляя обращение, Вы соглашаетесь на обработку Ваших персональных данных
 
                     </div>
-                </div>
+                </form>
+              
+            </div>
+       
 
 
-
-
-                <button class="full-menu__form-submit" type="submit" disabled>
-                    Отправить заявку
-                </button>
-                <p class="full-menu__text3">
-                    Это бесплатно и ни к чему вас не обязывает<br />
-                    Отправляя заявку, вы соглашаетесь на обработку ваших персональных данных.
-                </p>
-            </form>
         </section>
-        <main class="main" id="main" data-fullpage="true">
-            <section class="section section_delivery">
-                <div class="services">
-                    <div class="services__inner">
-                        <h2 class="services__heading small">
-                            Ваше мнение очень важно для нас!
-                        </h2>
-                        <div class="services__wrap">
-                            <div class="services__text _half">
+        <main class="main " id="main" data-fullpage="true">
+            <section class="section section_reviews"   
+            data-logo-color="white"
+            data-burger-color="blue" 
+            data-last-section="true"
+            style="background-image: url(img/Reviews_1920x1200.jpg); background-repeat: no-repeat; background-position: 100% 100%; background-size: 100% auto;">
+                <div class="reviews">
+                    <div class="reviews__inner">
+                        <h2 class="reviews__heading ">
+                            Ваше мнение  <br>очень важно для нас!
+                        </h2>    
+                        <div class="reviews__text _half">
                                 Уважаемый клиент! мы надеемся, что вы остались довольны нашими услугами. Мы всегда стремимся улучшать качество нашей работы и Ваше мнение очень важно для нас. Если у Вас есть какие-либо предложения или замечания, пожалуйста, поделитесь ими с нами. Спасибо за вашу помощь в улучшении нашего сервиса.
+                        </div>
 
-                                <a href="#" class="btn btn-open-video" data-toggle="modal"
-                                    data-target="#video-popup">Доставка <br> у вас дома</a>
-                            </div>
-
-                            <form class="services__form _fixed form-with-submit-validation">
-                                <div class="services__form-text">
-                                    Оставить заявку на вызов специалиста
-                                </div>
-                                <div class="full-menu__form-inputs required-input-wrapper">
-                                    <input type="text" class="input full required-input" placeholder="Телефон"
-                                        required />
-
+                            <form class="reviews__form _fixed form-with-submit-validation">
+                                <div class="reviews__form-text">
+                                    Оставить отзыв
                                 </div>
 
-                                <div class="full-menu__form-inputs required-input-wrapper">
+                                <div class="reviews__form-rating">
+                                   <a href="" class="reviews__form-rating--like">+</a> <a href="" class="reviews__form-rating--dislike">-</a>
+                                    
+                                </div>
+                                <div class="form-inputs full required-input-wrapper">
                                     <input type="text" class="input  full required-input" placeholder="Ваше имя"
                                         required />
-
                                 </div>
-                                <div class="full-menu__form-inputs required-input-wrapper">
-                                    <input type="text" class="input full required-input" placeholder="Адрес" required />
-
+                                <div class="form-inputs-row">
+                                    <div class="form-inputs required-input-wrapper">
+                                        <input type="text" class="input full required-input" placeholder="Телефон"
+                                            required />
+    
+                                    </div>
+                                    <div class="form-inputs required-input-wrapper">
+                                        <input type="email" class="input full required-input" placeholder="Ваш e-mail"
+                                            required />
+                                    </div>
                                 </div>
 
-                                <div class="full-menu__form-inputs checkbox-inputs">
+                               
 
-
-                                    <input type="checkbox" class="checkbox" id="express" name="express" /> <label
-                                        for="express">Экспресс
-
-                                        <div class="hint"> <span>?</span>
-                                            <div class="hint-text">
-                                                <h3> <span>?</span>С услугой экспресс-доставки мы заберем ваши вещи в
-                                                    химчистку в течение 90 мин с момента звонка!</h3>
-
-                                                <p>Обратите внимание на условия экспресс-доставки:</p>
-                                                <ul>
-                                                    <li>услуга бесплатна при сумме заказа от 700 рублей (при заказе на
-                                                        меньшую сумму, разница в цене оплачивается отдельно);</li>
-                                                    <li>услуга действует в следующих округах Москвы: ЦАО, ЗАО, ЮЗАО,
-                                                        СЗАО
-                                                        (напишите ваш адрес и мы сориентируем по доступности этой
-                                                        услуги);
-                                                    </li>
-                                                    <li>машины экспресс-доставки принимают все позиции, кроме
-                                                        крупногабаритных вещей;</li>
-                                                    <li>сроки при химчистке одежды равны срокам в приемном пункте,
-                                                        если Вы желаете почистить вещи в режиме ЭКСПРЕСС (от 2 часов)
-                                                        сообщите об этом
-                                                        координатору (на услугу ЭКСПРЕСС химчистка действует наценка 50%
-                                                        к
-                                                        стоимости заказа);</li>
-                                                    <li>при отказе от химчистки клиент оплачивает стоимость доставки в
-                                                        размере 700 руб.</li>
-                                                </ul>
-
-                                            </div>
-                                        </div>
-
-                                    </label>
-
-                                    <input type="checkbox" class="checkbox" id="big" name="big" /> <label
-                                        for="big">Крупногабаритные
-                                        вещи</label>
+                         
+                                <div class="full-menu__form-inputs">
+                                  <textarea name="" class="input full"  id="" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
                                 </div>
+
+                              
 
                                 <button class="full-menu__form-submit _float" type="submit" disabled>
                                     Отправить заявку
                                 </button>
-                                <p class="full-menu__text3">
-                                    Это бесплатно и ни к чему вас не обязывает
-                                    Отправляя заявку, вы соглашаетесь на обработку ваших
-                                    персональных данных.
-                                </p>
-                                <div class="services__form-required-message">
-                                    поле обязательно для заполнения
+                               
+                                <div class="reviews__form-required-message">
+                                    поле обязательно для заполнения <br>
+                                    Отправляя обращение, Вы соглашаетесь на обработку Ваших персональных данных
+
                                 </div>
                             </form>
-                        </div>
-         
-                     
+                       
                     </div>
                 </div>
             </section>
@@ -1130,33 +1078,10 @@
                 <div class="footer__chat-num">3</div>
             </div>
         </footer>
-        <div class="cookies">
-            <img src="img/cookies.svg" class="cookies_image" alt="">
-            <div class="cookies_text">
-                Мы используем куки для наилучшего представления нашего сайта.
-            </div><a href="#" class="cookies_btn">Хорошо</a>
-        </div>
+
 
     </div>
-    <div class="form" id="form"></div>
 
-    <div class="popup-block popup-block-video-popup" id="video-popup">
-        <div class="popup-block__overlay">
-
-            <div class="popup-block__popup">
-                <a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close info-block__popup-close"
-                    data-popup-close="">
-                    <img src="img/full-menu-close.svg">
-                </a>
-                <video controls loop="false">
-                    <source src="https://d2z8nyy70yf33i.cloudfront.net/wp-content/uploads/V6_UNIT9-HOMEPAGE-REEL-2.mp4"
-                        type="video/mp4">
-                    <source src="https://d2z8nyy70yf33i.cloudfront.net/wp-content/uploads/V6_-UNIT9-HOME-REEL.webm"
-                        type="video/webm">
-                </video>
-            </div>
-        </div>
-    </div>
 
     <script type="text/javascript" src="js/bundle.js"></script>
 
