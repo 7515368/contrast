@@ -20,28 +20,45 @@ h1,
 h2 {
   all: unset;
 }
-@keyframes fadeInMenu {
+@-webkit-keyframes fadeInMenu {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0px);
     transform: translateY(0px);
+  }
+}
+@keyframes fadeInMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeOutMenu {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
   }
 }
 
 @keyframes fadeOutMenu {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
 }
@@ -133,6 +150,7 @@ $vwSize3: 1920 / 100;
 @import "../styles/footer-slide.scss";
 @import "../styles/services-portfolio.scss";
 @import "../styles/cleanbox.scss";
+@import "../styles/reviews.scss";
 
 @media (max-width: 1024px) {
   .content {

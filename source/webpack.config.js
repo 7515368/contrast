@@ -72,6 +72,7 @@ module.exports = (env) => {
                 { from: "src/portfolio.html", to: "portfolio.html" },
                 { from: "src/clean-box.html", to: "clean-box.html" },
                 { from: "src/underconstruction.html", to: "underconstruction.html" },
+                { from: "src/feedback.html", to: "feedback.html" },
                 { from: "src/img", to: "img" },
                 { from: "src/styles/fonts", to: "css/fonts" },
             ]),

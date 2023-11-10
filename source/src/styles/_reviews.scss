@@ -1,0 +1,198 @@
+.reviews {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: pxToVw(200);
+    &__heading {
+        font-family: "Charter", serif;
+        font-size: pxToVw(60);
+        line-height: pxToVw(70);
+      }
+      &__text {
+        font-size: pxToVw(16);
+        width: pxToVw(600);
+        margin-top: pxToVw(40);
+        line-height: pxToVw(24);
+        font-weight: 300;
+      }
+      &__form {
+        margin-top: pxToVw(40);
+        min-width: 45%;
+        max-width: 100%;
+        background: white;
+        padding: pxToVw(20);
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      &_form-text {
+        color: #005090;
+        font-size: pxToVw(15.36);
+        margin-bottom: pxToVw(7.8);
+        font-weight: 300;
+        }
+    .form-inputs-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form &__form-text {
+        font-size: pxToVw(16);
+        margin-bottom: pxToVw(17);
+        color: #005090;
+        text-transform: uppercase;
+    }
+    
+    &__form .form-inputs {
+       width: 49%;
+        margin-bottom: pxToVw(10);
+    }
+    &__form .form-inputs.full {
+        width: 100%; 
+    }
+    &__form textarea {
+        width: 100%;
+        height: pxToVw(60);
+        font-size: pxToVw(12);
+        padding: pxToVw(1) pxToVw(2) pxToVw(5);
+        padding-bottom: pxToVw(2);
+        border-radius: 5px;
+        color: #67a1c4;
+        border: none;
+        background: #E8F1F5;
+        padding: 5px;
+        &::-webkit-input-placeholder {
+            color: #67a1c4;
+          }
+    }
+     
+    &__form input {
+ 
+    height: pxToVw(30);
+    font-size: pxToVw(12);
+    padding: pxToVw(1) pxToVw(2) pxToVw(5);
+    padding-bottom: pxToVw(2);
+    border-radius: 5px;
+    color: #67a1c4;
+    border: none;
+    background: #E8F1F5;
+    padding-left: 5px;
+ 
+    &::-webkit-input-placeholder {
+      color: #67a1c4;
+    }
+    &::-moz-placeholder {
+      color: #67a1c4;
+    }
+    &:-ms-input-placeholder {
+      color: #67a1c4;
+    }
+    &::-ms-input-placeholder {
+      color: #67a1c4;
+    }
+    &::placeholder {
+      color: #67a1c4;
+    } 
+    }
+    &__form input.full {
+        width: 100%;
+    }
+    .required-input-wrapper {
+        position: relative;
+       input {
+        padding-left: 20px;
+       }
+    }
+    .required-input-wrapper::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+&__form-required-message {
+    font-size: pxToVw3(10);
+    line-height: pxToVw3(11);
+    margin-bottom: pxToVw3(25);
+    padding-left: pxToVw3(20);
+    color: #65a2c2;
+    float: right;
+    width: 20%;
+    position: relative;
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: red;
+      border-radius: 50%;
+  
+      position: absolute;
+      left: 0;
+      top: 50%;
+  
+      transform: translateY(-50%);
+      @media (max-width: 1200px) {
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+  &__form-required-message {
+    font-size: 0.52083vw;
+    line-height: 0.57292vw;
+    margin-bottom: 1.30208vw;
+    padding-left: 1.04167vw;
+    color: #65a2c2;
+    float: right;
+    width: 70%;
+    position: relative;
+}
+    &__form-rating {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        display: flex;
+        gap: 10px;
+
+        a {
+            display: block;
+            width: 28px;
+            height: 28px;
+            font-size: 0;
+
+        }
+        &--like {
+            background-image: url(../img/like.svg); 
+            background-size: contain;
+            position: relative;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 20px;
+                background: #65a2c2;
+                position: absolute;
+                right: -5px;
+                top: 3px;
+            }
+        }
+        &--dislike {
+            background-image: url(../img/dislike.svg); 
+            background-size: contain;
+        }
+    }
+  
+}
+
+@media (max-width: 1024px) {
+    .section_reviews {
+    display: none;
+}
+}
