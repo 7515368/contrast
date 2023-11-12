@@ -12,135 +12,174 @@
 
 <body>
     <div class="content" id="content" data-height-adjust="true">
-        <section class="section section_a-mob">
-            <div class="section__breadcrumbs-mob">
-                <div>Отзывы</div>
-            </div>
-            <div class="section__slide" data-section-slide-mob="1"
-                style="background-image: url(img/Reviews_800x800.jpg); background-position: center;"></div>
-            <div class="section__text-mob">
-                <h2 class="section__h2-mob">
-                  Ваше мнение очень важно для нас!
-                </h2>
-                <p class="section__text-mob-desc">
-                   Уважаемый клиент! мы надеемся, что вы остались довольны нашими услугами. Мы всегда стремимся улучшать качество нашей работы и Ваше мнение очень важно для нас. Если у Вас есть какие-либо предложения или замечания, пожалуйста, поделитесь ими с нами. Спасибо за вашу помощь в улучшении нашего сервиса.
-                </p>
-                <form class="reviews__form _fixed form-with-submit-validation">
-                    <div class="reviews__form-text">
-                        Оставить отзыв
-                    </div>
 
-                    <div class="reviews__form-rating">
-                       <a href="" class="reviews__form-rating--like">+</a> <a href="" class="reviews__form-rating--dislike">-</a>
-                        
-                    </div>
-                    <div class="form-inputs full required-input-wrapper">
-                        <input type="text" class="input  full required-input" placeholder="Ваше имя"
-                            required />
-                    </div>
-                    <div class="form-inputs-row">
-                        <div class="form-inputs required-input-wrapper">
-                            <input type="text" class="input full required-input" placeholder="Телефон"
-                                required />
+        <main class="main" id="main" data-fullpage="true">
+            <section class="section section_reviews section_a-mob">
+                <div class="section__breadcrumbs-mob">
+                    <div>Отзывы</div>
+                </div>
+                <div class="section__slide" data-section-slide-mob="1"
+                    style="background-image: url(img/Reviews_800x800.jpg); background-position: center;"></div>
+                <div class="section__text-mob">
+                    <h2 class="section__h2-mob">
+                        Ваше мнение очень важно для нас!
+                    </h2>
+                    <p class="section__text-mob-desc">
+                        Уважаемый клиент! мы надеемся, что вы остались довольны нашими услугами. Мы всегда стремимся
+                        улучшать качество нашей работы и Ваше мнение очень важно для нас. Если у Вас есть какие-либо
+                        предложения или замечания, пожалуйста, поделитесь ими с нами. Спасибо за вашу помощь в улучшении
+                        нашего сервиса.
+                    </p>
+                    <form class="reviews__form _fixed form-with-submit-validation">
+                        <div class="reviews__form-text">
+                            Оставить <br> отзыв
+                        </div>
+
+                        <div class="reviews__form-rating">
+                            <a href="" class="reviews__form-rating--like">+</a> <a href=""
+                                class="reviews__form-rating--dislike">-</a>
 
                         </div>
-                        <div class="form-inputs required-input-wrapper">
-                            <input type="email" class="input full required-input" placeholder="Ваш e-mail"
-                                required />
+                        <div class="form-inputs full required-input-wrapper">
+                            <input type="text" class="input  full required-input" placeholder="Ваше имя" required />
+                        </div>
+                        <div class="form-inputs-row">
+                            <div class="form-inputs required-input-wrapper">
+                                <input type="text" class="input full required-input" placeholder="Телефон" required />
+
+                            </div>
+                            <div class="form-inputs required-input-wrapper">
+                                <input type="email" class="input full required-input" placeholder="Ваш e-mail"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="full-menu__form-inputs">
+                            <textarea name="" class="input full" id="" cols="30" rows="10"
+                                placeholder="Ваш отзыв"></textarea>
+                        </div>
+
+
+                        <div class="reviews__form-required-message">
+                            поле обязательно для заполнения
+                        </div>
+
+                        <button class="full-menu__form-submit _float" type="submit" disabled>
+                            Отправить заявку
+                        </button>
+                        <div class="reviews__form-message">
+                            Отправляя обращение, Вы соглашаетесь на обработку Ваших персональных данных
+
+                        </div>
+
+
+                    </form>
+
+                    <div class="reviews__form_success">
+                        <div class="reviews__form-text">
+                            <strong>Благодарим Вас за оставленный отзыв</strong>
+                        </div>
+                        <div class="reviews__form_success-message">
+                            <p>Мы очень рады, что вы оценили нашу работу и сервис. </p>
+                            <div class="d-flex">
+                                <div>Номер обращения</div>
+                                <div> № <span class="number">356</span></div>
+                            </div>
+
+
+                        </div>
+
+                        <button class="full-menu__form-submit _float" type="submit" disabled>
+                            Оставить еще отзыв
+                        </button>
+                        <div class="reviews__form-message">
+                            Отправляя обращение, Вы соглашаетесь <br> на обработку Ваших персональных данных
                         </div>
                     </div>
 
-                   
-
-             
-                    <div class="full-menu__form-inputs">
-                      <textarea name="" class="input full"  id="" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
-                    </div>
-
-                  
-
-                    <button class="full-menu__form-submit _float" type="submit" disabled>
-                        Отправить заявку
-                    </button>
-                   
-                    <div class="reviews__form-required-message">
-                        поле обязательно для заполнения <br>
-                        Отправляя обращение, Вы соглашаетесь на обработку Ваших персональных данных
-
-                    </div>
-                </form>
-              
-            </div>
-       
+                </div>
 
 
-        </section>
-        <main class="main " id="main" data-fullpage="true">
-            <section class="section section_reviews"   
-            data-logo-color="white"
-            data-burger-color="blue" 
-            data-last-section="true"
-            style="background-image: url(img/Reviews_1920x1200.jpg); background-repeat: no-repeat; background-position: 100% 100%; background-size: 100% auto;">
+
+            </section>
+            <section class="section section_reviews  section_a-desktop" data-logo-color="white" data-burger-color="blue"
+                data-last-section="true">
                 <div class="reviews">
                     <div class="reviews__inner">
                         <h2 class="reviews__heading ">
-                            Ваше мнение  <br>очень важно для нас!
-                        </h2>    
+                            Ваше мнение <br>очень важно для нас!
+                        </h2>
                         <div class="reviews__text _half">
-                                Уважаемый клиент! мы надеемся, что вы остались довольны нашими услугами. Мы всегда стремимся улучшать качество нашей работы и Ваше мнение очень важно для нас. Если у Вас есть какие-либо предложения или замечания, пожалуйста, поделитесь ими с нами. Спасибо за вашу помощь в улучшении нашего сервиса.
+                            Уважаемый клиент! мы надеемся, что вы остались довольны нашими услугами. Мы всегда стремимся
+                            улучшать качество нашей работы и Ваше мнение очень важно для нас. Если у Вас есть какие-либо
+                            предложения или замечания, пожалуйста, поделитесь ими с нами. Спасибо за вашу помощь в
+                            улучшении нашего сервиса.
                         </div>
 
-                            <form class="reviews__form _fixed form-with-submit-validation">
-                                <div class="reviews__form-text">
-                                    Оставить отзыв
-                                </div>
+                        <form class="reviews__form _fixed form-with-submit-validation">
+                            <div class="reviews__form-text">
+                                Оставить отзыв
+                            </div>
 
-                                <div class="reviews__form-rating">
-                                   <a href="" class="reviews__form-rating--like">+</a> <a href="" class="reviews__form-rating--dislike">-</a>
-                                    
+                            <div class="reviews__form-rating">
+                                <a href="" class="reviews__form-rating--like">+</a> <a href=""
+                                    class="reviews__form-rating--dislike">-</a>
+
+                            </div>
+                            <div class="form-inputs full required-input-wrapper">
+                                <input type="text" class="input  full required-input" placeholder="Ваше имя" required />
+                            </div>
+                            <div class="form-inputs-row">
+                                <div class="form-inputs required-input-wrapper">
+                                    <input type="text" class="input full required-input" placeholder="Телефон"
+                                        required />
+
                                 </div>
-                                <div class="form-inputs full required-input-wrapper">
-                                    <input type="text" class="input  full required-input" placeholder="Ваше имя"
+                                <div class="form-inputs required-input-wrapper">
+                                    <input type="email" class="input full required-input" placeholder="Ваш e-mail"
                                         required />
                                 </div>
-                                <div class="form-inputs-row">
-                                    <div class="form-inputs required-input-wrapper">
-                                        <input type="text" class="input full required-input" placeholder="Телефон"
-                                            required />
-    
-                                    </div>
-                                    <div class="form-inputs required-input-wrapper">
-                                        <input type="email" class="input full required-input" placeholder="Ваш e-mail"
-                                            required />
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="full-menu__form-inputs">
+                                <textarea name="" class="input full" id="" cols="30" rows="10"
+                                    placeholder="Ваш отзыв"></textarea>
+                            </div>
 
-                               
 
-                         
-                                <div class="full-menu__form-inputs">
-                                  <textarea name="" class="input full"  id="" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
-                                </div>
 
-                              
+                            <button class="full-menu__form-submit _float" type="submit" disabled>
+                                Отправить заявку
+                            </button>
 
-                                <button class="full-menu__form-submit _float" type="submit" disabled>
-                                    Отправить заявку
-                                </button>
-                               
-                                <div class="reviews__form-required-message">
-                                    поле обязательно для заполнения <br>
-                                    Отправляя обращение, Вы соглашаетесь на обработку Ваших персональных данных
+                            <div class="reviews__form-required-message">
+                                поле обязательно для заполнения <br>
+                                Отправляя обращение, Вы соглашаетесь на обработку Ваших персональных данных
 
-                                </div>
-                            </form>
-                       
+                            </div>
+                        </form>
+
+                        <div class="reviews__form_success">
+                            <div class="reviews__form-text">
+                                <strong>Благодарим Вас за оставленный отзыв</strong>
+                            </div>
+                            <div class="reviews__form_success-message">
+                                <p>Мы очень рады, что вы оценили нашу работу и сервис. </p>
+                                <p>Номер обращения № <span class="number">356</span></p>
+
+                            </div>
+
+                            <button class="full-menu__form-submit _float" type="submit" disabled>
+                                Оставить еще отзыв
+                            </button>
+                            <div class="reviews__form-message">
+                                Отправляя обращение, Вы соглашаетесь <br> на обработку Ваших персональных данных
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
 
-       
         </main>
         <div class="pagination" data-pagination>
             <div class="pagination__up" data-pagination-up>
@@ -1039,7 +1078,7 @@
                     style="opacity: 0;" />
             </a>
             <div class="header__breadcrumbs" data-breadcrumbs>
-                <strong>Отзывы</strong> 
+                <strong>Отзывы</strong>
             </div>
             <img class="header__menu" src="img/menu-btn.svg" data-menu-white data-menu-open />
             <img class="header__menu header__menu_blue" src="img/menu-btn.svg" data-menu-blue data-menu-open
@@ -1078,8 +1117,6 @@
                 <div class="footer__chat-num">3</div>
             </div>
         </footer>
-
-
     </div>
 
 
