@@ -228,15 +228,15 @@
     right: 20px;
     top: 15px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     @media (max-width: 1200px) {
       top: 20px;
     }
 
     a {
       display: block;
-      width: 28px;
-      height: 28px;
+      width: 18px;
+      height: 18px;
       font-size: 0;
       @media (max-width: 1024px) {
         width: 32px;
@@ -254,13 +254,19 @@
         height: 20px;
         background: #65a2c2;
         position: absolute;
-        right: -5px;
-        top: 3px;
+        right: -8px;
+        top: 0px;
+      }
+      &._active {
+        background-image: url(../img/like-a.svg);
       }
     }
     &--dislike {
       background-image: url(../img/dislike.svg);
       background-size: contain;
+      &._active {
+        background-image: url(../img/dislike-a.svg);
+      }
     }
   }
 }
