@@ -1,10 +1,10 @@
 {
   "presets": [
-    "env",
-    "react"
+    "@babel/react",
+    "@babel/env"
   ],
   "plugins": [
-    "transform-class-properties",
-    "transform-object-rest-spread"
+    "@babel/plugin-transform-class-properties",
+    "@babel/plugin-transform-object-rest-spread"
   ]
 }
