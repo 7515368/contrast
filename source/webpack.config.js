@@ -94,7 +94,9 @@ module.exports = (env, argv) => {
         ],
         devtool: "source-map", //isProduction ? "source-map" : "inline-source-map",
         devServer: {
-            contentBase: path.join(__dirname, "public"),
+            static: {
+                directory: path.join(__dirname, "public")
+              },
             port: 3000,
             historyApiFallback: true,
             /*uncomment below in case of access from another device of this network. (192.168.0.102:3000)*/
