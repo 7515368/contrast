@@ -59,6 +59,7 @@ module.exports = (env, argv) => {
                     { from: "src/delivery.html", to: "delivery.html" },
                     { from: "src/map.html", to: "map.html" },
                     { from: "src/map2.html", to: "map2.html" },
+                    { from: "src/map3.html", to: "map3.html" },
                     { from: "src/map-item.html", to: "map-item.html" },
                     { from: "src/page404.html", to: "page404.html" },
                     { from: "src/blog.html", to: "blog.html" },
