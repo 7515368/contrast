@@ -8,6 +8,10 @@ module.exports = (env, argv) => {
     const isProduction = argv.mode === "production";
     console.log('isProduction = ' + isProduction);
     return {
+        performance: {
+            maxAssetSize: 3145728,
+            maxEntrypointSize: 3145728,
+        },
         entry: ["babel-polyfill", "./src/js/script.js"],
         output: {
             path: path.join(__dirname, "public"),
@@ -97,7 +101,7 @@ module.exports = (env, argv) => {
         devServer: {
             static: {
                 directory: path.join(__dirname, "public")
-              },
+            },
             port: 3000,
             historyApiFallback: true,
             /*uncomment below in case of access from another device of this network. (192.168.0.102:3000)*/
