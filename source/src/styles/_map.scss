@@ -1094,7 +1094,13 @@ input:checked + .map__option-checkbox-img {
   }
 }
 
+// new
+
 .map_new {
+  .map__scheme-object.selected.map2 {
+    height: auto;
+  }
+
   .map__left {
     width: 52vw;
     padding-left: 85px;
@@ -1146,95 +1152,115 @@ input:checked + .map__option-checkbox-img {
       padding-bottom: 5vw;
       margin-bottom: 1.625vw;
     }
+  }
+  .map__scheme-object.selected + .map__scheme {
+    height: 400px;
+  }
 
-    .map__scheme-desc {
-      margin-bottom: 1.2vw;
-      //   padding-bottom: 7vw;
-    }
+  .map__scheme-desc {
+    margin-bottom: 1.2vw;
+  }
 
-    .map__scheme-desc-row {
-      font-size: 1.2em;
+  .map__scheme-desc-row {
+    font-size: 1.2em;
+  }
+  .map__scheme-services-row {
+    font-size: 1em;
+  }
+  .map__options {
+    padding-right: 0;
+  }
+  .map__option {
+    font-size: 0.85em;
+    font-weight: 300;
+    .map__option-right {
+      margin-left: auto;
+      display: flex;
+      width: 120px;
+      flex-grow: 0;
     }
-    .map__scheme-services-row {
-      font-size: 1em;
+    span {
+      font-weight: bold;
+      width: 90px;
+      flex-grow: 0;
+      flex-shrink: 0;
     }
-    .map__options {
-      padding-right: 0;
-    }
-    .map__option {
-      font-size: 0.85em;
-      font-weight: 300;
-      .map__option-right {
-        margin-left: auto;
-        display: flex;
-        width: 120px;
-        flex-grow: 0;
-      }
+    .hint {
+      margin-left: 0;
       span {
-        font-weight: bold;
-        width: 90px;
-        flex-grow: 0;
-        flex-shrink: 0;
+        width: 12px;
+        height: 12px;
+        display: block;
+        margin: 0 5px;
+        background: url(../img/icon-i.svg);
+        background-size: contain;
+        &:hover {
+          background: url(../img/icon-i-h.svg);
+        }
       }
-      .hint {
-        margin-left: 0;
+      .hint-text {
+        width: 300px;
+        top: -10px;
+        right: 20px;
+        left: auto;
+        background-image: url(../img/icon-i-b.svg);
+        background-repeat: no-repeat;
+        background-position: 15px 10px;
+        background-size: 12px;
+      }
+      &_attention {
         span {
-          width: 12px;
-          height: 12px;
-          display: block;
-          margin: 0 5px;
-          background: url(../img/icon-i.svg);
+          background: url(../img/icon-m.svg);
           background-size: contain;
+          background-repeat: no-repeat;
           &:hover {
-            background: url(../img/icon-i-h.svg);
+            background: url(../img/icon-m-h.svg);
           }
         }
         .hint-text {
-          width: 300px;
-          top: -10px;
-          right: 20px;
-          left: auto;
-          background-image: url(../img/icon-i-b.svg);
+          color: #fff;
+          background: #f18d1e;
+          background-image: url(../img/icon-m-h.svg);
           background-repeat: no-repeat;
           background-position: 15px 10px;
           background-size: 12px;
         }
-        &_attention {
-          span {
-            background: url(../img/icon-m.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            &:hover {
-              background: url(../img/icon-m-h.svg);
-            }
-          }
-          .hint-text {
-            color: #fff;
-            background: #f18d1e;
-            background-image: url(../img/icon-m-h.svg);
-            background-repeat: no-repeat;
-            background-position: 15px 10px;
-            background-size: 12px;
-          }
-        }
       }
-      a {
+    }
+    a {
+      width: 12px;
+      display: block;
+      margin: 0 5px;
+      img {
         width: 12px;
-        display: block;
-        margin: 0 5px;
-        img {
-          width: 12px;
-        }
       }
     }
-    .map__scheme-object.selected {
-      margin-bottom: 4vw;
+  }
+  .map__scheme-object.selected {
+    margin-bottom: 4vw;
+  }
+  .map__scheme-object-services-heading {
+    font-size: 1.2em;
+  }
+  .map__scheme-object.selected.map2 {
+    height: auto;
+  }
+
+  @media (max-width: 840px) {
+    .map__right,
+    .map__left {
+      width: 100%;
+      padding-left: 0;
     }
-    .map__scheme-object-services-heading {
-      font-size: 1.2vw;
-    }
-    .map__scheme-object.selected.map2 {
+    .map__options,
+    .map__scheme-imgs {
       height: auto;
+    }
+    .map__right {
+      .btn-open-video {
+        margin-left: 0;
+        margin-top: 30px;
+      }
     }
   }
 }
