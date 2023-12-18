@@ -1104,6 +1104,7 @@ input:checked + .map__option-checkbox-img {
   .map__left {
     width: 52vw;
     padding-left: 85px;
+    padding-bottom: 0;
   }
   .map__scheme-imgs {
     justify-content: space-between;
@@ -1112,6 +1113,8 @@ input:checked + .map__option-checkbox-img {
 
     img {
       width: 45%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
       height: fit-content;
     }
   }
@@ -1129,7 +1132,7 @@ input:checked + .map__option-checkbox-img {
   }
 
   .map__scheme-desc-heading {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .btn-open-video {
     margin-top: 0;
@@ -1162,7 +1165,7 @@ input:checked + .map__option-checkbox-img {
   }
 
   .map__scheme-desc-row {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .map__scheme-services-row {
     font-size: 1em;
@@ -1171,7 +1174,7 @@ input:checked + .map__option-checkbox-img {
     padding-right: 0;
   }
   .map__option {
-    font-size: 0.85em;
+    font-size: 0.8em;
     font-weight: 300;
     .map__option-right {
       margin-left: auto;
@@ -1244,6 +1247,7 @@ input:checked + .map__option-checkbox-img {
   }
   .map__scheme-object.selected.map2 {
     height: auto;
+    
   }
 
   @media (max-width: 840px) {
@@ -1255,10 +1259,16 @@ input:checked + .map__option-checkbox-img {
     .map__options,
     .map__scheme-imgs {
       height: auto;
+      margin-top: 20px;
+      flex-direction: column;
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
     .map__right {
       .btn-open-video {
-        margin-left: 0;
+        margin-left: 20px;
         margin-top: 30px;
       }
     }
@@ -1268,9 +1278,12 @@ input:checked + .map__option-checkbox-img {
   .popup-block__popup {
     overflow: hidden;
     width: 600px;
-    right: 50%;
-    transform: translateX(50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     height: auto;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
     border-radius: 30px;
     .popup-block__close {
