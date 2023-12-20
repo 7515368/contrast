@@ -93,7 +93,7 @@
   font-size: pxToVw(13);
   margin-top: pxToVw(15);
 }
-
+.section__blog-link,
 .portfolio__switch {
   position: absolute;
   bottom: pxToVw(31);
@@ -104,6 +104,9 @@
   transform: translateX(-50%);
   user-select: none;
   transition: opacity 1s ease;
+}
+.section__blog-link {
+  left: pxToVw(330);
 }
 
 @media (max-width: 1024px) {
@@ -160,10 +163,13 @@
     font-size: pxToVw2(13);
     margin-top: pxToVw2(15);
   }
-
+  .section__blog-link,
   .portfolio__switch {
     font-size: pxToVw2(12);
     bottom: pxToVw2(34);
     left: pxToVw2(355);
+  }
+  .section__blog-link {
+    left: pxToVw(310);
   }
 }

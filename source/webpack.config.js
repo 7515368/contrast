@@ -36,11 +36,11 @@ module.exports = (env, argv) => {
                         },
                         {
                             loader: "css-loader",
-                            options: {sourceMap: true},
+                            options: { sourceMap: true },
                         },
                         {
                             loader: "sass-loader",
-                            options: {sourceMap: true},
+                            options: { sourceMap: true },
                         }
                     ],
                 },
@@ -54,7 +54,7 @@ module.exports = (env, argv) => {
             new MiniCssExtractPlugin({
                 filename: 'css/styles.css'
             }),
-            new CopyWebpackPlugin({ 
+            new CopyWebpackPlugin({
                 patterns: [
                     //{ from: "src/index.html", to: "index.html" },
                     { from: "src/services.html", to: "services.html" },
@@ -81,6 +81,7 @@ module.exports = (env, argv) => {
                     { from: "src/clean-box.html", to: "clean-box.html" },
                     { from: "src/underconstruction.html", to: "underconstruction.html" },
                     { from: "src/feedback.html", to: "feedback.html" },
+                    { from: "src/news.html", to: "news.html" },
                     { from: "src/img", to: "img" },
                     { from: "src/styles/fonts", to: "css/fonts" },
                 ]
