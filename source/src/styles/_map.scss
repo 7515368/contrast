@@ -1165,12 +1165,6 @@ input:checked + .map__option-checkbox-img {
     margin-bottom: 1.2vw;
   }
 
-  .map__scheme-desc-row {
-    // font-size: 1em;
-  }
-  .map__scheme-services-row {
-    // font-size: 1em;
-  }
   .map__options {
     padding-right: 0;
   }
@@ -1180,8 +1174,10 @@ input:checked + .map__option-checkbox-img {
     .map__option-right {
       margin-left: auto;
       display: flex;
-      width: 120px;
+      width: 125px;
       flex-grow: 0;
+      flex-shrink: 0;
+      padding-left: 10px;
     }
     span {
       font-weight: bold;
@@ -1196,10 +1192,10 @@ input:checked + .map__option-checkbox-img {
         height: 12px;
         display: block;
         margin: 0 5px;
-        background: url(../img/icon-i.svg);
+        background: url(../img/icon-i.svg) no-repeat;
         background-size: contain;
         &:hover {
-          background: url(../img/icon-i-h.svg);
+          background: url(../img/icon-i-h.svg) no-repeat;
         }
       }
       .hint-text {
@@ -1219,6 +1215,7 @@ input:checked + .map__option-checkbox-img {
           background-repeat: no-repeat;
           &:hover {
             background: url(../img/icon-m-h.svg);
+            background-repeat: no-repeat;
           }
         }
         .hint-text {
@@ -1240,12 +1237,7 @@ input:checked + .map__option-checkbox-img {
       }
     }
   }
-  .map__scheme-object.selected {
-    // margin-bottom: 4vw;
-  }
-  .map__scheme-object-services-heading {
-    // font-size: 1.2em;
-  }
+
   .map__scheme-object.selected.map2 {
     height: auto;
   }
@@ -1277,7 +1269,7 @@ input:checked + .map__option-checkbox-img {
 .popup-block-delivery-form {
   .popup-block__popup {
     overflow: hidden;
-    max-width: 700px;
+    max-width: 600px;
     width: 90%;
     left: 50%;
     top: 50%;
@@ -1294,6 +1286,7 @@ input:checked + .map__option-checkbox-img {
     }
     form {
       width: 100%;
+      max-width: 100%;
       input + input {
         margin-left: 20px;
       }
@@ -1303,7 +1296,14 @@ input:checked + .map__option-checkbox-img {
     left: 0 !important;
   }
   .full-menu__form-inputs div {
-    width: 45%;
+    width: 30%;
+    &:first-child {
+      width: 60%;
+      @media (max-width: 840px) {
+        width: 100%;
+      }
+    }
+   
     @media (max-width: 840px) {
       width: 100%;
     }
@@ -1372,6 +1372,9 @@ input:checked + .map__option-checkbox-img {
       position: absolute;
       top: 0;
       right: 0;
+      @media (max-width: 840px) {
+        display: none;
+      }
     }
   }
   .d_flex {
