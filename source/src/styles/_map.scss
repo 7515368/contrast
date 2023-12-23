@@ -1125,7 +1125,7 @@ input:checked + .map__option-checkbox-img {
   }
 
   .map__options {
-    height: pxToVw2(333);
+    height: pxToVw2(300);
     margin-top: 0;
     flex-direction: column;
     margin-bottom: 2vw;
@@ -1173,6 +1173,10 @@ input:checked + .map__option-checkbox-img {
   .map__option {
     font-size: 0.8vw;
     font-weight: 300;
+    padding-top: pxToVw(5);
+    padding-bottom: pxToVw(5);
+    height: auto;
+    
     @media (max-width: 840px) {
       font-size: 14px;
     }
