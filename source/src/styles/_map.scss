@@ -1098,7 +1098,6 @@ input:checked + .map__option-checkbox-img {
 
 .map_new {
   .map__scheme-object.selected.map2 {
-    height: auto;
     margin-bottom: 0;
   }
 
@@ -1132,22 +1131,22 @@ input:checked + .map__option-checkbox-img {
     margin-bottom: 2vw;
   }
 
-  .map__scheme-desc-heading {
-    // font-size: 1em;
-  }
+ 
   .btn-open-video {
     margin-top: 0;
     margin-bottom: 30px;
     flex-shrink: 0;
+    height: 45px;
+    font-size: 13px;
   }
   .btn-open-video::after {
     content: "";
     display: inline-block;
-    width: 54px;
-    height: 55px;
+    width: 42px;
+    height: 45px;
     position: absolute;
     top: 0;
-    right: -25px;
+    right: -20px;
     background: url(../img/video-btn-o.svg) no-repeat;
     background-size: cover;
   }
@@ -1159,6 +1158,9 @@ input:checked + .map__option-checkbox-img {
   }
   .map__scheme-object.selected + .map__scheme {
     height: 40vh;
+    @media (max-width: 840px) {
+      height: 30vh;
+    }
   }
 
   .map__scheme-desc {
@@ -1169,8 +1171,11 @@ input:checked + .map__option-checkbox-img {
     padding-right: 0;
   }
   .map__option {
-    font-size: 0.8em;
+    font-size: 0.8vw;
     font-weight: 300;
+    @media (max-width: 840px) {
+      font-size: 14px;
+    }
     .map__option-right {
       margin-left: auto;
       display: flex;
@@ -1238,11 +1243,12 @@ input:checked + .map__option-checkbox-img {
     }
   }
 
-  .map__scheme-object.selected.map2 {
-    height: auto;
-  }
+ 
 
   @media (max-width: 840px) {
+    .map__scheme-object.selected.map2 {
+      height: auto;
+    }
     .map__right,
     .map__left {
       width: 100%;
@@ -1255,6 +1261,9 @@ input:checked + .map__option-checkbox-img {
       flex-direction: column;
       img {
         width: 100%;
+        height: 30vh;
+        -o-object-fit: cover;
+           object-fit: cover;
         margin-bottom: 20px;
       }
     }
