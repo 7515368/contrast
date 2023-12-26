@@ -1101,28 +1101,23 @@ input:checked + .map__option-checkbox-img {
     margin-bottom: 0;
   }
 
-  .map__left {
-    width: 52vw;
-    padding-left: 85px;
-    padding-bottom: 0;
-  }
+
   .map__scheme-imgs {
     justify-content: space-between;
     display: flex;
-    height: 17vw;
-
+  
+    a {
+      display: block;
+      @media (max-width: 840px) {
+        margin-bottom: 20px;
+      }
+    }
     img {
-      width: 45%;
-      height: -webkit-fit-content;
-      height: -moz-fit-content;
-      height: fit-content;
+      height: 100%;
     }
   }
 
-  .map__right {
-    width: 28vw;
-    left: pxToVw(980);
-  }
+ 
 
   .map__options {
     height: pxToVw2(300);
@@ -1253,25 +1248,23 @@ input:checked + .map__option-checkbox-img {
     .map__scheme-object.selected.map2 {
       height: auto;
     }
-    .map__right,
-    .map__left {
-      width: 100%;
-      padding-left: 0;
-    }
+ 
     .map__options,
     .map__scheme-imgs {
       height: auto;
       margin-top: 20px;
       flex-direction: column;
+      a {
+      }
       img {
-        width: 100%;
-        height: 30vh;
-        -o-object-fit: cover;
-           object-fit: cover;
-        margin-bottom: 20px;
+        // width: 100%;
+        // height: 30vh;
+        // -o-object-fit: cover;
+        //    object-fit: cover;
+        // margin-bottom: 20px;
       }
     }
-    .map__right {
+    .map__small{
       .btn-open-video {
         margin-left: 20px;
         margin-top: 30px;
@@ -1385,6 +1378,7 @@ input:checked + .map__option-checkbox-img {
       position: absolute;
       top: 0;
       right: 0;
+      pointer-events: none;
       @media (max-width: 840px) {
         display: none;
       }
@@ -1429,4 +1423,41 @@ input:checked + .map__option-checkbox-img {
       margin-bottom: 20px;
     }
   }
+}
+
+input[type="date"] {
+  position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  z-index: -10;
+}
+
+input[type="date"]::-webkit-input-placeholder {
+  z-index: 99;
+}
+
+input[type="date"]:placeholder {
+  z-index: 99;
+}
+input[type="date"]:not(.has-value):before {
+  content: attr(placeholder);
+  width: 100%;
+}
+
+input[type="date"] {
+  // padding: 12px 20px;
 }
