@@ -1458,6 +1458,15 @@ input[type="date"]:not(.has-value):before {
   width: 100%;
 }
 
-input[type="date"] {
-  // padding: 12px 20px;
+.datepicker {
+  font-family: "Museo Sans", sans-serif !important;
+  font-size: 12px !important;
+}
+.datepicker--day-name {
+  color: #19619d !important;}
+  .datepicker--cell.-selected- {
+    background: #19619d !important;
+  }
+  .datepicker--cell.-current- {
+    color: #65a2c2 !important;
 }

@@ -12,6 +12,7 @@
             src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6df80c10-caa1-4e7b-b17b-682ac757966b"
             type="text/javascript"
         ></script>
+    
     </head>
     <body>
         <div class="content" id="content">
@@ -1284,7 +1285,9 @@
                         <div class="full-menu__form-inputs ">
                             <div class="required-input-wrapper"><input type="text" class="input  required-input"
                                     placeholder="Ваше имя" required=""></div>
-                                    <div class="date"> <input type="date" value="" class="input-txt" id="date" aria-required="true" aria-invalid="false" placeholder="Дата" onchange="this.className=(this.value!=''?'has-value':'')"></div>
+                                    <div class="date"> 
+                                         <input type="text" value="" class="input-txt" id="datepicker" aria-required="true" aria-invalid="false" placeholder="Дата" onchange="this.className=(this.value!=''?'has-value':'')">
+                                       </div> 
 
                         </div>
                         <div class="full-menu__form-inputs">
@@ -1344,5 +1347,6 @@
                 );
             }
         </script>
+          
     </body>
 </html>
