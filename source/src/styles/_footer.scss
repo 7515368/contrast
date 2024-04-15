@@ -216,12 +216,12 @@
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 1025px) {
   .footer__links-mob {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .footer__links-mob {
     display: block;
   }
