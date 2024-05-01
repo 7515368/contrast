@@ -106,7 +106,7 @@
 .header__small-menu {
     position: absolute;
     top: pxToVw(45);
-    right: pxToVw(50);
+    right: pxToVw(100);
     z-index: 100;
 
     display: flex;
@@ -333,3 +333,4 @@
         right: 7.5vw;
     }
 }
+

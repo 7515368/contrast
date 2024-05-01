@@ -82,6 +82,7 @@ module.exports = (env, argv) => {
                     { from: "src/underconstruction.html", to: "underconstruction.html" },
                     { from: "src/feedback.html", to: "feedback.html" },
                     { from: "src/news.html", to: "news.html" },
+                    { from: "src/search_results.html", to: "search_results.html" },
                     { from: "src/img", to: "img" },
                     { from: "src/styles/fonts", to: "css/fonts" },
                 ]

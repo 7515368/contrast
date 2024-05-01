@@ -120,6 +120,9 @@ $vwSize3: 1920 / 100;
   }
 }
 
+.white {
+  background: #fff;
+}
 @import "../styles/header";
 @import "../styles/full-menu";
 @import "../styles/section";
@@ -151,6 +154,7 @@ $vwSize3: 1920 / 100;
 @import "../styles/services-portfolio.scss";
 @import "../styles/cleanbox.scss";
 @import "../styles/reviews.scss";
+@import "../styles/search.scss";
 
 @media (max-width: 1024px) {
   .content {
