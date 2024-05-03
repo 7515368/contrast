@@ -614,3 +614,15 @@ $('.hint-close').click(function () {
 
 });
 
+
+
+const search = document.querySelector('.search')
+const searchBtn = document.querySelector('.search_btn-open')
+const searchClose = document.querySelector('.search_btn-close')
+
+searchBtn.addEventListener('click', () => {
+	search.classList.add('open')
+})
+searchClose.addEventListener('click', () => {
+	search.classList.remove('open')
+})
