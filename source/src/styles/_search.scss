@@ -2,13 +2,11 @@
 .header {
     .search {
         position: absolute;
-        top: pxToVw(40);
-        right: pxToVw(50);
+        top: pxToVw(35);
+        right: pxToVw(65);
         z-index: 100;
     &_btn-close {
-        // left: pxToVw(500);
         transform: translate(-30px, -50%);
-  
     }
     &_input-wrapper {
         position: absolute;
@@ -16,7 +14,7 @@
         right: pxToVw(0);
         display: none;
         
-        input {
+        .search_input {
             border: 1px solid rgba(#005090, .5);
             outline: none;
             padding-left: 40px;
@@ -63,7 +61,9 @@
         border-radius: 10px;
         padding: 6px 30px;
         margin-left: 26px;
+        height: 36px;
         cursor: pointer;
+        
     }
     &-type {
         font-weight: 300;
@@ -99,14 +99,13 @@
             width: 30px;
             height: 30px;
         }
-        input {
+        .search_input {
             height: 36px;
             border-radius: 0;
             width: pxToVw(600);
             border: none;
             border-bottom: 1px solid rgba(#005090, .5);
             outline: none;
-           
         }
      
     }
