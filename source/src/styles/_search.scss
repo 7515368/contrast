@@ -209,6 +209,7 @@
 .nav-links {
     font-size: .66667vw;
     margin: 0 .66667vw;
+    display: flex;
     
     a {
         color: #65A2C2;
@@ -227,5 +228,6 @@
         background: url(../img/arrow-next.svg) 50% 50% no-repeat;
         width: 23px;
         height: 23px;
+        display: inline-block;
     }
 }
