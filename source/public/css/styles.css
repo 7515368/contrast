@@ -10273,8 +10273,8 @@ input[type="date"]:not(.has-value):before {
 
 .header .search {
   position: absolute;
-  top: 2.66667vw;
-  right: 3.33333vw;
+  top: 2.33333vw;
+  right: 4.33333vw;
   z-index: 100; }
   .header .search_btn-close {
     transform: translate(-30px, -50%); }
@@ -10283,7 +10283,7 @@ input[type="date"]:not(.has-value):before {
     top: -50%;
     right: 0vw;
     display: none; }
-    .header .search_input-wrapper input {
+    .header .search_input-wrapper .search_input {
       border: 1px solid rgba(0, 80, 144, 0.5);
       outline: none;
       padding-left: 40px;
@@ -10320,6 +10320,7 @@ input[type="date"]:not(.has-value):before {
   border-radius: 10px;
   padding: 6px 30px;
   margin-left: 26px;
+  height: 36px;
   cursor: pointer; }
 
 .search-type {
@@ -10351,7 +10352,7 @@ input[type="date"]:not(.has-value):before {
     background: #fff url(../img/lense.svg) 0 50% no-repeat;
     width: 30px;
     height: 30px; }
-  .search_input-wrapper input {
+  .search_input-wrapper .search_input {
     height: 36px;
     border-radius: 0;
     width: 40vw;
@@ -10431,6 +10432,10 @@ input[type="date"]:not(.has-value):before {
           display: block;
           height: 100%;
           width: 100%; }
+
+.nav-links {
+  font-size: .66667vw;
+  margin: 0 .66667vw; }
 
 @media (max-width: 1024px) {
   .content {

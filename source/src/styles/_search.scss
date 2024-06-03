@@ -205,3 +205,27 @@
      }
     }
 }
+
+.nav-links {
+    font-size: .66667vw;
+    margin: 0 .66667vw;
+    
+    a {
+        color: #65A2C2;
+    }
+    .page-numbers {
+        margin-right: 18px;
+        font-size: 16px;
+    }
+    .page-numbers.current {
+        font-weight: bold;
+        color: #005090;
+
+    }
+    .next {
+        font-size: 0;
+        background: url(../img/arrow-next.svg) 50% 50% no-repeat;
+        width: 23px;
+        height: 23px;
+    }
+}
