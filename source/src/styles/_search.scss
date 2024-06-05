@@ -99,6 +99,7 @@
             width: 30px;
             height: 30px;
         }
+        input[type="text"],
         .search_input {
             height: 36px;
             border-radius: 0;
@@ -109,7 +110,7 @@
         }
      
     }
-  
+
 }
 
 .section__search-results {
@@ -139,15 +140,25 @@
     }
     ol {
         margin-left: 0;
-        padding-left: 0;
         font-weight: 300;
         margin-top: 5vh;
         height: 40vh;
         overflow: scroll;
         padding-right: 40px;
-        padding-left: 20px;
+        padding-left: 40px;
+        list-style: none;
         li {
             margin-bottom: 3vh;
+            position: relative;
+            & > span {
+                position: absolute;
+                top: 4px;
+                left: -35px;
+                width: 35px;
+                font-weight: bold;
+                // text-align: right; 
+            }
+           
           
             b {
                 font-size: 20px;
