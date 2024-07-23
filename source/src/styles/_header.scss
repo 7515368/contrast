@@ -317,12 +317,12 @@
         height: pxToVw2(116);
         top: 50.5%;
         transform: translateY(-50%);
-        left: pxToVw(15);
+        left: pxToVw(20);
     }
 
     .header__small-menu {
         top: pxToVw2(45);
-        right: pxToVw2(50);
+        // right: pxToVw2(50);
     }
 
     .header__link {

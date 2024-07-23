@@ -19,10 +19,13 @@
 }
 
 .full-menu.opened .full-menu__menu-item {
-  animation: 0.5s fadeInMenu;
-  animation-fill-mode: forwards;
+  -webkit-animation: 0.5s fadeInMenu;
+          animation: 0.5s fadeInMenu;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   opacity: 0;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .full-menu__top {
@@ -109,7 +112,8 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
-  animation: 0.5s fadeOutMenu forwards;
+  -webkit-animation: 0.5s fadeOutMenu forwards;
+          animation: 0.5s fadeOutMenu forwards;
   cursor: pointer;
   letter-spacing: pxToVw(2);
 }
@@ -243,6 +247,30 @@
 
 .full-menu__form-inputs input._small {
   width: pxToVw(175);
+}
+
+.full-menu__form-inputs input::-webkit-input-placeholder {
+  font-size: pxToVw(12);
+  color: #005090;
+  font-weight: 300;
+}
+
+.full-menu__form-inputs input::-moz-placeholder {
+  font-size: pxToVw(12);
+  color: #005090;
+  font-weight: 300;
+}
+
+.full-menu__form-inputs input:-ms-input-placeholder {
+  font-size: pxToVw(12);
+  color: #005090;
+  font-weight: 300;
+}
+
+.full-menu__form-inputs input::-ms-input-placeholder {
+  font-size: pxToVw(12);
+  color: #005090;
+  font-weight: 300;
 }
 
 .full-menu__form-inputs input::placeholder {
@@ -496,7 +524,7 @@
 
   .full-menu__socials {
     position: absolute;
-    top: 145px;
+    top: 45%;
     right: 20px;
 
     display: flex;
@@ -575,7 +603,8 @@
   }
 
   .full-menu.opened .full-menu__menu-item {
-    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
   }
 
   .full-menu__content-inner::-webkit-scrollbar {
@@ -744,6 +773,22 @@
 
   .full-menu__form-inputs input._small {
     width: pxToVw2(175);
+  }
+
+  .full-menu__form-inputs input::-webkit-input-placeholder {
+    font-size: pxToVw2(12);
+  }
+
+  .full-menu__form-inputs input::-moz-placeholder {
+    font-size: pxToVw2(12);
+  }
+
+  .full-menu__form-inputs input:-ms-input-placeholder {
+    font-size: pxToVw2(12);
+  }
+
+  .full-menu__form-inputs input::-ms-input-placeholder {
+    font-size: pxToVw2(12);
   }
 
   .full-menu__form-inputs input::placeholder {
