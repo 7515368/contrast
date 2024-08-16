@@ -1,52 +1,5 @@
 
-.header {
-    .search {
-        position: absolute;
-        top: pxToVw(35);
-        right: pxToVw(65);
-        z-index: 100;
-        &_btn-close {
-            transform: translate(-30px, -50%);
-        }
-        &_input-wrapper {
-            position: absolute;
-            top: -50%;
-            right: pxToVw(0);
-            display: none;
-            
-            input[type="text"], .search_input {
-                border: 1px solid rgba(#005090, .5);
-                outline: none;
-                padding-left: 40px;
-                background: #fff url(../img/lense.svg) 10px 50% no-repeat;
-                color: #005090;
-            }
-            &:before {
-                display: none;
-            }
-        }
-        &.open {
-            .search_input-wrapper  {
-                display: flex;
-            }
-            .search_btn-open {
-                display: none;
-            }
-        }
-        &_btn-open {
-            background: url(../img/search_lense.svg) no-repeat;
-            width: 22px;
-            height: 22px;
-            display: block;
-            font-size: 0;
-            @media (max-width: 600px) {
-                position: absolute;
-                background: url(../img/lense.svg) no-repeat;
-                right: 25px;
-              }
-        }
-}
-}
+
 .search {
 
     &_btn-open {
@@ -139,7 +92,7 @@
             border-bottom: 1px solid rgba(#005090, .5);
             outline: none;
             @media (max-width: 600px) {
-                width: calc(100vw - 30px);;
+                width: calc(100vw - 30px);
               }
         }
         @media (max-width: 600px) {
@@ -147,11 +100,71 @@
            padding-left: 15px;
            padding-right: 15px;
          }
-     
     }
-
+    &.open {
+       @media (max-width: 600px) {  
+        .search_input-wrapper  {   
+            display: flex;
+        }
+        .search_input {
+                background: url(../img/lense.svg) 0 50% no-repeat;
+                background-size: 25px;
+                padding-left: 30px;
+            }
+        }
+        .search_btn-open {
+            display: none;
+        }
+    }
 }
-
+.header {
+    .search {
+        position: absolute;
+        top: pxToVw(35);
+        right: pxToVw(65);
+        z-index: 100;
+        &_btn-close {
+            transform: translate(-30px, -50%);
+        }
+        &_input-wrapper {
+            position: absolute;
+            top: -50%;
+            right: pxToVw(0);
+            display: none;
+            
+            input[type="text"], .search_input {
+                border: 1px solid rgba(#005090, .5);
+                outline: none;
+                padding-left: 40px;
+                background: #fff url(../img/lense.svg) 10px 50% no-repeat;
+                color: #005090;
+            }
+            &:before {
+                display: none;
+            }
+        }
+        &.open {
+            .search_input-wrapper  {
+                display: flex;
+            }
+            .search_btn-open {
+                display: none;
+            }
+        }
+        &_btn-open {
+            background: url(../img/search_lense.svg) no-repeat;
+            width: 22px;
+            height: 22px;
+            display: block;
+            font-size: 0;
+            @media (max-width: 600px) {
+                position: absolute;
+                background: url(../img/lense.svg) no-repeat;
+                right: 25px;
+              }
+        }
+    }
+}
 .section__search-results {
     width: 100%;
     align-items: center;
