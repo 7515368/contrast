@@ -614,15 +614,20 @@ $('.hint-close').click(function () {
 
 });
 
+$('.search_btn-open').click(function () {
+    $('.search_btn-open').parent('.search').addClass('open');
+});
+$('.search_btn-close').click(function () {
+    $('.search_btn-open').parent('.search').removeClass('open');
+});
 
+// const search = document.querySelector('.search')
+// const searchBtn = document.querySelector('.search_btn-open')
+// const searchClose = document.querySelector('.search_btn-close')
 
-const search = document.querySelector('.search')
-const searchBtn = document.querySelector('.search_btn-open')
-const searchClose = document.querySelector('.search_btn-close')
-
-searchBtn.addEventListener('click', () => {
-	search.classList.add('open')
-})
-searchClose.addEventListener('click', () => {
-	search.classList.remove('open')
-})
+// searchBtn.addEventListener('click', () => {
+// 	search.classList.add('open')
+// })
+// searchClose.addEventListener('click', () => {
+// 	search.classList.remove('open')
+// })
