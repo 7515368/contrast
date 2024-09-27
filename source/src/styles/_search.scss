@@ -69,7 +69,6 @@
         align-items: center;
         margin-bottom: 15px;
         position: relative;
-        display: none;
         @media (max-width: 600px) {
             flex-wrap: wrap;
         }
@@ -92,13 +91,17 @@
             border-bottom: 1px solid rgba(#005090, .5);
             outline: none;
             @media (max-width: 600px) {
-                width: calc(100vw - 30px);
+                // width: calc(100vw - 30px);
+                flex-grow: 1;
+
               }
         }
         @media (max-width: 600px) {
   
            padding-left: 15px;
            padding-right: 15px;
+           display: flex;
+           gap: 15px;
          }
     }
     &.open {
@@ -121,7 +124,7 @@
     .search {
         position: absolute;
         top: pxToVw(35);
-        right: pxToVw(65);
+        right: pxToVw(90);
         z-index: 100;
         &_btn-close {
             transform: translate(-30px, -50%);
